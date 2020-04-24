@@ -1,5 +1,5 @@
-{% load static %}
-@import url({% static "website/fontawesome-all.min.css" %});
+
+@import url("fontawesome-all.min.css");
 
 /*
 	Fractal by HTML5 UP
