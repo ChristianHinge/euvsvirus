@@ -83,6 +83,7 @@ DATABASES = {
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
+import django_heroku
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -119,3 +120,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR,'static-files')
+django_heroku.settings(locals())
