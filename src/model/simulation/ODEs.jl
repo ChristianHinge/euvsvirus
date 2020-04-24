@@ -3,8 +3,9 @@
 module ODEs
 using DifferentialEquations: ODEProblem, solve, ODESolution
 
+export SEIR!
 
-function SEIR!(du, u::Matrix, t, β, γ, σ)
+function SEIR!(du, u::AbstractMatrix, t, β, γ, σ)
     S = @view u[:,1]
     E = @view u[:,2]
     I = @view u[:,3]
@@ -15,16 +16,12 @@ function SEIR!(du, u::Matrix, t, β, γ, σ)
     du[:,3] .= dIdt(E, I, γ, σ)
     du[:,4] .= dRdt(I, γ)
 end
+SEIR!(du, u::AbstractVector, t, β, γ, σ) = SEIR!(du, u', t, β, γ, σ)
 
 dSdt(S, I, N, β) = - β .* S .* I ./ N
 dEdt(S, E, I, N, β, σ) = β .* S .* I ./ N .- σ .* E
 dIdt(E, I, γ, σ) = σ .* E .- γ .* I
 dRdt(I, γ) = γ .* I
-
-function simulate_SEIR(u₀::Matrix, duration::Real, β, γ, σ)
-    problem = ODEProblem(SEIR!, u₀, (0., duration), β, γ, σ)
-    solve(problem, save_everystep=true)
-end
 
 
 
