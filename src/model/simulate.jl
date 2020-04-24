@@ -1,10 +1,10 @@
 #!/usr/bin/env julia
 
 using Fire
+using DelimitedFiles
 
 
 include("simulation/ODEs.jl")
-include("simulation/Simulation.jl")
 
 """
 Simulate SEIR. 
@@ -15,10 +15,11 @@ R₀ = β / γ
 - γ = rate of I->R
 - σ = rate of E->I
 """
-@main function SEIR(; duration, S, E=0, I=1, R=0, beta, gamma=1/14, sigma=1/2)
+# @main 
+function SEIR(o=stdout; duration, S, E=0, I=1, R=0, beta, gamma=1/14, sigma=1/2, dtmax=nothing)
 	u₀ = hcat([S, E, I, R]...)
-	solution = Simulation.simulate(ODEs.SEIR!, u₀, duration)
+	solution = ODEs.simulate_SEIR(u₀, duration, beta, gamma, sigma; dtmax=dtmax)
 	if solution === nothing return end
-    print(solution)
+    writedlm(o, hcat(solution.t, vcat(solution.u...)))
 end
 
