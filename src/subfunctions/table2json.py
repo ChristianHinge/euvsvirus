@@ -15,6 +15,6 @@ def parse_args(args):
 def main(args):
     args = parse_args(args)
     table = pd.read_pandas(args.infile, args.delimiter, args.header)
-    with as_handle(args.outfile) as fh:
+    with as_handle(args.outfile, 'w') as fh:
         colstrs = ['"{}": {}'.format(col, list(table[col])) for col in table]
         fh.write("{" + ',\n'.join(colstrs) + "}\n")

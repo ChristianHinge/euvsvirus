@@ -1,10 +1,13 @@
 #!/usr/bin/env julia
+
+
 module ArgParseUtils
 
 using ArgParse
 using NamedTupleTools
 
 export parse_arguments
+
 
 get_field_groups(settings) = [field.group for field in settings.args_table.fields]
 get_field_dest_names(settings) = [field.dest_name for field in settings.args_table.fields]
@@ -21,6 +24,11 @@ function main(settings, f)
     @info("Positionals: $positionals")
     @info("Optionals: $optionals")
     f(positionals...; optionals...)
+end
+
+# a real number should be parsed from "1/2" or "4+1"
+function ArgParse.parse_item(::Type{Real}, x::AbstractString)
+    return Real(eval(Meta.parse(x)))
 end
 
 
