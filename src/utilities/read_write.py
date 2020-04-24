@@ -5,8 +5,8 @@ import pandas as pd
 from pathlib import Path
 from Bio.File import as_handle
 import re
-from degnutil import string_util as st, input_output as io
-from degnutil.input_output import log
+from utilities import string_util as st, input_output as io
+from utilities.input_output import log
 
 """
 This script is for reading and writing to files. 

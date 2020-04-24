@@ -4,7 +4,7 @@ import sys
 import argparse
 from shlex import split as shell_split
 import logging
-import degnutil.input_output as io
+import utilities.input_output as io
 
 """
 This script is for functions related to argument parsing, 

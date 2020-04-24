@@ -6,7 +6,7 @@ import re
 import subprocess
 import shutil
 import logging
-from degnutil import string_util as st
+from utilities import string_util as st
 
 
 """
@@ -61,7 +61,7 @@ def confirm(prompt):
     :param prompt: string message to use as prompt
     :return: True if y is pressed, False otherwise
     """
-    from degnutil.get_key import getch
+    from utilities.get_key import getch
     
     while True:
         print(prompt, end='', flush=True)
@@ -233,7 +233,7 @@ def dynamic_parser(pattern, description=None):
     :param description: Text description for parser to print in help messages.
     :return: ArgumentParser
     """
-    from degnutil.argument_parsing import subparser_group
+    from utilities.argument_parsing import subparser_group
     from argparse import ArgumentParser
     from pathlib import Path
     from glob import iglob
