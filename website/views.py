@@ -1,11 +1,10 @@
 from django.shortcuts import render
 from django.http import  HttpResponse
-import os
-
-from website import *
-
-
+from django.template import loader
 
 
 def index(request):
-    return render(request,'index.html')
+    template=loader.get_template('index.html')
+    context={}
+
+    return HttpResponse(template.render(context, request))
