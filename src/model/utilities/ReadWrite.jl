@@ -2,11 +2,7 @@
 module ReadWrite
 
 using DelimitedFiles
-import JSON3
-import BSON
-import JLD
 using Flux: TrackedArray, Tracker.data
-# problems with JLD2, not using it
 
 export load, save
 export loaddlm, loadmat, savedlm
@@ -18,9 +14,7 @@ Load from file using relevant package depending on file extension.
 """
 function load(fname::String)
 	ext = splitext(fname)[2]
-	if ext == ".bson" load_BSON(fname)
-	elseif ext == ".jld" load_JLD(fname)
-	else loaddlm(fname) end
+	loaddlm(fname)
 end
 function load(fname::String, cast)
 	if splitext(fname)[2] == ".json"
@@ -50,29 +44,11 @@ function loadmat(fname::String)
 end
 
 """
-Load from JSON format using JSON3.
-For this to work it is necessary that a visible constructor is found that matches the elements of the JSON.
-This can mean that you will have to make a constructor that is identical to the "new" function in a struct.
-- fname: filename of file to read from
-- cast: type to cast the read contents to e.g. a custom struct you have made.
-To use this you must define what struct type you are reading to JSON3.
-This can be do like so:
-JSON3.StructType(::Type{ExampleStruct}) = JSON3.struct()
-"""
-load_JSON(fname::String, cast) = open(fname) do io return JSON3.read(io, cast) end
-load_BSON(fname::String) = BSON.load(fname)[default_identifier]
-load_JLD(fname::String) = JLD.load(fname, default_identifier)
-
-
-"""
 Save to file using relevant package depending on file extension.
 """
 function save(fname::String, x)
 	ext = splitext(fname)[2]
-	if ext == ".bson" save_BSON(fname, x)
-	elseif ext == ".json" save_JSON(fname, x)
-	elseif ext == ".jld" save_JLD(fname, x)
-	else savedlm(fname, x) end
+	savedlm(fname, x)
 end
 
 function savedlm(fname::String, x::AbstractArray)
@@ -85,9 +61,5 @@ end
 savedlm(fname::String, x::TrackedArray) = savedlm(fname, data(x))
 savedlm(o::Base.TTY, x::Matrix) = writedlm(o, x)
 savedlm(o::Base.TTY, x::TrackedArray) = writedlm(o, data(x))
-
-save_JSON(fname::String, x) = open(fname, "w") do io JSON3.write(io, x) end
-save_BSON(fname::String, x) = BSON.bson(fname, Dict(default_identifier => x))
-save_JLD(fname::String, x) = JLD.save(fname, default_identifier, x)
 
 end;
