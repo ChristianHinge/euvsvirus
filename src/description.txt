@@ -1,0 +1,2 @@
+zshrc.sh is a file to source in your ~/.zshrc or ~/.bashrc or ~/.bash_profile depending on what you use.
+It adds whatever is needed to have everything running. This is mainly just adding things to your PATH and PYTHONPATH variables.
