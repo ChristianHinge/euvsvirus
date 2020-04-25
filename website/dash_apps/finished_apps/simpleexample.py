@@ -47,7 +47,10 @@ fig = px.choropleth(df, geojson=counties, locations='fips', color='unemp',
                         scope="usa",
                         labels={'unemp':'unemployment rate'}
 )
-
+fig.update_layout({
+    'plot_bgcolor':'rgb(0,0,0,0)',
+    'paper_bgcolor':'rgb(0,0,0,0)',
+})
 
 
 

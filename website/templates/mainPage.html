@@ -12,18 +12,15 @@
         <div class="front">
             <img id="logoTop" src="{% static 'website/images/WHET_Logo_ClearBackground_75_v0.1.png' %}" alt="">
             <p>World Heatmap Epidemioligy Tool</p>
-            <p2>The tool that allows policy makes to visualize stuff while making the bestest solutions!</p2>
+            <p2>The tool that allows decision makers to visualize stuff while making the bestest solutions!</p2>
         </div>
     </header>
 
-    <div class="{% plotly_class name='SimpleExample' %} card" style="height: 100%; width: 100%" id="usaPlot">
-        {% plotly_app name='SimpleExample' ratio=1 %}
-    </div>
-
 <!-- White section -->
     <section id="one" class="wrapper style2 special">
-            
-            <img src={% static "website/images/overlay.png" %} alt=""> 
+        <div class="{% plotly_class name='SimpleExample' %} card" style="height: 100%; width: 100%" id="usaPlot">
+                {% plotly_app name='SimpleExample' ratio=1 %}
+            </div>
         <header class="major">
             <h2>THIS IS OBVIOUSLY UNDER MAJOR CONSTRUCTION BRUH!!</h2>
         </header>
