@@ -44,7 +44,7 @@ fig3 = go.Figure(data=[go.Table(
 fig.show()
 
 fig = px.choropleth_mapbox(df, geojson=counties, locations='fips', color='unemp',
-                           color_continuous_scale="Viridis",
+                           color_continuous_scale = ['#2821FF','#D917E8','#FF4726','#E89817','#FFCB00'],
                            range_color=(0, 12),
                            mapbox_style="carto-positron",
                            zoom=3, center = {"lat": 37.0902, "lon": -95.7129},
