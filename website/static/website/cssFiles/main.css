@@ -28,7 +28,7 @@
 }
 
 #header1 {
-	background-color: #e59b46;
+	background-color: rgb(226,179,118);
 	color: #d1e5f9;
 	padding: 4.5em 0 2.5em 0 ;
 	-moz-align-items: center;
@@ -43,7 +43,7 @@
 	-webkit-justify-content: center;
 	-ms-justify-content: center;
 	justify-content: center;
-	background-image: url('../images/overlay.png'), url('../images/pattern-size1.svg'),  linear-gradient(90deg, rgb(51, 23, 1) 0%, #e59b46 35%, rgb(228, 177, 143) 100%);
+	background-image: url('../images/overlay.png'), url('../images/pattern-size1.svg');
 	background-position: top left, center center;
 	background-attachment: fixed, fixed;
 	background-size: auto, cover;

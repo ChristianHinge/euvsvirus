@@ -12,4 +12,4 @@ dash-table==4.6.2
 django-chartjs
 channels
 channels_redis
-
+scipy

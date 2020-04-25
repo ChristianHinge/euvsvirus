@@ -1,6 +1,7 @@
 import os
 import dash_core_components as dcc
 import dash_html_components as html
+# import dash
 import dash_table
 from dash.dependencies import Input, Output
 import plotly.graph_objs as go
@@ -36,12 +37,12 @@ fig3 = go.Figure(data=[go.Table(
     header=dict(values=list(df.columns),
                 fill_color='paleturquoise',
                 align='left'),
-    cells=dict(values=[df.Rank, df.State, df.Postal, df.Population],
+    cells=dict(values=[df.rank, df.fips,df.unemp],
                fill_color='lavender',
                align='left'))
 ])
 
-fig.show()
+# fig.show()
 
 fig = px.choropleth_mapbox(df, geojson=counties, locations='fips', color='unemp',
                            color_continuous_scale = ['#2821FF','#D917E8','#FF4726','#E89817','#FFCB00'],
@@ -71,11 +72,6 @@ def create_time_series(df):
 
 
 
-fig.update_layout({
-    'plot_bgcolor':'rgb(0,0,0,0)',
-    'paper_bgcolor':'rgb(0,0,0,0)',
-})
-
 
 app.layout = html.Div([
 
@@ -98,7 +94,7 @@ app.layout = html.Div([
 
 df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/solar.csv')
 
-app = dash.Dash(__name__)
+# app = DjangoDash.dash(__name__)
 
 @app.callback(
     Output('x-time-series', 'figure'),
