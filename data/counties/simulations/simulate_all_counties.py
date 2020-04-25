@@ -9,5 +9,5 @@ for fips, pop in zip(density["fips"], density["population"]):
     arr = simulate_county(fips, 500)
     max_icu = max(arr["ICU"])
     icu_beds = arr.at[0, "icu_beds"]
-    D = arr.at[-1, "D"]
+    D = arr.at[len(arr)-1, "D"]
     print("\t".join(map(str, (fips, max_icu, max_icu/icu_beds, D, D/pop))))
