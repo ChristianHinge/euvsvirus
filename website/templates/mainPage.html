@@ -5,9 +5,10 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 {% load static %} 
+{% load plotly_dash %}
 <html>
 	<head>
-		<title>W H E T</title>
+		<title>W 22H E T</title>
 		<meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         
@@ -29,6 +30,9 @@
 			<section id="one" class="wrapper style2 special">
                     
                     <img src={% static "website/images/overlay.png" %} alt=""> 
+					<div class="{% plotly_class name='SimpleExample' %} card" style="height: 100%; width: 100%">
+    					{% plotly_app name='SimpleExample' ratio=1 %}
+   					</div>
 				<header class="major">
 					<h2>THIS IS OBVIOUSLY UNDER MAJOR CONSTRUCTION BRUH!!</h2>
 				</header>
