@@ -31,5 +31,9 @@ function ArgParse.parse_item(::Type{Real}, x::AbstractString)
     return Real(eval(Meta.parse(x)))
 end
 
+function ArgParse.parse_item(::Type{Vector{Real}}, x::AbstractString)
+    return Real.(eval.(Meta.parse.(x)))
+end
+
 
 end;
