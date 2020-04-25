@@ -4291,7 +4291,7 @@ input, select, textarea {
 	#footer {
 		background-color: #f7f7f7;
 		color: #999999;
-		padding: 0 1em 0 0 ;
+		padding: 0 0 0 0 ;
 		color: #b0b0b0;
 		text-align: right;
 	}
@@ -4308,6 +4308,11 @@ input, select, textarea {
 			#footer a:hover {
 				color: #4696e5;
 			}
+
+		#footer p{
+			padding: 0 0 0 0;
+			bottom: 0;
+		}
 
 		#footer strong, #footer b {
 			color: #828282;
@@ -4336,6 +4341,8 @@ input, select, textarea {
 
 		#footer .copyright {
 			font-size: 0.8em;
+			padding-right: 2em;
+			margin-bottom: 0;
 		}
 
 		@media screen and (max-width: 980px) {
