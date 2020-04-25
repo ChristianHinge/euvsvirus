@@ -3616,7 +3616,41 @@ input, select, textarea {
 
 /* Header */
 
+
+/* adding scrolling lock */
+.scrollContainer{
+	scroll-snap-type: y mandatory;
+}
+
+.getScrolled{
+	scroll-snap-align: start;
+}
+
+#header2 {
+	background-color: #e59b46;
+	color: #d1e5f9;
+	padding: 4.5em 0 2.5em 0 ;
+	-moz-align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-justify-content: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	background-image: url('../images/overlay.png'), url('../images/pattern-size1.svg'),  linear-gradient(90deg, rgb(51, 23, 1) 0%, #725a3e 35%, rgb(149, 143, 228) 100%);
+	background-position: top left, center center;
+	background-attachment: fixed, fixed;
+	background-size: auto, cover;
+	height: 100vh;
+	min-height: 35em;
+}
 	#header {
+		/* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
 		background-color: #e59b46;
 		color: #d1e5f9;
 		padding: 4.5em 0 2.5em 0 ;
@@ -3632,7 +3666,7 @@ input, select, textarea {
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
-		background-image: url('../images/overlay.png'), url('../images/pattern-size1.svg');
+		background-image: url('../images/overlay.png'), url('../images/pattern-size1.svg'),  linear-gradient(90deg, rgb(51, 23, 1) 0%, #e59b46 35%, rgb(228, 177, 143) 100%);
 		background-position: top left, center center;
 		background-attachment: fixed, fixed;
 		background-size: auto, cover;
@@ -4083,9 +4117,9 @@ input, select, textarea {
 	#footer {
 		background-color: #f7f7f7;
 		color: #999999;
-		padding: 4.5em 0 2.5em 0 ;
+		padding: 0 1em 0 0 ;
 		color: #b0b0b0;
-		text-align: center;
+		text-align: right;
 	}
 
 		#footer input, #footer select, #footer textarea {
@@ -4133,7 +4167,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			#footer {
-				padding: 4em 4em 2em 4em ;
+				padding: 0 0 0 1em ;
 			}
 
 		}
@@ -4141,7 +4175,7 @@ input, select, textarea {
 	@media screen and (max-width: 736px) and (orientation: landscape) {
 
 		#footer {
-			padding: 3em 3em 1em 3em ;
+			padding: 0 0 0 1em ;
 		}
 
 	}
@@ -4149,7 +4183,7 @@ input, select, textarea {
 	@media screen and (max-width: 736px) and (orientation: portrait) {
 
 		#footer {
-			padding: 3em 1.5em 1em 1.5em ;
+			padding: 0 0 0 1em ;
 		}
 
 	}
