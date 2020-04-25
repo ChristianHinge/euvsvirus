@@ -1,0 +1,3143 @@
+fips	location	beta
+1001	Autauga County, Alabama	0.16525255957229446
+1003	Baldwin County, Alabama	0.16821734626457058
+1005	Barbour County, Alabama	0.15628308014596265
+1007	Bibb County, Alabama	0.1581597595389726
+1009	Blount County, Alabama	0.16490627733163235
+1011	Bullock County, Alabama	0.15227766157277567
+1013	Butler County, Alabama	0.15548357624111028
+1015	Calhoun County, Alabama	0.17035286607010264
+1017	Chambers County, Alabama	0.16139522575212256
+1019	Cherokee County, Alabama	0.16018341692960217
+1021	Chilton County, Alabama	0.1624291516705336
+1023	Choctaw County, Alabama	0.1510749745621884
+1025	Clarke County, Alabama	0.15347510750962554
+1027	Clay County, Alabama	0.15450014555058747
+1029	Cleburne County, Alabama	0.15593688325534383
+1031	Coffee County, Alabama	0.16378904116366724
+1033	Colbert County, Alabama	0.16519180524439991
+1035	Conecuh County, Alabama	0.15129292864886396
+1037	Coosa County, Alabama	0.15235138612757274
+1039	Covington County, Alabama	0.1581565668717522
+1041	Crenshaw County, Alabama	0.15473444683369195
+1043	Cullman County, Alabama	0.16667738174773783
+1045	Dale County, Alabama	0.1647356204979875
+1047	Dallas County, Alabama	0.15856640156813923
+1049	DeKalb County, Alabama	0.16509702666342227
+1051	Elmore County, Alabama	0.16772180077716747
+1053	Escambia County, Alabama	0.15871186524848513
+1055	Etowah County, Alabama	0.1704914668801081
+1057	Fayette County, Alabama	0.15575479425445724
+1059	Franklin County, Alabama	0.16051491344658989
+1061	Geneva County, Alabama	0.15993364474861813
+1063	Greene County, Alabama	0.1503747003825418
+1065	Hale County, Alabama	0.1547773970811704
+1067	Henry County, Alabama	0.15697247839256415
+1069	Houston County, Alabama	0.17015714714334734
+1071	Jackson County, Alabama	0.1602745299368624
+1073	Jefferson County, Alabama	0.17885103936354543
+1075	Lamar County, Alabama	0.15480071869941378
+1077	Lauderdale County, Alabama	0.16813604645765892
+1079	Lawrence County, Alabama	0.16023940280104257
+1081	Lee County, Alabama	0.17306822991395396
+1083	Limestone County, Alabama	0.16991274549639862
+1085	Lowndes County, Alabama	0.15096942069471608
+1087	Macon County, Alabama	0.1567386198442997
+1089	Madison County, Alabama	0.17706328771149277
+1091	Marengo County, Alabama	0.15356583731075926
+1093	Marion County, Alabama	0.1589483840814013
+1095	Marshall County, Alabama	0.16967370887597386
+1097	Mobile County, Alabama	0.17466294472543734
+1099	Monroe County, Alabama	0.15390385091538702
+1101	Montgomery County, Alabama	0.17354146471776138
+1103	Morgan County, Alabama	0.1710681475884579
+1105	Perry County, Alabama	0.15029446867315008
+1107	Pickens County, Alabama	0.15473147713765426
+1109	Pike County, Alabama	0.16048320518080325
+1111	Randolph County, Alabama	0.15878334439987718
+1113	Russell County, Alabama	0.16496545245433625
+1115	St. Clair County, Alabama	0.1682822023962191
+1117	Shelby County, Alabama	0.17323989186089134
+1119	Sumter County, Alabama	0.1510574345232949
+1121	Talladega County, Alabama	0.1663166091639152
+1123	Tallapoosa County, Alabama	0.16147322662025346
+1125	Tuscaloosa County, Alabama	0.16910737881723062
+1127	Walker County, Alabama	0.16408907832049005
+1129	Washington County, Alabama	0.15175667557073538
+1131	Wilcox County, Alabama	0.14985009072220196
+1133	Winston County, Alabama	0.1586709852646103
+2013	Aleutians East Borough, Alaska	0.12625066336461577
+2016	Aleutians West Census Area, Alaska	0.13354452334052738
+2020	Anchorage Municipality, Alaska	0.16957500799130565
+2050	Bethel Census Area, Alaska	0.12585790403155153
+2060	Bristol Bay Borough, Alaska	0.13544180884373463
+2068	Denali Borough, Alaska	0.11837422705239684
+2070	Dillingham Census Area, Alaska	0.12188827892635
+2090	Fairbanks North Star Borough, Alaska	0.1507505612278855
+2100	Haines Borough, Alaska	0.13234179111972066
+2105	Hoonah-Angoon Census Area, Alaska	0.12346819008265086
+2110	Juneau City and Borough, Alaska	0.14994978349617072
+2122	Kenai Peninsula Borough, Alaska	0.14126807118027276
+2130	Ketchikan Gateway Borough, Alaska	0.1394657783961347
+2150	Kodiak Island Borough, Alaska	0.13676314558503905
+2158	Kusilvak Census Area, Alaska	0.12638514241058457
+2164	Lake and Peninsula Borough, Alaska	0.11183829484719716
+2170	Matanuska-Susitna Borough, Alaska	0.1426467151820972
+2180	Nome Census Area, Alaska	0.12556653977047474
+2185	North Slope Borough, Alaska	0.1154472796731758
+2188	Northwest Arctic Borough, Alaska	0.12031202287884159
+2195	Petersburg Borough, Alaska	0.1325356074318343
+2198	Prince of Wales-Hyder Census Area, Alaska	0.13291743242218018
+2220	Sitka City and Borough, Alaska	0.13971351072019217
+2230	Skagway Municipality, Alaska	0.13880239656873275
+2240	Southeast Fairbanks Census Area, Alaska	0.12225717634606251
+2261	Valdez-Cordova Census Area, Alaska	0.12199949796819372
+2275	Wrangell City and Borough, Alaska	0.13158688052289508
+2282	Yakutat City and Borough, Alaska	0.11264177826756847
+2290	Yukon-Koyukuk Census Area, Alaska	0.10714285714285714
+4001	Apache County, Arizona	0.1454338413992354
+4003	Cochise County, Arizona	0.15398124255731704
+4005	Coconino County, Arizona	0.14678226571386319
+4007	Gila County, Arizona	0.1496437789839151
+4009	Graham County, Arizona	0.14742023785950945
+4011	Greenlee County, Arizona	0.14381534331005705
+4012	La Paz County, Arizona	0.14311686414426505
+4013	Maricopa County, Arizona	0.1774103825700807
+4015	Mohave County, Arizona	0.15214980780271886
+4017	Navajo County, Arizona	0.1495093204437501
+4019	Pima County, Arizona	0.1666778469092883
+4021	Pinal County, Arizona	0.16461807689607832
+4023	Santa Cruz County, Arizona	0.15848551128111027
+4025	Yavapai County, Arizona	0.15655410437280645
+4027	Yuma County, Arizona	0.15871371283856722
+5001	Arkansas County, Arkansas	0.15291649795050513
+5003	Ashley County, Arkansas	0.15427053946682984
+5005	Baxter County, Arkansas	0.16365001555779263
+5007	Benton County, Arkansas	0.17451357285503596
+5009	Boone County, Arkansas	0.1623463794913597
+5011	Bradley County, Arkansas	0.152439517392347
+5013	Calhoun County, Arkansas	0.14729074254075214
+5015	Carroll County, Arkansas	0.1598219281163619
+5017	Chicot County, Arkansas	0.15203939860899413
+5019	Clark County, Arkansas	0.15569764393717136
+5021	Clay County, Arkansas	0.1547785502112072
+5023	Cleburne County, Arkansas	0.15981474690655717
+5025	Cleveland County, Arkansas	0.15081767274416005
+5027	Columbia County, Arkansas	0.1569706774897057
+5029	Conway County, Arkansas	0.15851594437113953
+5031	Craighead County, Arkansas	0.16899433848157686
+5033	Crawford County, Arkansas	0.16621044224945153
+5035	Crittenden County, Arkansas	0.16392983198338687
+5037	Cross County, Arkansas	0.15594180005015315
+5039	Dallas County, Arkansas	0.1490684303399166
+5041	Desha County, Arkansas	0.1515968406825293
+5043	Drew County, Arkansas	0.15452724603786777
+5045	Faulkner County, Arkansas	0.1706227895824955
+5047	Franklin County, Arkansas	0.15659352223387663
+5049	Fulton County, Arkansas	0.15389260630297716
+5051	Garland County, Arkansas	0.16853700400643087
+5053	Grant County, Arkansas	0.1565460328085392
+5055	Greene County, Arkansas	0.16391920238290933
+5057	Hempstead County, Arkansas	0.1567195923860823
+5059	Hot Spring County, Arkansas	0.16128150016978354
+5061	Howard County, Arkansas	0.15467238526316957
+5063	Independence County, Arkansas	0.16051953780278178
+5065	Izard County, Arkansas	0.15500839866557276
+5067	Jackson County, Arkansas	0.15586811428934808
+5069	Jefferson County, Arkansas	0.16375591195475442
+5071	Johnson County, Arkansas	0.15899493271292542
+5073	Lafayette County, Arkansas	0.15037714769555852
+5075	Lawrence County, Arkansas	0.15628885931904682
+5077	Lee County, Arkansas	0.15155040380333523
+5079	Lincoln County, Arkansas	0.15491898948315944
+5081	Little River County, Arkansas	0.15486776172868608
+5083	Logan County, Arkansas	0.1568965242624565
+5085	Lonoke County, Arkansas	0.16533901166143034
+5087	Madison County, Arkansas	0.15377691134956856
+5089	Marion County, Arkansas	0.1563002802219086
+5091	Miller County, Arkansas	0.16298608754074687
+5093	Mississippi County, Arkansas	0.15983663981307084
+5095	Monroe County, Arkansas	0.14943535736650665
+5097	Montgomery County, Arkansas	0.149753005149395
+5099	Nevada County, Arkansas	0.1508437708332795
+5101	Newton County, Arkansas	0.14828450304641552
+5103	Ouachita County, Arkansas	0.1572750608401904
+5105	Perry County, Arkansas	0.1534291361476288
+5107	Phillips County, Arkansas	0.1556375607655671
+5109	Pike County, Arkansas	0.15298337798512793
+5111	Poinsett County, Arkansas	0.1570676616462796
+5113	Polk County, Arkansas	0.15494574045810072
+5115	Pope County, Arkansas	0.1639561247077219
+5117	Prairie County, Arkansas	0.15032071124223303
+5119	Pulaski County, Arkansas	0.17783782141088053
+5121	Randolph County, Arkansas	0.15618587910195192
+5123	St. Francis County, Arkansas	0.1588274690544553
+5125	Saline County, Arkansas	0.1695949869294553
+5127	Scott County, Arkansas	0.1497527676466041
+5129	Searcy County, Arkansas	0.1499486744038628
+5131	Sebastian County, Arkansas	0.17218577087413695
+5133	Sevier County, Arkansas	0.15684274314380836
+5135	Sharp County, Arkansas	0.1565326254865665
+5137	Stone County, Arkansas	0.15405194228680866
+5139	Union County, Arkansas	0.15841258846949255
+5141	Van Buren County, Arkansas	0.15495655072194106
+5143	Washington County, Arkansas	0.17259187947067225
+5145	White County, Arkansas	0.1636920553238394
+5147	Woodruff County, Arkansas	0.14925499158198852
+5149	Yell County, Arkansas	0.15483879499203765
+6001	Alameda County, California	0.18874036500153082
+6003	Alpine County, California	0.13483871561386881
+6005	Amador County, California	0.16273759803953775
+6007	Butte County, California	0.16786860299529674
+6009	Calaveras County, California	0.15981459128199324
+6011	Colusa County, California	0.1533387523484279
+6013	Contra Costa County, California	0.18616718358978582
+6015	Del Norte County, California	0.15621456458077754
+6017	El Dorado County, California	0.1666076513181433
+6019	Fresno County, California	0.1695272752362156
+6021	Glenn County, California	0.154396742280814
+6023	Humboldt County, California	0.15856393985127132
+6025	Imperial County, California	0.15954454911731622
+6027	Inyo County, California	0.13592676057184214
+6029	Kern County, California	0.166461351650576
+6031	Kings County, California	0.1664195331965897
+6033	Lake County, California	0.1607732605015645
+6035	Lassen County, California	0.14578478220739324
+6037	Los Angeles County, California	0.18940353307418237
+6039	Madera County, California	0.1634487243027916
+6041	Marin County, California	0.17755565098977327
+6043	Mariposa County, California	0.149974946079631
+6045	Mendocino County, California	0.15539615035114318
+6047	Merced County, California	0.16837719267866952
+6049	Modoc County, California	0.13771721511086457
+6051	Mono County, California	0.14318932483341365
+6053	Monterey County, California	0.1677783720015289
+6055	Napa County, California	0.1702164109609761
+6057	Nevada County, California	0.1660112202435078
+6059	Orange County, California	0.19298299451262796
+6061	Placer County, California	0.17339518915395932
+6063	Plumas County, California	0.14644945114897276
+6065	Riverside County, California	0.1748092402657713
+6067	Sacramento County, California	0.1862245245185982
+6069	San Benito County, California	0.15985110655154725
+6071	San Bernardino County, California	0.16632625018691005
+6073	San Diego County, California	0.18100744085778708
+6075	San Francisco County, California	0.2043800958231335
+6077	San Joaquin County, California	0.1782644152043829
+6079	San Luis Obispo County, California	0.16457748495275254
+6081	San Mateo County, California	0.18667283849989963
+6083	Santa Barbara County, California	0.1693298213995824
+6085	Santa Clara County, California	0.18567478896529127
+6087	Santa Cruz County, California	0.17910958709210098
+6089	Shasta County, California	0.16024395860074517
+6091	Sierra County, California	0.14018203411543434
+6093	Siskiyou County, California	0.14600300613795994
+6095	Solano County, California	0.17822874605226666
+6097	Sonoma County, California	0.17415331949966953
+6099	Stanislaus County, California	0.17533412982382762
+6101	Sutter County, California	0.16922616645758218
+6103	Tehama County, California	0.15455081210758453
+6105	Trinity County, California	0.1416847386518443
+6107	Tulare County, California	0.16545780440816202
+6109	Tuolumne County, California	0.15533285686517756
+6111	Ventura County, California	0.1769647290897248
+6113	Yolo County, California	0.1714417091835882
+6115	Yuba County, California	0.1673269994903662
+8001	Adams County, Colorado	0.17670661433123197
+8003	Alamosa County, Colorado	0.1546837857690239
+8005	Arapahoe County, Colorado	0.18127501702093868
+8007	Archuleta County, Colorado	0.14898995950846441
+8009	Baca County, Colorado	0.13419557566844317
+8011	Bent County, Colorado	0.14133704400492403
+8013	Boulder County, Colorado	0.17680309536889208
+8014	Broomfield County, Colorado	0.188316141376394
+8015	Chaffee County, Colorado	0.15385727374142472
+8017	Cheyenne County, Colorado	0.13191829602417
+8019	Clear Creek County, Colorado	0.15533748729071842
+8021	Conejos County, Colorado	0.14537985174844875
+8023	Costilla County, Colorado	0.1402140887746432
+8025	Crowley County, Colorado	0.14677384074401995
+8027	Custer County, Colorado	0.14592494410187548
+8029	Delta County, Colorado	0.15611912619711604
+8031	Denver County, Colorado	0.1942098706678602
+8033	Dolores County, Colorado	0.13654151588527505
+8035	Douglas County, Colorado	0.17627160595473504
+8037	Eagle County, Colorado	0.15746182187513894
+8039	Elbert County, Colorado	0.15142068171902517
+8041	El Paso County, Colorado	0.1747201274704215
+8043	Fremont County, Colorado	0.15711030161505807
+8045	Garfield County, Colorado	0.15396313539139772
+8047	Gilpin County, Colorado	0.15924238308081748
+8049	Grand County, Colorado	0.14752488364746696
+8051	Gunnison County, Colorado	0.14414379964217353
+8053	Hinsdale County, Colorado	0.12941838763621746
+8055	Huerfano County, Colorado	0.14253380280817132
+8057	Jackson County, Colorado	0.13061102926089077
+8059	Jefferson County, Colorado	0.1807144894509333
+8061	Kiowa County, Colorado	0.130011474310161
+8063	Kit Carson County, Colorado	0.1404843841649681
+8065	Lake County, Colorado	0.15438056090385688
+8067	La Plata County, Colorado	0.15758388746877308
+8069	Larimer County, Colorado	0.16806081628949635
+8071	Las Animas County, Colorado	0.13991144830630198
+8073	Lincoln County, Colorado	0.13756421043032138
+8075	Logan County, Colorado	0.1501678595943266
+8077	Mesa County, Colorado	0.1600280323872159
+8079	Mineral County, Colorado	0.1307424961730761
+8081	Moffat County, Colorado	0.139307104455258
+8083	Montezuma County, Colorado	0.15058857613518212
+8085	Montrose County, Colorado	0.15347770936627908
+8087	Morgan County, Colorado	0.15476074506371335
+8089	Otero County, Colorado	0.15144226521680992
+8091	Ouray County, Colorado	0.14804527522571334
+8093	Park County, Colorado	0.14758398972207498
+8095	Phillips County, Colorado	0.14517615242194348
+8097	Pitkin County, Colorado	0.15317065814793476
+8099	Prowers County, Colorado	0.14651211767348643
+8101	Pueblo County, Colorado	0.1631383080594044
+8103	Rio Blanco County, Colorado	0.13668481004316752
+8105	Rio Grande County, Colorado	0.1502681606212086
+8107	Routt County, Colorado	0.14931196015957887
+8109	Saguache County, Colorado	0.13736788358166627
+8111	San Juan County, Colorado	0.13635896349609988
+8113	San Miguel County, Colorado	0.1453604400751414
+8115	Sedgwick County, Colorado	0.14212574517647072
+8117	Summit County, Colorado	0.16073479079358685
+8119	Teller County, Colorado	0.15990786751841263
+8121	Washington County, Colorado	0.13663089475287854
+8123	Weld County, Colorado	0.16418948652413304
+8125	Yuma County, Colorado	0.142365848085495
+9001	Fairfield County, Connecticut	0.1857551772843569
+9003	Hartford County, Connecticut	0.18414076159334394
+9005	Litchfield County, Connecticut	0.1706768241659451
+9007	Middlesex County, Connecticut	0.17664938395890642
+9009	New Haven County, Connecticut	0.18527293524333124
+9011	New London County, Connecticut	0.17592449600497936
+9013	Tolland County, Connecticut	0.17531879800639233
+9015	Windham County, Connecticut	0.17178730757141508
+10001	Kent County, Delaware	0.17402615941295643
+10003	New Castle County, Delaware	0.18471249359424827
+10005	Sussex County, Delaware	0.17248364896941806
+11001	District of Columbia, District of Columbia	0.2007779947689607
+12001	Alachua County, Florida	0.17400504619056897
+12003	Baker County, Florida	0.16057893319369246
+12005	Bay County, Florida	0.1718724927101171
+12007	Bradford County, Florida	0.16540411083829673
+12009	Brevard County, Florida	0.1788534846389417
+12011	Broward County, Florida	0.1862679502929812
+12013	Calhoun County, Florida	0.1554322944221868
+12015	Charlotte County, Florida	0.17324396911167406
+12017	Citrus County, Florida	0.17268665094901875
+12019	Clay County, Florida	0.17522150295417038
+12021	Collier County, Florida	0.1705498230713894
+12023	Columbia County, Florida	0.16492305088466847
+12027	DeSoto County, Florida	0.16189521386181943
+12029	Dixie County, Florida	0.15512950937947417
+12031	Duval County, Florida	0.18439710272439355
+12033	Escambia County, Florida	0.17736471094475983
+12035	Flagler County, Florida	0.17208448393554884
+12037	Franklin County, Florida	0.15460990555011792
+12039	Gadsden County, Florida	0.164803333769146
+12041	Gilchrist County, Florida	0.16104141508180336
+12043	Glades County, Florida	0.1526775065822404
+12045	Gulf County, Florida	0.15536533622343868
+12047	Hamilton County, Florida	0.1563316932411031
+12049	Hardee County, Florida	0.15934557266124694
+12051	Hendry County, Florida	0.15823577175665235
+12053	Hernando County, Florida	0.17613284800868773
+12055	Highlands County, Florida	0.16603488191691199
+12057	Hillsborough County, Florida	0.18542120080615
+12059	Holmes County, Florida	0.1591219253382408
+12061	Indian River County, Florida	0.17425576774404172
+12063	Jackson County, Florida	0.1606727581770077
+12065	Jefferson County, Florida	0.15511583919906466
+12067	Lafayette County, Florida	0.15194225603113415
+12069	Lake County, Florida	0.17576473558718383
+12071	Lee County, Florida	0.1825864383337861
+12073	Leon County, Florida	0.17665606219990307
+12075	Levy County, Florida	0.15839123743449374
+12077	Liberty County, Florida	0.14870516052003963
+12079	Madison County, Florida	0.15592197278572373
+12081	Manatee County, Florida	0.17820012812475947
+12083	Marion County, Florida	0.17186823215095118
+12085	Martin County, Florida	0.17372717218680375
+12086	Miami-Dade County, Florida	0.18536113558481385
+12087	Monroe County, Florida	0.16363631181392865
+12089	Nassau County, Florida	0.16801563949501788
+12091	Okaloosa County, Florida	0.1717494657793541
+12093	Okeechobee County, Florida	0.16127450494066123
+12095	Orange County, Florida	0.18591582122008002
+12097	Osceola County, Florida	0.17339332030214247
+12099	Palm Beach County, Florida	0.1806863803654218
+12101	Pasco County, Florida	0.18050037268804323
+12103	Pinellas County, Florida	0.1920938588598334
+12105	Polk County, Florida	0.17601030379189275
+12107	Putnam County, Florida	0.16588444715970935
+12109	St. Johns County, Florida	0.1766622211369384
+12111	St. Lucie County, Florida	0.17861874597337807
+12113	Santa Rosa County, Florida	0.17013987545880374
+12115	Sarasota County, Florida	0.18088376476837678
+12117	Seminole County, Florida	0.1858290463062215
+12119	Sumter County, Florida	0.1722309712664849
+12121	Suwannee County, Florida	0.16247331741543064
+12123	Taylor County, Florida	0.15407003131620559
+12125	Union County, Florida	0.16224695913200507
+12127	Volusia County, Florida	0.17763206997649847
+12129	Wakulla County, Florida	0.1613807175112699
+12131	Walton County, Florida	0.16322074059964997
+12133	Washington County, Florida	0.15958123229960028
+13001	Appling County, Georgia	0.1582182290550667
+13003	Atkinson County, Georgia	0.15519146319257732
+13005	Bacon County, Georgia	0.15881460816239942
+13007	Baker County, Georgia	0.14783312621249892
+13009	Baldwin County, Georgia	0.16978294716925868
+13011	Banks County, Georgia	0.16432334744386853
+13013	Barrow County, Georgia	0.1778722713697294
+13015	Bartow County, Georgia	0.17200286410634463
+13017	Ben Hill County, Georgia	0.16272760290601732
+13019	Berrien County, Georgia	0.1594641989964382
+13021	Bibb County, Georgia	0.17911668536880015
+13023	Bleckley County, Georgia	0.1618930588015495
+13025	Brantley County, Georgia	0.15951199104583005
+13027	Brooks County, Georgia	0.15714394443281474
+13029	Bryan County, Georgia	0.16499890002066814
+13031	Bulloch County, Georgia	0.16695047887555586
+13033	Burke County, Georgia	0.1560596742141491
+13035	Butts County, Georgia	0.1679649884268228
+13037	Calhoun County, Georgia	0.1545541960745544
+13039	Camden County, Georgia	0.1648624758284874
+13043	Candler County, Georgia	0.15972259497381572
+13045	Carroll County, Georgia	0.17218960762916918
+13047	Catoosa County, Georgia	0.17625094909892894
+13049	Charlton County, Georgia	0.15275897632633276
+13051	Chatham County, Georgia	0.1798075014348966
+13053	Chattahoochee County, Georgia	0.1596226608126186
+13055	Chattooga County, Georgia	0.1639807124108191
+13057	Cherokee County, Georgia	0.17911879527394978
+13059	Clarke County, Georgia	0.18325954217047485
+13061	Clay County, Georgia	0.15145304077327967
+13063	Clayton County, Georgia	0.1880635282451799
+13065	Clinch County, Georgia	0.14730403965214184
+13067	Cobb County, Georgia	0.18866296868399351
+13069	Coffee County, Georgia	0.1636057676306739
+13071	Colquitt County, Georgia	0.16436716877936247
+13073	Columbia County, Georgia	0.1781674610803102
+13075	Cook County, Georgia	0.16368520332453448
+13077	Coweta County, Georgia	0.17467855020762993
+13079	Crawford County, Georgia	0.15859947870092855
+13081	Crisp County, Georgia	0.16425166647969056
+13083	Dade County, Georgia	0.1651454421517718
+13085	Dawson County, Georgia	0.16728941576960338
+13087	Decatur County, Georgia	0.15968432935742571
+13089	DeKalb County, Georgia	0.19041566338295723
+13091	Dodge County, Georgia	0.1592250160165279
+13093	Dooly County, Georgia	0.15777931392566294
+13095	Dougherty County, Georgia	0.17298097751304292
+13097	Douglas County, Georgia	0.18040380451629923
+13099	Early County, Georgia	0.15378063293239605
+13101	Echols County, Georgia	0.14844768890593357
+13103	Effingham County, Georgia	0.1679046301825679
+13105	Elbert County, Georgia	0.16125199571867466
+13107	Emanuel County, Georgia	0.15758436315695784
+13109	Evans County, Georgia	0.1617212861575084
+13111	Fannin County, Georgia	0.1628252850182686
+13113	Fayette County, Georgia	0.17880196535308385
+13115	Floyd County, Georgia	0.1705725274427494
+13117	Forsyth County, Georgia	0.18335074310026564
+13119	Franklin County, Georgia	0.16487380389006961
+13121	Fulton County, Georgia	0.18790680365671864
+13123	Gilmer County, Georgia	0.16344634736437882
+13125	Glascock County, Georgia	0.15406842962083234
+13127	Glynn County, Georgia	0.17094568386450573
+13129	Gordon County, Georgia	0.16931443886068864
+13131	Grady County, Georgia	0.16118675389709192
+13133	Greene County, Georgia	0.16018132112039046
+13135	Gwinnett County, Georgia	0.18845329318106271
+13137	Habersham County, Georgia	0.1693545464956107
+13139	Hall County, Georgia	0.17789263912073824
+13141	Hancock County, Georgia	0.15302791131092489
+13143	Haralson County, Georgia	0.16611190531313738
+13145	Harris County, Georgia	0.16367995354889198
+13147	Hart County, Georgia	0.1665974643500737
+13149	Heard County, Georgia	0.15899487065367696
+13151	Henry County, Georgia	0.1804531319554053
+13153	Houston County, Georgia	0.17631462053567087
+13155	Irwin County, Georgia	0.15592346308320781
+13157	Jackson County, Georgia	0.17135842795690231
+13159	Jasper County, Georgia	0.15868505976376898
+13161	Jeff Davis County, Georgia	0.15992728604778672
+13163	Jefferson County, Georgia	0.1566145535997891
+13165	Jenkins County, Georgia	0.15546811296336674
+13167	Johnson County, Georgia	0.15725548194160385
+13169	Jones County, Georgia	0.16338085980698244
+13171	Lamar County, Georgia	0.1659976072219313
+13173	Lanier County, Georgia	0.16146198822986624
+13175	Laurens County, Georgia	0.16180106786748244
+13177	Lee County, Georgia	0.16444732466259218
+13179	Liberty County, Georgia	0.16699430828471148
+13181	Lincoln County, Georgia	0.1584971476261025
+13183	Long County, Georgia	0.16041945010682496
+13185	Lowndes County, Georgia	0.17207246048832253
+13187	Lumpkin County, Georgia	0.1669823260578438
+13189	McDuffie County, Georgia	0.16431490942079402
+13191	McIntosh County, Georgia	0.1577183913557692
+13193	Macon County, Georgia	0.15736872378570496
+13195	Madison County, Georgia	0.16612985014996023
+13197	Marion County, Georgia	0.15480517947903977
+13199	Meriwether County, Georgia	0.15934483880481373
+13201	Miller County, Georgia	0.15391575641452504
+13205	Mitchell County, Georgia	0.15942542914997912
+13207	Monroe County, Georgia	0.16303678957534176
+13209	Montgomery County, Georgia	0.15862186261232147
+13211	Morgan County, Georgia	0.16136177274607544
+13213	Murray County, Georgia	0.16683156965325857
+13215	Muscogee County, Georgia	0.18197410237185538
+13217	Newton County, Georgia	0.17613995824060374
+13219	Oconee County, Georgia	0.17148371078349658
+13221	Oglethorpe County, Georgia	0.15790666558856833
+13223	Paulding County, Georgia	0.17816564687286324
+13225	Peach County, Georgia	0.17018605702711473
+13227	Pickens County, Georgia	0.16821879424188554
+13229	Pierce County, Georgia	0.16158805975603124
+13231	Pike County, Georgia	0.1647458342023897
+13233	Polk County, Georgia	0.16805225225646048
+13235	Pulaski County, Georgia	0.15976715272984476
+13237	Putnam County, Georgia	0.162435520452928
+13239	Quitman County, Georgia	0.15179930131269745
+13241	Rabun County, Georgia	0.1600241725483329
+13243	Randolph County, Georgia	0.1520975289510536
+13245	Richmond County, Georgia	0.17923704361704096
+13247	Rockdale County, Georgia	0.180083170517327
+13249	Schley County, Georgia	0.15717915900257587
+13251	Screven County, Georgia	0.15441052666608326
+13253	Seminole County, Georgia	0.1578285097478309
+13255	Spalding County, Georgia	0.174759384332587
+13257	Stephens County, Georgia	0.16844063575220175
+13259	Stewart County, Georgia	0.15141618614060898
+13261	Sumter County, Georgia	0.16208036788565053
+13263	Talbot County, Georgia	0.15209777915794026
+13265	Taliaferro County, Georgia	0.14696393059556692
+13267	Tattnall County, Georgia	0.16098478097442367
+13269	Taylor County, Georgia	0.15428726102034537
+13271	Telfair County, Georgia	0.1582207302151046
+13273	Terrell County, Georgia	0.15559980535630877
+13275	Thomas County, Georgia	0.16421096520829387
+13277	Tift County, Georgia	0.16898502626136366
+13279	Toombs County, Georgia	0.1634578509104024
+13281	Towns County, Georgia	0.16331349344793442
+13283	Treutlen County, Georgia	0.15787365462020733
+13285	Troup County, Georgia	0.1695811913065525
+13287	Turner County, Georgia	0.15630456095512588
+13289	Twiggs County, Georgia	0.15474598726214475
+13291	Union County, Georgia	0.16369652582072577
+13293	Upson County, Georgia	0.1641887587273189
+13295	Walker County, Georgia	0.16900773205186873
+13297	Walton County, Georgia	0.1735845611726779
+13299	Ware County, Georgia	0.1589478882522854
+13301	Warren County, Georgia	0.15324183158714103
+13303	Washington County, Georgia	0.1568269977761159
+13305	Wayne County, Georgia	0.1600766810801468
+13307	Webster County, Georgia	0.15033473591418822
+13309	Wheeler County, Georgia	0.15592673127110374
+13311	White County, Georgia	0.16753100001785315
+13313	Whitfield County, Georgia	0.17517444001677865
+13315	Wilcox County, Georgia	0.15481294110483432
+13317	Wilkes County, Georgia	0.15412374781047036
+13319	Wilkinson County, Georgia	0.15383168930207977
+13321	Worth County, Georgia	0.158057954817778
+15001	Hawaii County, Hawaii	0.1605952599303861
+15003	Honolulu County, Hawaii	0.18628935861918922
+15005	Kalawao County, Hawaii	0.14625169672831767
+15007	Kauai County, Hawaii	0.16684631003350134
+15009	Maui County, Hawaii	0.16841039601735058
+16001	Ada County, Idaho	0.17694093154018958
+16003	Adams County, Idaho	0.14017784104289802
+16005	Bannock County, Idaho	0.16396343997316615
+16007	Bear Lake County, Idaho	0.14527374753570652
+16009	Benewah County, Idaho	0.15003367239225301
+16011	Bingham County, Idaho	0.15464784529524703
+16013	Blaine County, Idaho	0.14770181505360097
+16015	Boise County, Idaho	0.14216283053066053
+16017	Bonner County, Idaho	0.15587360731650168
+16019	Bonneville County, Idaho	0.16239273969437892
+16021	Boundary County, Idaho	0.14844457650451254
+16023	Butte County, Idaho	0.1328067720133161
+16025	Camas County, Idaho	0.13191773478257568
+16027	Canyon County, Idaho	0.17578577858425454
+16029	Caribou County, Idaho	0.14204243313478102
+16031	Cassia County, Idaho	0.14822306548527037
+16033	Clark County, Idaho	0.12627074966202462
+16035	Clearwater County, Idaho	0.1410865127806207
+16037	Custer County, Idaho	0.13072967102133465
+16039	Elmore County, Idaho	0.14788468384726008
+16041	Franklin County, Idaho	0.1541582640067361
+16043	Fremont County, Idaho	0.14610213897468224
+16045	Gem County, Idaho	0.15737766102011747
+16047	Gooding County, Idaho	0.1541197954749136
+16049	Idaho County, Idaho	0.1366949037674136
+16051	Jefferson County, Idaho	0.15612595363732248
+16053	Jerome County, Idaho	0.1591043305410261
+16055	Kootenai County, Idaho	0.1678659361502179
+16057	Latah County, Idaho	0.15842400310098434
+16059	Lemhi County, Idaho	0.13587303566383918
+16061	Lewis County, Idaho	0.14707235580037953
+16063	Lincoln County, Idaho	0.1427545218238738
+16065	Madison County, Idaho	0.1645134406990909
+16067	Minidoka County, Idaho	0.15625330562551304
+16069	Nez Perce County, Idaho	0.16023406731339568
+16071	Oneida County, Idaho	0.1415212228074542
+16073	Owyhee County, Idaho	0.13490200162522376
+16075	Payette County, Idaho	0.16179701489117718
+16077	Power County, Idaho	0.14425333167261317
+16079	Shoshone County, Idaho	0.14341450352671517
+16081	Teton County, Idaho	0.15605012768093823
+16083	Twin Falls County, Idaho	0.15984784341041822
+16085	Valley County, Idaho	0.14007703834303048
+16087	Washington County, Idaho	0.146090006690224
+17001	Adams County, Illinois	0.1637337786394119
+17003	Alexander County, Illinois	0.1553121431515194
+17005	Bond County, Illinois	0.15951149068957368
+17007	Boone County, Illinois	0.17047885180696293
+17009	Brown County, Illinois	0.15436778276682178
+17011	Bureau County, Illinois	0.15847636407575713
+17013	Calhoun County, Illinois	0.15331730775623256
+17015	Carroll County, Illinois	0.15732879895823335
+17017	Cass County, Illinois	0.15737017450312382
+17019	Champaign County, Illinois	0.17120662346975438
+17021	Christian County, Illinois	0.1599017302528212
+17023	Clark County, Illinois	0.1570126363996922
+17025	Clay County, Illinois	0.15634991746934124
+17027	Clinton County, Illinois	0.16399144230120483
+17029	Coles County, Illinois	0.16568043087126536
+17031	Cook County, Illinois	0.1952365401114325
+17033	Crawford County, Illinois	0.15931805089539663
+17035	Cumberland County, Illinois	0.15708869022062297
+17037	DeKalb County, Illinois	0.1694599387157969
+17039	De Witt County, Illinois	0.15882049330990203
+17041	Douglas County, Illinois	0.16009028347903406
+17043	DuPage County, Illinois	0.19036539633033975
+17045	Edgar County, Illinois	0.15618489044582376
+17047	Edwards County, Illinois	0.15650585145446436
+17049	Effingham County, Illinois	0.1631846814975959
+17051	Fayette County, Illinois	0.15676493596738655
+17053	Ford County, Illinois	0.15595633275080759
+17055	Franklin County, Illinois	0.16526014050748958
+17057	Fulton County, Illinois	0.15888329752374508
+17059	Gallatin County, Illinois	0.1516732938706173
+17061	Greene County, Illinois	0.15513569703228838
+17063	Grundy County, Illinois	0.16718662532387002
+17065	Hamilton County, Illinois	0.15331788522792703
+17067	Hancock County, Illinois	0.1546325070894224
+17069	Hardin County, Illinois	0.1543674251229386
+17071	Henderson County, Illinois	0.15285675388305422
+17073	Henry County, Illinois	0.16186820279139133
+17075	Iroquois County, Illinois	0.15525363471210082
+17077	Jackson County, Illinois	0.16549812042285944
+17079	Jasper County, Illinois	0.15361302612596323
+17081	Jefferson County, Illinois	0.1626396462716025
+17083	Jersey County, Illinois	0.1618092890315769
+17085	Jo Daviess County, Illinois	0.15802901676312203
+17087	Johnson County, Illinois	0.15818744710746935
+17089	Kane County, Illinois	0.18288651147845816
+17091	Kankakee County, Illinois	0.16929061902323614
+17093	Kendall County, Illinois	0.17599848829759362
+17095	Knox County, Illinois	0.16301014214078893
+17097	Lake County, Illinois	0.18604211532032597
+17099	LaSalle County, Illinois	0.16538858136710943
+17101	Lawrence County, Illinois	0.15932632673791763
+17103	Lee County, Illinois	0.16014101236320594
+17105	Livingston County, Illinois	0.1577738520356764
+17107	Logan County, Illinois	0.16002470612289946
+17109	McDonough County, Illinois	0.16064478457661302
+17111	McHenry County, Illinois	0.17774540175319675
+17113	McLean County, Illinois	0.16845163682069103
+17115	Macon County, Illinois	0.17001489578360754
+17117	Macoupin County, Illinois	0.16089049651467957
+17119	Madison County, Illinois	0.17532049989196224
+17121	Marion County, Illinois	0.16252957865985349
+17123	Marshall County, Illinois	0.15671334878094692
+17125	Mason County, Illinois	0.1554061035332624
+17127	Massac County, Illinois	0.1616951685270474
+17129	Menard County, Illinois	0.1587166173144515
+17131	Mercer County, Illinois	0.15617896902993997
+17133	Monroe County, Illinois	0.1649295223896101
+17135	Montgomery County, Illinois	0.1590136783968615
+17137	Morgan County, Illinois	0.16183589086850064
+17139	Moultrie County, Illinois	0.15950643810592607
+17141	Ogle County, Illinois	0.16272679449902064
+17143	Peoria County, Illinois	0.1735574397302679
+17145	Perry County, Illinois	0.16018911158747778
+17147	Piatt County, Illinois	0.15841126671666064
+17149	Pike County, Illinois	0.1533355754990995
+17151	Pope County, Illinois	0.1496266777829302
+17153	Pulaski County, Illinois	0.15598226069809806
+17155	Putnam County, Illinois	0.15813163564173613
+17157	Randolph County, Illinois	0.1613258997063883
+17159	Richland County, Illinois	0.159493488360408
+17161	Rock Island County, Illinois	0.17457019338903837
+17163	St. Clair County, Illinois	0.17585137549150023
+17165	Saline County, Illinois	0.16216220139953588
+17167	Sangamon County, Illinois	0.17167286545252664
+17169	Schuyler County, Illinois	0.15193240917287934
+17171	Scott County, Illinois	0.1537256982333286
+17173	Shelby County, Illinois	0.15644619382873262
+17175	Stark County, Illinois	0.15326696298021983
+17177	Stephenson County, Illinois	0.16395311668888088
+17179	Tazewell County, Illinois	0.17096660185092885
+17181	Union County, Illinois	0.1589950765030387
+17183	Vermilion County, Illinois	0.16445193631023372
+17185	Wabash County, Illinois	0.1608246208395428
+17187	Warren County, Illinois	0.1570746709164803
+17189	Washington County, Illinois	0.15537950217544655
+17191	Wayne County, Illinois	0.15476569866810497
+17193	White County, Illinois	0.15613946086843056
+17195	Whiteside County, Illinois	0.16412126876270988
+17197	Will County, Illinois	0.18129703750882928
+17199	Williamson County, Illinois	0.16911191221666838
+17201	Winnebago County, Illinois	0.1783051649734461
+17203	Woodford County, Illinois	0.16337294739635028
+18001	Adams County, Indiana	0.16610802846845876
+18003	Allen County, Indiana	0.17865424963863102
+18005	Bartholomew County, Indiana	0.17104407402365585
+18007	Benton County, Indiana	0.15436787969624605
+18009	Blackford County, Indiana	0.16320495237348945
+18011	Boone County, Indiana	0.16920085781770314
+18013	Brown County, Indiana	0.16034775798736584
+18015	Carroll County, Indiana	0.16121762512930018
+18017	Cass County, Indiana	0.16505014393695158
+18019	Clark County, Indiana	0.17423789581708776
+18021	Clay County, Indiana	0.16342109294258442
+18023	Clinton County, Indiana	0.1640613614150723
+18025	Crawford County, Indiana	0.1578744118445329
+18027	Daviess County, Indiana	0.16384290074285565
+18029	Dearborn County, Indiana	0.16927963558544074
+18031	Decatur County, Indiana	0.16321118909567836
+18033	DeKalb County, Indiana	0.1670460660218585
+18035	Delaware County, Indiana	0.17360041468967988
+18037	Dubois County, Indiana	0.16571223123011508
+18039	Elkhart County, Indiana	0.1767436297172602
+18041	Fayette County, Indiana	0.16624067843206372
+18043	Floyd County, Indiana	0.17803461263429401
+18045	Fountain County, Indiana	0.15918252903170857
+18047	Franklin County, Indiana	0.16183912751425117
+18049	Fulton County, Indiana	0.16119032692374313
+18051	Gibson County, Indiana	0.16297525169732277
+18053	Grant County, Indiana	0.16912749268174038
+18055	Greene County, Indiana	0.1617943482873317
+18057	Hamilton County, Indiana	0.18157730777260175
+18059	Hancock County, Indiana	0.17263615374591823
+18061	Harrison County, Indiana	0.16438960141126296
+18063	Hendricks County, Indiana	0.17628316969044314
+18065	Henry County, Indiana	0.16720429889871688
+18067	Howard County, Indiana	0.17335949030357778
+18069	Huntington County, Indiana	0.1653660241493098
+18071	Jackson County, Indiana	0.16466901764324793
+18073	Jasper County, Indiana	0.16193488679287693
+18075	Jay County, Indiana	0.16105448444985573
+18077	Jefferson County, Indiana	0.16489865785346544
+18079	Jennings County, Indiana	0.16345184333720303
+18081	Johnson County, Indiana	0.1775010155821663
+18083	Knox County, Indiana	0.16317258190457704
+18085	Kosciusko County, Indiana	0.16868109351640878
+18087	LaGrange County, Indiana	0.16602505334694392
+18089	Lake County, Indiana	0.18251373346892574
+18091	LaPorte County, Indiana	0.17019995737287957
+18093	Lawrence County, Indiana	0.16578464312920554
+18095	Madison County, Indiana	0.173489078272765
+18097	Marion County, Indiana	0.18928224803277155
+18099	Marshall County, Indiana	0.1660195908878348
+18101	Martin County, Indiana	0.15695198333610733
+18103	Miami County, Indiana	0.1653320953674499
+18105	Monroe County, Indiana	0.17549570086843966
+18107	Montgomery County, Indiana	0.1636815297827335
+18109	Morgan County, Indiana	0.16982146100719972
+18111	Newton County, Indiana	0.1579172092050341
+18113	Noble County, Indiana	0.16682011646273434
+18115	Ohio County, Indiana	0.16288464328865368
+18117	Orange County, Indiana	0.16048989508892358
+18119	Owen County, Indiana	0.16115773159958555
+18121	Parke County, Indiana	0.15858218018678155
+18123	Perry County, Indiana	0.1606238504720526
+18125	Pike County, Indiana	0.1583814741042468
+18127	Porter County, Indiana	0.17608656523779742
+18129	Posey County, Indiana	0.16219023023689041
+18131	Pulaski County, Indiana	0.15643723438133486
+18133	Putnam County, Indiana	0.16389436274838612
+18135	Randolph County, Indiana	0.16123144112881474
+18137	Ripley County, Indiana	0.16235076901000176
+18139	Rush County, Indiana	0.15905900702206438
+18141	St. Joseph County, Indiana	0.17886394498097985
+18143	Scott County, Indiana	0.1673812760408031
+18145	Shelby County, Indiana	0.1663326644265571
+18147	Spencer County, Indiana	0.16075296245710696
+18149	Starke County, Indiana	0.1635253894395731
+18151	Steuben County, Indiana	0.16654996335025446
+18153	Sullivan County, Indiana	0.16001238966126824
+18155	Switzerland County, Indiana	0.16040069794383574
+18157	Tippecanoe County, Indiana	0.17579176449937378
+18159	Tipton County, Indiana	0.1617058719054543
+18161	Union County, Indiana	0.15960630877881904
+18163	Vanderburgh County, Indiana	0.1808466619054203
+18165	Vermillion County, Indiana	0.16197910517659864
+18167	Vigo County, Indiana	0.17291568610519015
+18169	Wabash County, Indiana	0.16360129547841756
+18171	Warren County, Indiana	0.15474864888539316
+18173	Warrick County, Indiana	0.16935083466210576
+18175	Washington County, Indiana	0.1612383540931588
+18177	Wayne County, Indiana	0.16936369720755362
+18179	Wells County, Indiana	0.16376837923084894
+18181	White County, Indiana	0.16024647978933473
+18183	Whitley County, Indiana	0.16579972341531127
+19001	Adair County, Iowa	0.15039185630453564
+19003	Adams County, Iowa	0.14751212448396342
+19005	Allamakee County, Iowa	0.15433073343247863
+19007	Appanoose County, Iowa	0.1554694474409519
+19009	Audubon County, Iowa	0.15029956160351535
+19011	Benton County, Iowa	0.1581256562745259
+19013	Black Hawk County, Iowa	0.17192358130883176
+19015	Boone County, Iowa	0.15995979724343248
+19017	Bremer County, Iowa	0.16163052607535525
+19019	Buchanan County, Iowa	0.15838485065045013
+19021	Buena Vista County, Iowa	0.15777156641494397
+19023	Butler County, Iowa	0.15544038772096344
+19025	Calhoun County, Iowa	0.1526103838756128
+19027	Carroll County, Iowa	0.1580444352886957
+19029	Cass County, Iowa	0.15477609464568087
+19031	Cedar County, Iowa	0.15733001518724943
+19033	Cerro Gordo County, Iowa	0.16355630659180237
+19035	Cherokee County, Iowa	0.15362873648182512
+19037	Chickasaw County, Iowa	0.15506598553131465
+19039	Clarke County, Iowa	0.1544582627325989
+19041	Clay County, Iowa	0.1563718510252254
+19043	Clayton County, Iowa	0.15470894423619086
+19045	Clinton County, Iowa	0.1627325075454135
+19047	Crawford County, Iowa	0.15503233103872474
+19049	Dallas County, Iowa	0.1691271196707929
+19051	Davis County, Iowa	0.153015026697449
+19053	Decatur County, Iowa	0.151600012115309
+19055	Delaware County, Iowa	0.15668126448779388
+19057	Des Moines County, Iowa	0.1652259088336699
+19059	Dickinson County, Iowa	0.15987003649993725
+19061	Dubuque County, Iowa	0.16918026900737848
+19063	Emmet County, Iowa	0.15494029919336996
+19065	Fayette County, Iowa	0.15601064015764826
+19067	Floyd County, Iowa	0.15711977221155493
+19069	Franklin County, Iowa	0.1527557373746356
+19071	Fremont County, Iowa	0.1509865500063065
+19073	Greene County, Iowa	0.15199273705236704
+19075	Grundy County, Iowa	0.15528581170239697
+19077	Guthrie County, Iowa	0.15308734563232523
+19079	Hamilton County, Iowa	0.1556524434834979
+19081	Hancock County, Iowa	0.1532958966534123
+19083	Hardin County, Iowa	0.15671803108948362
+19085	Harrison County, Iowa	0.15388455073517585
+19087	Henry County, Iowa	0.1599669602737914
+19089	Howard County, Iowa	0.15358187627588252
+19091	Humboldt County, Iowa	0.15453072915996788
+19093	Ida County, Iowa	0.15213012903674814
+19095	Iowa County, Iowa	0.15620284879624585
+19097	Jackson County, Iowa	0.15695681878294648
+19099	Jasper County, Iowa	0.160725023325695
+19101	Jefferson County, Iowa	0.15930573449605712
+19103	Johnson County, Iowa	0.1723624561639075
+19105	Jones County, Iowa	0.15815125920014564
+19107	Keokuk County, Iowa	0.15291921750314127
+19109	Kossuth County, Iowa	0.15181240284470807
+19111	Lee County, Iowa	0.16253340198145358
+19113	Linn County, Iowa	0.17421280691100494
+19115	Louisa County, Iowa	0.15616787929821754
+19117	Lucas County, Iowa	0.15381498575633265
+19119	Lyon County, Iowa	0.15382659478657043
+19121	Madison County, Iowa	0.15660042798511167
+19123	Mahaska County, Iowa	0.1587009580684506
+19125	Marion County, Iowa	0.16193469691336768
+19127	Marshall County, Iowa	0.16294541878075944
+19129	Mills County, Iowa	0.1578602826810416
+19131	Mitchell County, Iowa	0.15471645409895426
+19133	Monona County, Iowa	0.15030245100991493
+19135	Monroe County, Iowa	0.15295219380861896
+19137	Montgomery County, Iowa	0.1549796677231853
+19139	Muscatine County, Iowa	0.16552598426263915
+19141	O'Brien County, Iowa	0.1551718290997228
+19143	Osceola County, Iowa	0.15167328365962618
+19145	Page County, Iowa	0.1563732357407111
+19147	Palo Alto County, Iowa	0.1520654997335545
+19149	Plymouth County, Iowa	0.1566148522503986
+19151	Pocahontas County, Iowa	0.14971724592350896
+19153	Polk County, Iowa	0.18155279077505673
+19155	Pottawattamie County, Iowa	0.1655655248785914
+19157	Poweshiek County, Iowa	0.1572115490485467
+19159	Ringgold County, Iowa	0.14804181095766283
+19161	Sac County, Iowa	0.15258398351131489
+19163	Scott County, Iowa	0.17552123159727606
+19165	Shelby County, Iowa	0.15359582236201136
+19167	Sioux County, Iowa	0.15987794218358747
+19169	Story County, Iowa	0.1696111251794645
+19171	Tama County, Iowa	0.15497704086761113
+19173	Taylor County, Iowa	0.14974370089173944
+19175	Union County, Iowa	0.15654233232231754
+19177	Van Buren County, Iowa	0.15146579970905408
+19179	Wapello County, Iowa	0.16415243300663432
+19181	Warren County, Iowa	0.1649586777248928
+19183	Washington County, Iowa	0.15868342424692944
+19185	Wayne County, Iowa	0.15020996767464373
+19187	Webster County, Iowa	0.16061729934883157
+19189	Winnebago County, Iowa	0.15572108262798529
+19191	Winneshiek County, Iowa	0.15656380149788698
+19193	Woodbury County, Iowa	0.1669405079990735
+19195	Worth County, Iowa	0.15322834871009713
+19197	Wright County, Iowa	0.1544083202385437
+20001	Allen County, Kansas	0.15539093090003891
+20003	Anderson County, Kansas	0.15095367414945904
+20005	Atchison County, Kansas	0.15842352466899534
+20007	Barber County, Kansas	0.1417598639536191
+20009	Barton County, Kansas	0.15651570359321357
+20011	Bourbon County, Kansas	0.15481599080021474
+20013	Brown County, Kansas	0.15251722639656312
+20015	Butler County, Kansas	0.16010276846679972
+20017	Chase County, Kansas	0.1407947167914959
+20019	Chautauqua County, Kansas	0.14371528707382816
+20021	Cherokee County, Kansas	0.1577297386065146
+20023	Cheyenne County, Kansas	0.13877347622036343
+20025	Clark County, Kansas	0.13698882934194498
+20027	Clay County, Kansas	0.15029537254955191
+20029	Cloud County, Kansas	0.15022468772069253
+20031	Coffey County, Kansas	0.15067075649818942
+20033	Comanche County, Kansas	0.13737778824946292
+20035	Cowley County, Kansas	0.1570638744081217
+20037	Crawford County, Kansas	0.16262206107214724
+20039	Decatur County, Kansas	0.14020835534891787
+20041	Dickinson County, Kansas	0.1544617231628956
+20043	Doniphan County, Kansas	0.15356931818936026
+20045	Douglas County, Kansas	0.1729958651603746
+20047	Edwards County, Kansas	0.1428084180158284
+20049	Elk County, Kansas	0.14180390894437558
+20051	Ellis County, Kansas	0.15723332395216824
+20053	Ellsworth County, Kansas	0.1475274232242279
+20055	Finney County, Kansas	0.15631255551834977
+20057	Ford County, Kansas	0.15696846553181018
+20059	Franklin County, Kansas	0.15976049799163095
+20061	Geary County, Kansas	0.16427580027248204
+20063	Gove County, Kansas	0.13834919116269853
+20065	Graham County, Kansas	0.13920593045881294
+20067	Grant County, Kansas	0.1503184096924573
+20069	Gray County, Kansas	0.1459575264684338
+20071	Greeley County, Kansas	0.13509323429988954
+20073	Greenwood County, Kansas	0.14392312423637174
+20075	Hamilton County, Kansas	0.1386092352624223
+20077	Harper County, Kansas	0.14584144003305813
+20079	Harvey County, Kansas	0.1623902438256654
+20081	Haskell County, Kansas	0.14593500333461137
+20083	Hodgeman County, Kansas	0.13713240633526674
+20085	Jackson County, Kansas	0.15385152224996887
+20087	Jefferson County, Kansas	0.15811589565224365
+20089	Jewell County, Kansas	0.14020975157027177
+20091	Johnson County, Kansas	0.1844934702241097
+20093	Kearny County, Kansas	0.14265850309137532
+20095	Kingman County, Kansas	0.1473162513752174
+20097	Kiowa County, Kansas	0.1407938171270286
+20099	Labette County, Kansas	0.15691781550390518
+20101	Lane County, Kansas	0.13731963108573264
+20103	Leavenworth County, Kansas	0.169907608889523
+20105	Lincoln County, Kansas	0.14215352485926738
+20107	Linn County, Kansas	0.15232970914834176
+20109	Logan County, Kansas	0.1387699153556477
+20111	Lyon County, Kansas	0.15878907194054448
+20113	McPherson County, Kansas	0.15724393001552178
+20115	Marion County, Kansas	0.15040458023530906
+20117	Marshall County, Kansas	0.14926360158624577
+20119	Meade County, Kansas	0.14216429524678678
+20121	Miami County, Kansas	0.16187334169333978
+20123	Mitchell County, Kansas	0.1475234630594369
+20125	Montgomery County, Kansas	0.1605117832663813
+20127	Morris County, Kansas	0.1471350469592728
+20129	Morton County, Kansas	0.14104854587713517
+20131	Nemaha County, Kansas	0.15132763052673046
+20133	Neosho County, Kansas	0.15631277788717532
+20135	Ness County, Kansas	0.13864070505168297
+20137	Norton County, Kansas	0.1450631356073612
+20139	Osage County, Kansas	0.15472987890276907
+20141	Osborne County, Kansas	0.14162513427549436
+20143	Ottawa County, Kansas	0.1469790786790355
+20145	Pawnee County, Kansas	0.1475096238634317
+20147	Phillips County, Kansas	0.14482053923535906
+20149	Pottawatomie County, Kansas	0.1565672629413364
+20151	Pratt County, Kansas	0.1503351776924155
+20153	Rawlins County, Kansas	0.13806160558156155
+20155	Reno County, Kansas	0.16050087056978485
+20157	Republic County, Kansas	0.1454826211756534
+20159	Rice County, Kansas	0.15071879897879953
+20161	Riley County, Kansas	0.16716311960568447
+20163	Rooks County, Kansas	0.1443248727755664
+20165	Rush County, Kansas	0.14235253358987138
+20167	Russell County, Kansas	0.14681081389818068
+20169	Saline County, Kansas	0.16361444567226807
+20171	Scott County, Kansas	0.1457724465515299
+20173	Sedgwick County, Kansas	0.17784761259148915
+20175	Seward County, Kansas	0.1576380667148047
+20177	Shawnee County, Kansas	0.17441808377851736
+20179	Sheridan County, Kansas	0.1393422153423912
+20181	Sherman County, Kansas	0.1444285712474194
+20183	Smith County, Kansas	0.14194235821510195
+20185	Stafford County, Kansas	0.14394418994072214
+20187	Stanton County, Kansas	0.13968759220337873
+20189	Stevens County, Kansas	0.14662334575469213
+20191	Sumner County, Kansas	0.1535721652626639
+20193	Thomas County, Kansas	0.1463180472023244
+20195	Trego County, Kansas	0.14017887303961413
+20197	Wabaunsee County, Kansas	0.1477001644935489
+20199	Wallace County, Kansas	0.13545177227160116
+20201	Washington County, Kansas	0.14498558831107577
+20203	Wichita County, Kansas	0.13968873264327897
+20205	Wilson County, Kansas	0.15167382614123
+20207	Woodson County, Kansas	0.14529866032989888
+20209	Wyandotte County, Kansas	0.18335931720351956
+21001	Adair County, Kentucky	0.16019435521265324
+21003	Allen County, Kentucky	0.1621687445427433
+21005	Anderson County, Kentucky	0.16659372548358126
+21007	Ballard County, Kentucky	0.15729144989523713
+21009	Barren County, Kentucky	0.16499463174745985
+21011	Bath County, Kentucky	0.15978682569874922
+21013	Bell County, Kentucky	0.16333712487898205
+21015	Boone County, Kentucky	0.1781989561204351
+21017	Bourbon County, Kentucky	0.16289520652638595
+21019	Boyd County, Kentucky	0.17362990418354915
+21021	Boyle County, Kentucky	0.1694807872323334
+21023	Bracken County, Kentucky	0.15901423242639662
+21025	Breathitt County, Kentucky	0.15566251317484353
+21027	Breckinridge County, Kentucky	0.15818684736068875
+21029	Bullitt County, Kentucky	0.17318060765727036
+21031	Butler County, Kentucky	0.15687507225201291
+21033	Caldwell County, Kentucky	0.15836238550296397
+21035	Calloway County, Kentucky	0.1658057094661419
+21037	Campbell County, Kentucky	0.17916614454960647
+21039	Carlisle County, Kentucky	0.15551075456283292
+21041	Carroll County, Kentucky	0.16430674859329647
+21043	Carter County, Kentucky	0.162579146859376
+21045	Casey County, Kentucky	0.1582425532158089
+21047	Christian County, Kentucky	0.16557674231438582
+21049	Clark County, Kentucky	0.16838481156688515
+21051	Clay County, Kentucky	0.15937620780757714
+21053	Clinton County, Kentucky	0.16085360351173467
+21055	Crittenden County, Kentucky	0.15531323512928522
+21057	Cumberland County, Kentucky	0.1544183706957785
+21059	Daviess County, Kentucky	0.17158219221724189
+21061	Edmonson County, Kentucky	0.15896513973978627
+21063	Elliott County, Kentucky	0.1573147857498822
+21065	Estill County, Kentucky	0.16139419016545659
+21067	Fayette County, Kentucky	0.18367767284880146
+21069	Fleming County, Kentucky	0.15927517052173443
+21071	Floyd County, Kentucky	0.16497168908440837
+21073	Franklin County, Kentucky	0.1723414200357206
+21075	Fulton County, Kentucky	0.1565655520815976
+21077	Gallatin County, Kentucky	0.1649479507537906
+21079	Garrard County, Kentucky	0.1637596912274619
+21081	Grant County, Kentucky	0.16549942291316347
+21083	Graves County, Kentucky	0.1628126819817814
+21085	Grayson County, Kentucky	0.16102210611937778
+21087	Green County, Kentucky	0.15861371771997332
+21089	Greenup County, Kentucky	0.16584933255493312
+21091	Hancock County, Kentucky	0.16005273161768946
+21093	Hardin County, Kentucky	0.16996956616232375
+21095	Harlan County, Kentucky	0.16140720851903748
+21097	Harrison County, Kentucky	0.16213815188681352
+21099	Hart County, Kentucky	0.15999988770690982
+21101	Henderson County, Kentucky	0.1659702992893943
+21103	Henry County, Kentucky	0.16147227964141617
+21105	Hickman County, Kentucky	0.15307948230464877
+21107	Hopkins County, Kentucky	0.1642853195210365
+21109	Jackson County, Kentucky	0.15868341807629321
+21111	Jefferson County, Kentucky	0.18788961853678512
+21113	Jessamine County, Kentucky	0.17416990268312355
+21115	Johnson County, Kentucky	0.16448445615363946
+21117	Kenton County, Kentucky	0.18301926303703434
+21119	Knott County, Kentucky	0.15932548158421353
+21121	Knox County, Kentucky	0.1641202063783632
+21123	Larue County, Kentucky	0.16130282401394802
+21125	Laurel County, Kentucky	0.16820260566827935
+21127	Lawrence County, Kentucky	0.15833947058133108
+21129	Lee County, Kentucky	0.15805133428134427
+21131	Leslie County, Kentucky	0.1553662406728673
+21133	Letcher County, Kentucky	0.16238981124377455
+21135	Lewis County, Kentucky	0.1561753816717102
+21137	Lincoln County, Kentucky	0.16346509402152049
+21139	Livingston County, Kentucky	0.1566608023231108
+21141	Logan County, Kentucky	0.16045571676127163
+21143	Lyon County, Kentucky	0.15864128367433403
+21145	McCracken County, Kentucky	0.17285137055953279
+21147	McCreary County, Kentucky	0.15901247193831783
+21149	McLean County, Kentucky	0.15826120056540055
+21151	Madison County, Kentucky	0.17128192785921975
+21153	Magoffin County, Kentucky	0.1588375096126589
+21155	Marion County, Kentucky	0.1614535922567885
+21157	Marshall County, Kentucky	0.16594550531217162
+21159	Martin County, Kentucky	0.1604057907403132
+21161	Mason County, Kentucky	0.16319052659043318
+21163	Meade County, Kentucky	0.16521820039787333
+21165	Menifee County, Kentucky	0.15726699886748882
+21167	Mercer County, Kentucky	0.16477870565422387
+21169	Metcalfe County, Kentucky	0.1579093083837641
+21171	Monroe County, Kentucky	0.15737291843443066
+21173	Montgomery County, Kentucky	0.16833462046456607
+21175	Morgan County, Kentucky	0.15794109919109103
+21177	Muhlenberg County, Kentucky	0.16259283344164294
+21179	Nelson County, Kentucky	0.16646364966448188
+21181	Nicholas County, Kentucky	0.1584170154735239
+21183	Ohio County, Kentucky	0.1591005458748114
+21185	Oldham County, Kentucky	0.17510351051883882
+21187	Owen County, Kentucky	0.15707304444918765
+21189	Owsley County, Kentucky	0.1546506707078429
+21191	Pendleton County, Kentucky	0.1609720828732171
+21193	Perry County, Kentucky	0.16366764964949101
+21195	Pike County, Kentucky	0.16344273217663874
+21197	Powell County, Kentucky	0.16297607212596543
+21199	Pulaski County, Kentucky	0.16561335624379891
+21201	Robertson County, Kentucky	0.15422013618431837
+21203	Rockcastle County, Kentucky	0.1609861050889981
+21205	Rowan County, Kentucky	0.16471730494719852
+21207	Russell County, Kentucky	0.163145840263404
+21209	Scott County, Kentucky	0.1709140987125888
+21211	Shelby County, Kentucky	0.1675988033464739
+21213	Simpson County, Kentucky	0.16399778135146867
+21215	Spencer County, Kentucky	0.16597611728732917
+21217	Taylor County, Kentucky	0.16546694699214795
+21219	Todd County, Kentucky	0.15748487615553916
+21221	Trigg County, Kentucky	0.15756576031596922
+21223	Trimble County, Kentucky	0.16141032042127462
+21225	Union County, Kentucky	0.15929480847389196
+21227	Warren County, Kentucky	0.17233940102285264
+21229	Washington County, Kentucky	0.15906976851698845
+21231	Wayne County, Kentucky	0.1597110082407173
+21233	Webster County, Kentucky	0.1587549427392183
+21235	Whitley County, Kentucky	0.16431922740857802
+21237	Wolfe County, Kentucky	0.1573454283395037
+21239	Woodford County, Kentucky	0.16827822357594696
+22001	Acadia Parish, Louisiana	0.16530903647720377
+22003	Allen Parish, Louisiana	0.15766520146173854
+22005	Ascension Parish, Louisiana	0.1765947882786715
+22007	Assumption Parish, Louisiana	0.162488368573418
+22009	Avoyelles Parish, Louisiana	0.16032546757373647
+22011	Beauregard Parish, Louisiana	0.15738777620470706
+22013	Bienville Parish, Louisiana	0.1523242151305216
+22015	Bossier Parish, Louisiana	0.16876358660012664
+22017	Caddo Parish, Louisiana	0.17313854852334248
+22019	Calcasieu Parish, Louisiana	0.17049497280634643
+22021	Caldwell Parish, Louisiana	0.15334225279876687
+22023	Cameron Parish, Louisiana	0.14419296432857728
+22025	Catahoula Parish, Louisiana	0.15087290770786957
+22027	Claiborne Parish, Louisiana	0.15410016345045877
+22029	Concordia Parish, Louisiana	0.1562124215638061
+22031	De Soto Parish, Louisiana	0.1571413592619575
+22033	East Baton Rouge Parish, Louisiana	0.18246254069823983
+22035	East Carroll Parish, Louisiana	0.1523184474277358
+22037	East Feliciana Parish, Louisiana	0.1593400091863952
+22039	Evangeline Parish, Louisiana	0.16065324774917844
+22041	Franklin Parish, Louisiana	0.15730665427539708
+22043	Grant Parish, Louisiana	0.15791951659295714
+22045	Iberia Parish, Louisiana	0.16715680914481337
+22047	Iberville Parish, Louisiana	0.16095973326825197
+22049	Jackson Parish, Louisiana	0.15621998502319875
+22051	Jefferson Parish, Louisiana	0.18552431005796607
+22053	Jefferson Davis Parish, Louisiana	0.16031465711014664
+22055	Lafayette Parish, Louisiana	0.18201323029134678
+22057	Lafourche Parish, Louisiana	0.16504425659425512
+22059	LaSalle Parish, Louisiana	0.15512211353913255
+22061	Lincoln Parish, Louisiana	0.16564271020256185
+22063	Livingston Parish, Louisiana	0.17143901750402657
+22065	Madison Parish, Louisiana	0.1528550148153045
+22067	Morehouse Parish, Louisiana	0.15713066854336546
+22069	Natchitoches Parish, Louisiana	0.15693471902867268
+22071	Orleans Parish, Louisiana	0.188874592984597
+22073	Ouachita Parish, Louisiana	0.17251000043500067
+22075	Plaquemines Parish, Louisiana	0.15675210365099954
+22077	Pointe Coupee Parish, Louisiana	0.15875490285749652
+22079	Rapides Parish, Louisiana	0.16558904681394596
+22081	Red River Parish, Louisiana	0.15442668951589886
+22083	Richland Parish, Louisiana	0.15816153840017644
+22085	Sabine Parish, Louisiana	0.15619279781538964
+22087	St. Bernard Parish, Louisiana	0.1673672114080357
+22089	St. Charles Parish, Louisiana	0.17049706560827232
+22091	St. Helena Parish, Louisiana	0.15541642332470085
+22093	St. James Parish, Louisiana	0.16471106971296576
+22095	St. John the Baptist Parish, Louisiana	0.17082523807550887
+22097	St. Landry Parish, Louisiana	0.16484079354009656
+22099	St. Martin Parish, Louisiana	0.16332902059768675
+22101	St. Mary Parish, Louisiana	0.16483587306947942
+22103	St. Tammany Parish, Louisiana	0.17401658667542927
+22105	Tangipahoa Parish, Louisiana	0.16964213959984537
+22107	Tensas Parish, Louisiana	0.14627037729363332
+22109	Terrebonne Parish, Louisiana	0.1649060693164698
+22111	Union Parish, Louisiana	0.15553478251410827
+22113	Vermilion Parish, Louisiana	0.1606982440337163
+22115	Vernon Parish, Louisiana	0.15810772751997734
+22117	Washington Parish, Louisiana	0.1629698995416428
+22119	Webster Parish, Louisiana	0.16248804600703057
+22121	West Baton Rouge Parish, Louisiana	0.1680654737535321
+22123	West Carroll Parish, Louisiana	0.15684736187333215
+22125	West Feliciana Parish, Louisiana	0.15868268689465723
+22127	Winn Parish, Louisiana	0.15151868285322162
+23001	Androscoggin County, Maine	0.17190617888703086
+23003	Aroostook County, Maine	0.14874459991140793
+23005	Cumberland County, Maine	0.17502531642847519
+23007	Franklin County, Maine	0.15296293929610494
+23009	Hancock County, Maine	0.1578834633447507
+23011	Kennebec County, Maine	0.1682471047329388
+23013	Knox County, Maine	0.16634194874103944
+23015	Lincoln County, Maine	0.16368188935792433
+23017	Oxford County, Maine	0.1562875559415728
+23019	Penobscot County, Maine	0.1597787589443906
+23021	Piscataquis County, Maine	0.1423662518845343
+23023	Sagadahoc County, Maine	0.1682572685289853
+23025	Somerset County, Maine	0.1505665599489078
+23027	Waldo County, Maine	0.16121607236731145
+23029	Washington County, Maine	0.15020200516653928
+23031	York County, Maine	0.1711746998903614
+24001	Allegany County, Maryland	0.1694539694732507
+24003	Anne Arundel County, Maryland	0.1851790525839311
+24005	Baltimore County, Maryland	0.18510783538882541
+24009	Calvert County, Maryland	0.1765503954740492
+24011	Caroline County, Maryland	0.16604111726053486
+24013	Carroll County, Maryland	0.17549776433321654
+24015	Cecil County, Maryland	0.1737502406424057
+24017	Charles County, Maryland	0.1751005092882167
+24019	Dorchester County, Maryland	0.16181992505933218
+24021	Frederick County, Maryland	0.17581750912056354
+24023	Garrett County, Maryland	0.15978683298458105
+24025	Harford County, Maryland	0.1787478346158484
+24027	Howard County, Maryland	0.1846400772462149
+24029	Kent County, Maryland	0.16308802678958662
+24031	Montgomery County, Maryland	0.18830263031064992
+24033	Prince George's County, Maryland	0.18739118461577603
+24035	Queen Anne's County, Maryland	0.1679568868587899
+24037	St. Mary's County, Maryland	0.1742446498455814
+24039	Somerset County, Maryland	0.16407371478030502
+24041	Talbot County, Maryland	0.16811352007249708
+24043	Washington County, Maryland	0.17452685079785044
+24045	Wicomico County, Maryland	0.17322718604774584
+24047	Worcester County, Maryland	0.1665234617844476
+24510	Baltimore city, Maryland	0.19742718524109498
+25001	Barnstable County, Massachusetts	0.17816846953730497
+25003	Berkshire County, Massachusetts	0.16791575287939464
+25005	Bristol County, Massachusetts	0.18287499551894698
+25007	Dukes County, Massachusetts	0.16953479761171267
+25009	Essex County, Massachusetts	0.18619652338774464
+25011	Franklin County, Massachusetts	0.16573795478007539
+25013	Hampden County, Massachusetts	0.18064733796173987
+25015	Hampshire County, Massachusetts	0.17394692715698512
+25017	Middlesex County, Massachusetts	0.18772560226603122
+25019	Nantucket County, Massachusetts	0.1723940466442129
+25021	Norfolk County, Massachusetts	0.18699100986956183
+25023	Plymouth County, Massachusetts	0.1809845050672241
+25025	Suffolk County, Massachusetts	0.2020979527389648
+25027	Worcester County, Massachusetts	0.17829783467754692
+26001	Alcona County, Michigan	0.15190697106061432
+26003	Alger County, Michigan	0.14867201409151848
+26005	Allegan County, Michigan	0.16835655177138106
+26007	Alpena County, Michigan	0.1605431540429345
+26009	Antrim County, Michigan	0.16044736562281045
+26011	Arenac County, Michigan	0.15912254034874412
+26013	Baraga County, Michigan	0.1480414700977155
+26015	Barry County, Michigan	0.16650015797856269
+26017	Bay County, Michigan	0.17196221049543875
+26019	Benzie County, Michigan	0.1613719496558655
+26021	Berrien County, Michigan	0.17305084023666956
+26023	Branch County, Michigan	0.1645915357878069
+26025	Calhoun County, Michigan	0.17044877250909463
+26027	Cass County, Michigan	0.16611768149515682
+26029	Charlevoix County, Michigan	0.16227421753427704
+26031	Cheboygan County, Michigan	0.15802894016272478
+26033	Chippewa County, Michigan	0.15516120925446023
+26035	Clare County, Michigan	0.16127471484168604
+26037	Clinton County, Michigan	0.16822313224886148
+26039	Crawford County, Michigan	0.15553767964710635
+26041	Delta County, Michigan	0.15695523352331614
+26043	Dickinson County, Michigan	0.1575565258761625
+26045	Eaton County, Michigan	0.17051683741309542
+26047	Emmet County, Michigan	0.1632303922219016
+26049	Genesee County, Michigan	0.17938554378747343
+26051	Gladwin County, Michigan	0.16069708923459963
+26053	Gogebic County, Michigan	0.15046183335434632
+26055	Grand Traverse County, Michigan	0.1708468394853218
+26057	Gratiot County, Michigan	0.1632452639127066
+26059	Hillsdale County, Michigan	0.163707648158892
+26061	Houghton County, Michigan	0.15803412974285727
+26063	Huron County, Michigan	0.15837933485643976
+26065	Ingham County, Michigan	0.1779675080653649
+26067	Ionia County, Michigan	0.1666291798206255
+26069	Iosco County, Michigan	0.15993739126538462
+26071	Iron County, Michigan	0.1483196161490123
+26073	Isabella County, Michigan	0.16717972086367058
+26075	Jackson County, Michigan	0.17172886089889147
+26077	Kalamazoo County, Michigan	0.17716234697982788
+26079	Kalkaska County, Michigan	0.15734637649309274
+26081	Kent County, Michigan	0.18083256019105698
+26083	Keweenaw County, Michigan	0.14178648903037075
+26085	Lake County, Michigan	0.15414537279425794
+26087	Lapeer County, Michigan	0.16798112322713707
+26089	Leelanau County, Michigan	0.16226083835817667
+26091	Lenawee County, Michigan	0.16772419842403904
+26093	Livingston County, Michigan	0.17474216522647076
+26095	Luce County, Michigan	0.14599649561669614
+26097	Mackinac County, Michigan	0.14911399172998338
+26099	Macomb County, Michigan	0.18715380036888132
+26101	Manistee County, Michigan	0.15986230990953992
+26103	Marquette County, Michigan	0.15834457465525192
+26105	Mason County, Michigan	0.16179767486581995
+26107	Mecosta County, Michigan	0.1639026594228335
+26109	Menominee County, Michigan	0.15446826354982784
+26111	Midland County, Michigan	0.1692309913080036
+26113	Missaukee County, Michigan	0.15597848546544094
+26115	Monroe County, Michigan	0.17315214797997233
+26117	Montcalm County, Michigan	0.16497927152336983
+26119	Montmorency County, Michigan	0.15265271575315564
+26121	Muskegon County, Michigan	0.17490094481906246
+26123	Newaygo County, Michigan	0.16194440632313292
+26125	Oakland County, Michigan	0.18545733005856066
+26127	Oceana County, Michigan	0.16083591096487396
+26129	Ogemaw County, Michigan	0.1584205075520649
+26131	Ontonagon County, Michigan	0.14257981498164912
+26133	Osceola County, Michigan	0.15920122135369708
+26135	Oscoda County, Michigan	0.15148445952008438
+26137	Otsego County, Michigan	0.16027503088915449
+26139	Ottawa County, Michigan	0.1778545706327662
+26141	Presque Isle County, Michigan	0.15349148653454217
+26143	Roscommon County, Michigan	0.16001185056828765
+26145	Saginaw County, Michigan	0.1721151677900034
+26147	St. Clair County, Michigan	0.17155497660221056
+26149	St. Joseph County, Michigan	0.1671659015318982
+26151	Sanilac County, Michigan	0.1594386986510898
+26153	Schoolcraft County, Michigan	0.145976958362849
+26155	Shiawassee County, Michigan	0.16755347564336104
+26157	Tuscola County, Michigan	0.16253311688822697
+26159	Van Buren County, Michigan	0.1673297315031434
+26161	Washtenaw County, Michigan	0.17789574048020887
+26163	Wayne County, Michigan	0.19047053109777054
+26165	Wexford County, Michigan	0.16187948587988008
+27001	Aitkin County, Minnesota	0.1476953623530841
+27003	Anoka County, Minnesota	0.1814608411346826
+27005	Becker County, Minnesota	0.15581229531797836
+27007	Beltrami County, Minnesota	0.15338403270910914
+27009	Benton County, Minnesota	0.1657214045073268
+27011	Big Stone County, Minnesota	0.14870766273456026
+27013	Blue Earth County, Minnesota	0.16497076467948668
+27015	Brown County, Minnesota	0.1591129157424211
+27017	Carlton County, Minnesota	0.159241929823158
+27019	Carver County, Minnesota	0.17374205659838596
+27021	Cass County, Minnesota	0.1515674224426557
+27023	Chippewa County, Minnesota	0.1539374774812147
+27025	Chisago County, Minnesota	0.16800116172807078
+27027	Clay County, Minnesota	0.16211336230852838
+27029	Clearwater County, Minnesota	0.1477850305387624
+27031	Cook County, Minnesota	0.14148588972944354
+27033	Cottonwood County, Minnesota	0.1528372529972138
+27035	Crow Wing County, Minnesota	0.16254768608185252
+27037	Dakota County, Minnesota	0.18071513633987515
+27039	Dodge County, Minnesota	0.16023728461051442
+27041	Douglas County, Minnesota	0.1619225247210041
+27043	Faribault County, Minnesota	0.1535095467451309
+27045	Fillmore County, Minnesota	0.15531188481192684
+27047	Freeborn County, Minnesota	0.15944803305227837
+27049	Goodhue County, Minnesota	0.16208790162671077
+27051	Grant County, Minnesota	0.1493442653637799
+27053	Hennepin County, Minnesota	0.18882179874681868
+27055	Houston County, Minnesota	0.15767693609043582
+27057	Hubbard County, Minnesota	0.15492486263885524
+27059	Isanti County, Minnesota	0.16518784281903182
+27061	Itasca County, Minnesota	0.15259035010355354
+27063	Jackson County, Minnesota	0.1511946684402563
+27065	Kanabec County, Minnesota	0.15713796280743195
+27067	Kandiyohi County, Minnesota	0.1611851466821904
+27069	Kittson County, Minnesota	0.14177481351376603
+27071	Koochiching County, Minnesota	0.1418274767673128
+27073	Lac qui Parle County, Minnesota	0.14764183567283515
+27075	Lake County, Minnesota	0.14365381494607946
+27077	Lake of the Woods County, Minnesota	0.1395183010002517
+27079	Le Sueur County, Minnesota	0.16245737605117958
+27081	Lincoln County, Minnesota	0.14907099407454089
+27083	Lyon County, Minnesota	0.1580938049556105
+27085	McLeod County, Minnesota	0.1633896675605761
+27087	Mahnomen County, Minnesota	0.14863779684123823
+27089	Marshall County, Minnesota	0.14396157942792323
+27091	Martin County, Minnesota	0.1562122889318823
+27093	Meeker County, Minnesota	0.15860105139776753
+27095	Mille Lacs County, Minnesota	0.15996200250943288
+27097	Morrison County, Minnesota	0.15673899774338867
+27099	Mower County, Minnesota	0.1614709249349278
+27101	Murray County, Minnesota	0.1498202331929484
+27103	Nicollet County, Minnesota	0.16372266490643758
+27105	Nobles County, Minnesota	0.15687989519295908
+27107	Norman County, Minnesota	0.14638675636768086
+27109	Olmsted County, Minnesota	0.17224169300515385
+27111	Otter Tail County, Minnesota	0.1567676044891399
+27113	Pennington County, Minnesota	0.1548249454129508
+27115	Pine County, Minnesota	0.15417115807564946
+27117	Pipestone County, Minnesota	0.15368498456451948
+27119	Polk County, Minnesota	0.15213679766740423
+27121	Pope County, Minnesota	0.15253811347436028
+27123	Ramsey County, Minnesota	0.19220851098421318
+27125	Red Lake County, Minnesota	0.14823215668602657
+27127	Redwood County, Minnesota	0.15274007985950408
+27129	Renville County, Minnesota	0.1516021638944985
+27131	Rice County, Minnesota	0.16793053204561323
+27133	Rock County, Minnesota	0.15356506380387072
+27135	Roseau County, Minnesota	0.14798744047734042
+27137	St. Louis County, Minnesota	0.15726468296739154
+27139	Scott County, Minnesota	0.17627799671162123
+27141	Sherburne County, Minnesota	0.17168647269816437
+27143	Sibley County, Minnesota	0.15554582447066403
+27145	Stearns County, Minnesota	0.1670541342206058
+27147	Steele County, Minnesota	0.1645365866814088
+27149	Stevens County, Minnesota	0.1527955330530765
+27151	Swift County, Minnesota	0.15034691654422844
+27153	Todd County, Minnesota	0.15579120239186356
+27155	Traverse County, Minnesota	0.1445281846823591
+27157	Wabasha County, Minnesota	0.1591906394583899
+27159	Wadena County, Minnesota	0.15562334672172348
+27161	Waseca County, Minnesota	0.15964160942169223
+27163	Washington County, Minnesota	0.17989624179870703
+27165	Watonwan County, Minnesota	0.1554889067431952
+27167	Wilkin County, Minnesota	0.1472995391598537
+27169	Winona County, Minnesota	0.16412107463476167
+27171	Wright County, Minnesota	0.17116299083448264
+27173	Yellow Medicine County, Minnesota	0.15052391217861147
+28001	Adams County, Mississippi	0.16268522176122482
+28003	Alcorn County, Mississippi	0.165124813695134
+28005	Amite County, Mississippi	0.15255661081628738
+28007	Attala County, Mississippi	0.1553921621203407
+28009	Benton County, Mississippi	0.15393948385064485
+28011	Bolivar County, Mississippi	0.15794543410115433
+28013	Calhoun County, Mississippi	0.1553188480237262
+28015	Carroll County, Mississippi	0.15210001814775595
+28017	Chickasaw County, Mississippi	0.15776224813173872
+28019	Choctaw County, Mississippi	0.153688406436194
+28021	Claiborne County, Mississippi	0.1532256725680233
+28023	Clarke County, Mississippi	0.15468588620567783
+28025	Clay County, Mississippi	0.16015142594706772
+28027	Coahoma County, Mississippi	0.15895174796344286
+28029	Copiah County, Mississippi	0.15818822225974807
+28031	Covington County, Mississippi	0.1598198891507812
+28033	DeSoto County, Mississippi	0.17572916194254384
+28035	Forrest County, Mississippi	0.16921419116244957
+28037	Franklin County, Mississippi	0.1510219798177683
+28039	George County, Mississippi	0.1607642991834793
+28041	Greene County, Mississippi	0.15347029050110186
+28043	Grenada County, Mississippi	0.16046939155888218
+28045	Hancock County, Mississippi	0.16574729985449016
+28047	Harrison County, Mississippi	0.17522107114709534
+28049	Hinds County, Mississippi	0.17295079562242593
+28051	Holmes County, Mississippi	0.15468856083234186
+28053	Humphreys County, Mississippi	0.15355004723311633
+28055	Issaquena County, Mississippi	0.14032143623985407
+28057	Itawamba County, Mississippi	0.15963125067639186
+28059	Jackson County, Mississippi	0.17078158891538475
+28061	Jasper County, Mississippi	0.15524115310698686
+28063	Jefferson County, Mississippi	0.1508921329980156
+28065	Jefferson Davis County, Mississippi	0.15610817294508625
+28067	Jones County, Mississippi	0.16556216701422985
+28069	Kemper County, Mississippi	0.1504804012662693
+28071	Lafayette County, Mississippi	0.1645548000515808
+28073	Lamar County, Mississippi	0.16750034648114628
+28075	Lauderdale County, Mississippi	0.1660950836578499
+28077	Lawrence County, Mississippi	0.1566261719578775
+28079	Leake County, Mississippi	0.15877299058431368
+28081	Lee County, Mississippi	0.1704459012630392
+28083	Leflore County, Mississippi	0.16021274282148337
+28085	Lincoln County, Mississippi	0.16172218668089208
+28087	Lowndes County, Mississippi	0.16680222327437935
+28089	Madison County, Mississippi	0.1686444113219118
+28091	Marion County, Mississippi	0.1598638427658376
+28093	Marshall County, Mississippi	0.16058883715302258
+28095	Monroe County, Mississippi	0.15998829369376646
+28097	Montgomery County, Mississippi	0.15517738844181653
+28099	Neshoba County, Mississippi	0.16074862432547524
+28101	Newton County, Mississippi	0.15824202641953322
+28103	Noxubee County, Mississippi	0.15169352162914176
+28105	Oktibbeha County, Mississippi	0.1662940230367691
+28107	Panola County, Mississippi	0.1605778841878558
+28109	Pearl River County, Mississippi	0.16291533300963243
+28111	Perry County, Mississippi	0.1532494038858069
+28113	Pike County, Mississippi	0.16541341458536962
+28115	Pontotoc County, Mississippi	0.16248843748874756
+28117	Prentiss County, Mississippi	0.1620055307040811
+28119	Quitman County, Mississippi	0.15252453070292002
+28121	Rankin County, Mississippi	0.17083833892823247
+28123	Scott County, Mississippi	0.16000232325724717
+28125	Sharkey County, Mississippi	0.14871310147635142
+28127	Simpson County, Mississippi	0.15985431424151703
+28129	Smith County, Mississippi	0.15547752453059097
+28131	Stone County, Mississippi	0.15915512884097938
+28133	Sunflower County, Mississippi	0.1581632742720466
+28135	Tallahatchie County, Mississippi	0.15432568770983304
+28137	Tate County, Mississippi	0.16307348446062134
+28139	Tippah County, Mississippi	0.16030393237627355
+28141	Tishomingo County, Mississippi	0.15992495942014084
+28143	Tunica County, Mississippi	0.15425019749966618
+28145	Union County, Mississippi	0.16300606144605517
+28147	Walthall County, Mississippi	0.1580351497348574
+28149	Warren County, Mississippi	0.16379120741871933
+28151	Washington County, Mississippi	0.16201009745094636
+28153	Wayne County, Mississippi	0.15544220439035286
+28155	Webster County, Mississippi	0.1548631211766063
+28157	Wilkinson County, Mississippi	0.15048715267174456
+28159	Winston County, Mississippi	0.15671271032417186
+28161	Yalobusha County, Mississippi	0.15574009735134262
+28163	Yazoo County, Mississippi	0.15734135145506128
+29001	Adair County, Missouri	0.15975971187025242
+29003	Andrew County, Missouri	0.15911441337218704
+29005	Atchison County, Missouri	0.14824753967865517
+29007	Audrain County, Missouri	0.15830327894734567
+29009	Barry County, Missouri	0.15997401850997228
+29011	Barton County, Missouri	0.1537724936160185
+29013	Bates County, Missouri	0.1535731678287966
+29015	Benton County, Missouri	0.1562081894452579
+29017	Bollinger County, Missouri	0.15368958729918777
+29019	Boone County, Missouri	0.17285826618516245
+29021	Buchanan County, Missouri	0.17133298930220645
+29023	Butler County, Missouri	0.16207837109436815
+29025	Caldwell County, Missouri	0.1542396853972426
+29027	Callaway County, Missouri	0.16110696705003255
+29029	Camden County, Missouri	0.1631383869626591
+29031	Cape Girardeau County, Missouri	0.1679992216190107
+29033	Carroll County, Missouri	0.1503512618879134
+29035	Carter County, Missouri	0.14992293231516493
+29037	Cass County, Missouri	0.1687957401432262
+29039	Cedar County, Missouri	0.15687878026245766
+29041	Chariton County, Missouri	0.14862179825523575
+29043	Christian County, Missouri	0.16906345524137625
+29045	Clark County, Missouri	0.15090506929004746
+29047	Clay County, Missouri	0.1792860583532674
+29049	Clinton County, Missouri	0.1603915098748247
+29051	Cole County, Missouri	0.17068104179927998
+29053	Cooper County, Missouri	0.15714615552425812
+29055	Crawford County, Missouri	0.15734561183601944
+29057	Dade County, Missouri	0.15190971609865417
+29059	Dallas County, Missouri	0.15711191123983556
+29061	Daviess County, Missouri	0.1515502769796583
+29063	DeKalb County, Missouri	0.1567646490689992
+29065	Dent County, Missouri	0.1540750543445392
+29067	Douglas County, Missouri	0.1522715497460409
+29069	Dunklin County, Missouri	0.16113829316813957
+29071	Franklin County, Missouri	0.1665922311920501
+29073	Gasconade County, Missouri	0.15639794763299833
+29075	Gentry County, Missouri	0.15085212746328672
+29077	Greene County, Missouri	0.17655053627227293
+29079	Grundy County, Missouri	0.1547373075606921
+29081	Harrison County, Missouri	0.149777014631233
+29083	Henry County, Missouri	0.15713614783001315
+29085	Hickory County, Missouri	0.15515058556943861
+29087	Holt County, Missouri	0.14834026285133936
+29089	Howard County, Missouri	0.15438135002448133
+29091	Howell County, Missouri	0.15952344681373617
+29093	Iron County, Missouri	0.1532096877651789
+29095	Jackson County, Missouri	0.18382875753739683
+29097	Jasper County, Missouri	0.17045165672044243
+29099	Jefferson County, Missouri	0.17480791410957144
+29101	Johnson County, Missouri	0.1625511396837908
+29103	Knox County, Missouri	0.14692368290820965
+29105	Laclede County, Missouri	0.16008986135194517
+29107	Lafayette County, Missouri	0.16088820994553152
+29109	Lawrence County, Missouri	0.16226322769719506
+29111	Lewis County, Missouri	0.15358394682675813
+29113	Lincoln County, Missouri	0.16526834789451844
+29115	Linn County, Missouri	0.15358682517821057
+29117	Livingston County, Missouri	0.1564679505005054
+29119	McDonald County, Missouri	0.15936243892085136
+29121	Macon County, Missouri	0.15339497737600483
+29123	Madison County, Missouri	0.15530903285575848
+29125	Maries County, Missouri	0.1524062856888307
+29127	Marion County, Missouri	0.16256315815348735
+29129	Mercer County, Missouri	0.14703085850575473
+29131	Miller County, Missouri	0.15951787028778383
+29133	Mississippi County, Missouri	0.15730144749588787
+29135	Moniteau County, Missouri	0.15873243564582445
+29137	Monroe County, Missouri	0.15083844183212744
+29139	Montgomery County, Missouri	0.15438983656875177
+29141	Morgan County, Missouri	0.15785485884423925
+29143	New Madrid County, Missouri	0.155562392445901
+29145	Newton County, Missouri	0.16519176292059154
+29147	Nodaway County, Missouri	0.1555295441807115
+29149	Oregon County, Missouri	0.15082994481481896
+29151	Osage County, Missouri	0.15467731917329322
+29153	Ozark County, Missouri	0.15024409704222724
+29155	Pemiscot County, Missouri	0.1573169610939135
+29157	Perry County, Missouri	0.1590067750468466
+29159	Pettis County, Missouri	0.16218767653654956
+29161	Phelps County, Missouri	0.1626813318668128
+29163	Pike County, Missouri	0.15612275155877672
+29165	Platte County, Missouri	0.17243278939830717
+29167	Polk County, Missouri	0.16067804859076787
+29169	Pulaski County, Missouri	0.16542120161629917
+29171	Putnam County, Missouri	0.14799195132047105
+29173	Ralls County, Missouri	0.15451045179911124
+29175	Randolph County, Missouri	0.16077698399063042
+29177	Ray County, Missouri	0.15902983817136965
+29179	Reynolds County, Missouri	0.14682934713331466
+29181	Ripley County, Missouri	0.15422335408816537
+29183	St. Charles County, Missouri	0.18026162166749124
+29185	St. Clair County, Missouri	0.15115005278352914
+29186	Ste. Genevieve County, Missouri	0.1581349166692288
+29187	St. Francois County, Missouri	0.16864245041659773
+29189	St. Louis County, Missouri	0.18767667384231804
+29195	Saline County, Missouri	0.15685089471405775
+29197	Schuyler County, Missouri	0.15178121701608432
+29199	Scotland County, Missouri	0.14956055984170094
+29201	Scott County, Missouri	0.1650259994309559
+29203	Shannon County, Missouri	0.14718224365092697
+29205	Shelby County, Missouri	0.1499536049284516
+29207	Stoddard County, Missouri	0.15801220911593167
+29209	Stone County, Missouri	0.16295510549362333
+29211	Sullivan County, Missouri	0.1482472109636572
+29213	Taney County, Missouri	0.16480283039140947
+29215	Texas County, Missouri	0.15438468963313026
+29217	Vernon County, Missouri	0.15543851190631292
+29219	Warren County, Missouri	0.16435026066022734
+29221	Washington County, Missouri	0.15742092735450552
+29223	Wayne County, Missouri	0.15260626924049991
+29225	Webster County, Missouri	0.1627328093597453
+29227	Worth County, Missouri	0.14663147857443462
+29229	Wright County, Missouri	0.1559937194196826
+29510	St. Louis city, Missouri	0.19437769002249622
+30001	Beaverhead County, Montana	0.1356449114164345
+30003	Big Horn County, Montana	0.13894208066064592
+30005	Blaine County, Montana	0.13508288224271353
+30007	Broadwater County, Montana	0.14392128683090025
+30009	Carbon County, Montana	0.14392965406160924
+30011	Carter County, Montana	0.12445532019374846
+30013	Cascade County, Montana	0.15685785883768122
+30015	Chouteau County, Montana	0.1342842253313296
+30017	Custer County, Montana	0.13984927185029597
+30019	Daniels County, Montana	0.13295680245001923
+30021	Dawson County, Montana	0.1412249913661303
+30023	Deer Lodge County, Montana	0.15029931216197245
+30025	Fallon County, Montana	0.1358612577799398
+30027	Fergus County, Montana	0.13860515804483045
+30029	Flathead County, Montana	0.15397345911242238
+30031	Gallatin County, Montana	0.15963670304883973
+30033	Garfield County, Montana	0.12200602748064447
+30035	Glacier County, Montana	0.14295949027375246
+30037	Golden Valley County, Montana	0.1290587144461051
+30039	Granite County, Montana	0.13665845494546677
+30041	Hill County, Montana	0.14453652464241232
+30043	Jefferson County, Montana	0.14645902633845923
+30045	Judith Basin County, Montana	0.1322258887971878
+30047	Lake County, Montana	0.15398433573581677
+30049	Lewis and Clark County, Montana	0.15385316929836385
+30051	Liberty County, Montana	0.13532992812168257
+30053	Lincoln County, Montana	0.1443325242679885
+30055	McCone County, Montana	0.12828790352063743
+30057	Madison County, Montana	0.13815771136012364
+30059	Meagher County, Montana	0.12985320562114522
+30061	Mineral County, Montana	0.14117263614843123
+30063	Missoula County, Montana	0.15999594528722255
+30065	Musselshell County, Montana	0.13840661267667378
+30067	Park County, Montana	0.1448411115586897
+30069	Petroleum County, Montana	0.12266600393758198
+30071	Phillips County, Montana	0.1297646588415338
+30073	Pondera County, Montana	0.14124051199596424
+30075	Powder River County, Montana	0.12672967850527986
+30077	Powell County, Montana	0.1397216459824814
+30079	Prairie County, Montana	0.1281744421797906
+30081	Ravalli County, Montana	0.1531779471804276
+30083	Richland County, Montana	0.14385336490173403
+30085	Roosevelt County, Montana	0.14308957819703663
+30087	Rosebud County, Montana	0.1359786420880281
+30089	Sanders County, Montana	0.14262388153195732
+30091	Sheridan County, Montana	0.13672679954343014
+30093	Silver Bow County, Montana	0.1603866800164786
+30095	Stillwater County, Montana	0.1441104919317371
+30097	Sweet Grass County, Montana	0.13687296325825518
+30099	Teton County, Montana	0.13905391342291615
+30101	Toole County, Montana	0.13838917422311894
+30103	Treasure County, Montana	0.12919202881667743
+30105	Valley County, Montana	0.13470363911868302
+30107	Wheatland County, Montana	0.13467002582781093
+30109	Wibaux County, Montana	0.13234209802218141
+30111	Yellowstone County, Montana	0.1620905325893556
+31001	Adams County, Nebraska	0.16138652697523703
+31003	Antelope County, Nebraska	0.14642995399270148
+31005	Arthur County, Nebraska	0.12848977302556433
+31007	Banner County, Nebraska	0.13169053760657176
+31009	Blaine County, Nebraska	0.12856993286207438
+31011	Boone County, Nebraska	0.14664333214674724
+31013	Box Butte County, Nebraska	0.14872723012426986
+31015	Boyd County, Nebraska	0.1410672408043099
+31017	Brown County, Nebraska	0.13822725426895102
+31019	Buffalo County, Nebraska	0.16078084877425808
+31021	Burt County, Nebraska	0.1507227082705219
+31023	Butler County, Nebraska	0.15103405138466772
+31025	Cass County, Nebraska	0.1601485087361049
+31027	Cedar County, Nebraska	0.1496412849549549
+31029	Chase County, Nebraska	0.14262234523287562
+31031	Cherry County, Nebraska	0.13135822474452424
+31033	Cheyenne County, Nebraska	0.14653080536926932
+31035	Clay County, Nebraska	0.14930150931275118
+31037	Colfax County, Nebraska	0.15576707715691201
+31039	Cuming County, Nebraska	0.151944195246108
+31041	Custer County, Nebraska	0.14227261057298907
+31043	Dakota County, Nebraska	0.16366290779260703
+31045	Dawes County, Nebraska	0.14511726514724416
+31047	Dawson County, Nebraska	0.15494986523846294
+31049	Deuel County, Nebraska	0.14208380275137505
+31051	Dixon County, Nebraska	0.1499504992389617
+31053	Dodge County, Nebraska	0.16298731003201056
+31055	Douglas County, Nebraska	0.18680204923234678
+31057	Dundy County, Nebraska	0.13620896531682478
+31059	Fillmore County, Nebraska	0.1483223817394917
+31061	Franklin County, Nebraska	0.1438398170353448
+31063	Frontier County, Nebraska	0.13902512034940204
+31065	Furnas County, Nebraska	0.14552796653383332
+31067	Gage County, Nebraska	0.1555513469331928
+31069	Garden County, Nebraska	0.13225631268244248
+31071	Garfield County, Nebraska	0.1408597234951259
+31073	Gosper County, Nebraska	0.1425484177771395
+31075	Grant County, Nebraska	0.13007865714580644
+31077	Greeley County, Nebraska	0.1421845943939409
+31079	Hall County, Nebraska	0.16656824667737144
+31081	Hamilton County, Nebraska	0.15271410550725495
+31083	Harlan County, Nebraska	0.14506476437736954
+31085	Hayes County, Nebraska	0.1336002476916849
+31087	Hitchcock County, Nebraska	0.14173494142838589
+31089	Holt County, Nebraska	0.14225272448787632
+31091	Hooker County, Nebraska	0.1312902252219998
+31093	Howard County, Nebraska	0.14962232147821225
+31095	Jefferson County, Nebraska	0.15026995382134106
+31097	Johnson County, Nebraska	0.1509145254358271
+31099	Kearney County, Nebraska	0.15040233307765455
+31101	Keith County, Nebraska	0.14664861521169575
+31103	Keya Paha County, Nebraska	0.13201052141942907
+31105	Kimball County, Nebraska	0.14159174672013533
+31107	Knox County, Nebraska	0.14659932465118622
+31109	Lancaster County, Nebraska	0.17558840342399767
+31111	Lincoln County, Nebraska	0.15098635650863348
+31113	Logan County, Nebraska	0.1337009120099355
+31115	Loup County, Nebraska	0.1328522756712602
+31117	McPherson County, Nebraska	0.1276172437624604
+31119	Madison County, Nebraska	0.16209451172138373
+31121	Merrick County, Nebraska	0.15215975801512646
+31123	Morrill County, Nebraska	0.1404297769483451
+31125	Nance County, Nebraska	0.1470292707390301
+31127	Nemaha County, Nebraska	0.15267469691952157
+31129	Nuckolls County, Nebraska	0.1462929382899944
+31131	Otoe County, Nebraska	0.15576542892922543
+31133	Pawnee County, Nebraska	0.14500969610215317
+31135	Perkins County, Nebraska	0.14045830962585545
+31137	Phelps County, Nebraska	0.15250966081568218
+31139	Pierce County, Nebraska	0.1503362998675937
+31141	Platte County, Nebraska	0.16054092000839296
+31143	Polk County, Nebraska	0.14998651948705924
+31145	Red Willow County, Nebraska	0.1516797057170604
+31147	Richardson County, Nebraska	0.1513232877476429
+31149	Rock County, Nebraska	0.13389593905934358
+31151	Saline County, Nebraska	0.15540785164344997
+31153	Sarpy County, Nebraska	0.18090996898676354
+31155	Saunders County, Nebraska	0.1565083180276269
+31157	Scotts Bluff County, Nebraska	0.16031681071182907
+31159	Seward County, Nebraska	0.15688017503242738
+31161	Sheridan County, Nebraska	0.13735269336189748
+31163	Sherman County, Nebraska	0.144023360998292
+31165	Sioux County, Nebraska	0.12747593725238718
+31167	Stanton County, Nebraska	0.15110299183942175
+31169	Thayer County, Nebraska	0.14769426057855042
+31171	Thomas County, Nebraska	0.13179619297848327
+31173	Thurston County, Nebraska	0.15319126871500457
+31175	Valley County, Nebraska	0.14640254546786943
+31177	Washington County, Nebraska	0.16104409456790708
+31179	Wayne County, Nebraska	0.15425187373411106
+31181	Webster County, Nebraska	0.14501416547867468
+31183	Wheeler County, Nebraska	0.13398031831601306
+31185	York County, Nebraska	0.15513876031320906
+32001	Churchill County, Nevada	0.14366419542084613
+32003	Clark County, Nevada	0.17350244114099245
+32005	Douglas County, Nevada	0.16296053071851915
+32007	Elko County, Nevada	0.13999545791325874
+32009	Esmeralda County, Nevada	0.12127736619252956
+32011	Eureka County, Nevada	0.12637268592588186
+32013	Humboldt County, Nevada	0.13581746858126892
+32015	Lander County, Nevada	0.1317586502900242
+32017	Lincoln County, Nevada	0.1263957209407576
+32019	Lyon County, Nevada	0.15650204451422864
+32021	Mineral County, Nevada	0.13305153962253619
+32023	Nye County, Nevada	0.13864066996038168
+32027	Pershing County, Nevada	0.13250003239635708
+32029	Storey County, Nevada	0.15202899829779784
+32031	Washoe County, Nevada	0.16356806997370874
+32033	White Pine County, Nevada	0.13226734985448582
+32510	Carson City, Nevada	0.1756952244289833
+33001	Belknap County, New Hampshire	0.16883418461414948
+33003	Carroll County, New Hampshire	0.16094919260001492
+33005	Cheshire County, New Hampshire	0.16625592015594695
+33007	Coos County, New Hampshire	0.15287632329478718
+33009	Grafton County, New Hampshire	0.1609674834894892
+33011	Hillsborough County, New Hampshire	0.17723021954781562
+33013	Merrimack County, New Hampshire	0.16928717454575937
+33015	Rockingham County, New Hampshire	0.1767459752874648
+33017	Strafford County, New Hampshire	0.17507716133304577
+33019	Sullivan County, New Hampshire	0.16408771155779425
+34001	Atlantic County, New Jersey	0.17721058599238176
+34003	Bergen County, New Jersey	0.19296140617788815
+34005	Burlington County, New Jersey	0.17839916878449816
+34007	Camden County, New Jersey	0.18882738213000838
+34009	Cape May County, New Jersey	0.1752729757738783
+34011	Cumberland County, New Jersey	0.17404776933329597
+34013	Essex County, New Jersey	0.19634789009723566
+34015	Gloucester County, New Jersey	0.1819843013827627
+34017	Hudson County, New Jersey	0.2024821782542328
+34019	Hunterdon County, New Jersey	0.1735912129704525
+34021	Mercer County, New Jersey	0.18635742055422438
+34023	Middlesex County, New Jersey	0.1899614158917356
+34025	Monmouth County, New Jersey	0.18477120951787773
+34027	Morris County, New Jersey	0.18320025448666405
+34029	Ocean County, New Jersey	0.18245612587856952
+34031	Passaic County, New Jersey	0.19004401741788765
+34033	Salem County, New Jersey	0.17037235735535092
+34035	Somerset County, New Jersey	0.18334899983905545
+34037	Sussex County, New Jersey	0.17306804052118568
+34039	Union County, New Jersey	0.19518677797595205
+34041	Warren County, New Jersey	0.17370638527757148
+35001	Bernalillo County, New Mexico	0.1787545078946808
+35003	Catron County, New Mexico	0.126720959128903
+35005	Chaves County, New Mexico	0.14917397331092813
+35006	Cibola County, New Mexico	0.1447796809074219
+35007	Colfax County, New Mexico	0.14024005119334662
+35009	Curry County, New Mexico	0.1579223251118344
+35011	De Baca County, New Mexico	0.1296021240042595
+35013	Doña Ana County, New Mexico	0.16159788789697788
+35015	Eddy County, New Mexico	0.1511902247043655
+35017	Grant County, New Mexico	0.1458755377998328
+35019	Guadalupe County, New Mexico	0.13428814683383777
+35021	Harding County, New Mexico	0.1226635598376755
+35023	Hidalgo County, New Mexico	0.13317641704444896
+35025	Lea County, New Mexico	0.15226182840781544
+35027	Lincoln County, New Mexico	0.14203399828240185
+35028	Los Alamos County, New Mexico	0.16994382966977387
+35029	Luna County, New Mexico	0.14705470781261695
+35031	McKinley County, New Mexico	0.15069708389616693
+35033	Mora County, New Mexico	0.13799741875217117
+35035	Otero County, New Mexico	0.14885743128198511
+35037	Quay County, New Mexico	0.1394928099238138
+35039	Rio Arriba County, New Mexico	0.14568358741730308
+35041	Roosevelt County, New Mexico	0.1466441380350563
+35043	Sandoval County, New Mexico	0.1588634045483668
+35045	San Juan County, New Mexico	0.15468989458792112
+35047	San Miguel County, New Mexico	0.14465394396748707
+35049	Santa Fe County, New Mexico	0.1639517242018988
+35051	Sierra County, New Mexico	0.13870447397410893
+35053	Socorro County, New Mexico	0.13847867167059974
+35055	Taos County, New Mexico	0.1516306640915134
+35057	Torrance County, New Mexico	0.14300706043653202
+35059	Union County, New Mexico	0.1321431373462551
+35061	Valencia County, New Mexico	0.16328059656195856
+36001	Albany County, New York	0.1787472284440915
+36003	Allegany County, New York	0.15977751710993454
+36005	Bronx County, New York	0.20869642100308133
+36007	Broome County, New York	0.17304270504258623
+36009	Cattaraugus County, New York	0.16171054527477388
+36011	Cayuga County, New York	0.1664630872843381
+36013	Chautauqua County, New York	0.16703824300901188
+36015	Chemung County, New York	0.171007227476144
+36017	Chenango County, New York	0.16099833706515612
+36019	Clinton County, New York	0.16383378846874638
+36021	Columbia County, New York	0.16522923852009927
+36023	Cortland County, New York	0.16536261892123555
+36025	Delaware County, New York	0.15696513505982776
+36027	Dutchess County, New York	0.1753682604375094
+36029	Erie County, New York	0.1817798075943982
+36031	Essex County, New York	0.15402887543381022
+36033	Franklin County, New York	0.15699072098558917
+36035	Fulton County, New York	0.16626152080452844
+36037	Genesee County, New York	0.16681955960709263
+36039	Greene County, New York	0.1633780421764651
+36041	Hamilton County, New York	0.13867697547622324
+36043	Herkimer County, New York	0.15955366961587505
+36045	Jefferson County, New York	0.16464585939484713
+36047	Kings County, New York	0.20931404831914516
+36049	Lewis County, New York	0.1540544119413005
+36051	Livingston County, New York	0.1656799642834164
+36053	Madison County, New York	0.1663014995040158
+36055	Monroe County, New York	0.18360857494920316
+36057	Montgomery County, New York	0.16718526499515993
+36059	Nassau County, New York	0.1942435775432079
+36061	New York County, New York	0.21428571428571427
+36063	Niagara County, New York	0.17596015826666017
+36065	Oneida County, New York	0.17039683277531562
+36067	Onondaga County, New York	0.17883864165649102
+36069	Ontario County, New York	0.16964853916082118
+36071	Orange County, New York	0.17719979089950874
+36073	Orleans County, New York	0.1659384685962458
+36075	Oswego County, New York	0.16724396225082355
+36077	Otsego County, New York	0.16186293455495518
+36079	Putnam County, New York	0.1764287930364279
+36081	Queens County, New York	0.20509934563517737
+36083	Rensselaer County, New York	0.17227550429241872
+36085	Richmond County, New York	0.19823936443035242
+36087	Rockland County, New York	0.18736989259096443
+36089	St. Lawrence County, New York	0.1589832149803861
+36091	Saratoga County, New York	0.17341328972978629
+36093	Schenectady County, New York	0.18067950926682133
+36095	Schoharie County, New York	0.16057007147996408
+36097	Schuyler County, New York	0.16119228773057093
+36099	Seneca County, New York	0.166076741023681
+36101	Steuben County, New York	0.16292641454948467
+36103	Suffolk County, New York	0.18627515242526343
+36105	Sullivan County, New York	0.16386775775441484
+36107	Tioga County, New York	0.1651705205294584
+36109	Tompkins County, New York	0.17137292391126754
+36111	Ulster County, New York	0.16908631937125237
+36113	Warren County, New York	0.1634603255143617
+36115	Washington County, New York	0.16345069013566363
+36117	Wayne County, New York	0.16865127175082195
+36119	Westchester County, New York	0.18869448223440197
+36121	Wyoming County, New York	0.1627800931224089
+36123	Yates County, New York	0.16345468013055736
+37001	Alamance County, North Carolina	0.17595428814958014
+37003	Alexander County, North Carolina	0.16841514643479719
+37005	Alleghany County, North Carolina	0.16021504810349632
+37007	Anson County, North Carolina	0.15997580576874165
+37009	Ashe County, North Carolina	0.16241470826491908
+37011	Avery County, North Carolina	0.16317979062749677
+37013	Beaufort County, North Carolina	0.16149213603260779
+37015	Bertie County, North Carolina	0.15606858137441443
+37017	Bladen County, North Carolina	0.1584483246000546
+37019	Brunswick County, North Carolina	0.1695461860387694
+37021	Buncombe County, North Carolina	0.1759096726269507
+37023	Burke County, North Carolina	0.1699993668275166
+37025	Cabarrus County, North Carolina	0.17893253240671161
+37027	Caldwell County, North Carolina	0.16980719463100963
+37029	Camden County, North Carolina	0.159849440906964
+37031	Carteret County, North Carolina	0.16802783904313687
+37033	Caswell County, North Carolina	0.16104174476902577
+37035	Catawba County, North Carolina	0.17590211466417113
+37037	Chatham County, North Carolina	0.16636587105813455
+37039	Cherokee County, North Carolina	0.16227898985914396
+37041	Chowan County, North Carolina	0.1641322201179696
+37043	Clay County, North Carolina	0.16091575912430925
+37045	Cleveland County, North Carolina	0.17122650021301297
+37047	Columbus County, North Carolina	0.1618402203329854
+37049	Craven County, North Carolina	0.16843063033711228
+37051	Cumberland County, North Carolina	0.17780250382382093
+37053	Currituck County, North Carolina	0.16614034188016547
+37055	Dare County, North Carolina	0.16545332571459842
+37057	Davidson County, North Carolina	0.17389713840272386
+37059	Davie County, North Carolina	0.16929527174339043
+37061	Duplin County, North Carolina	0.16329480242452174
+37063	Durham County, North Carolina	0.18356854792511348
+37065	Edgecombe County, North Carolina	0.16584515238661837
+37067	Forsyth County, North Carolina	0.18223840558397833
+37069	Franklin County, North Carolina	0.1682849811351493
+37071	Gaston County, North Carolina	0.17931147400964972
+37073	Gates County, North Carolina	0.15773190292417233
+37075	Graham County, North Carolina	0.15654641032506098
+37077	Granville County, North Carolina	0.16665342135084277
+37079	Greene County, North Carolina	0.16396873535991321
+37081	Guilford County, North Carolina	0.18135507309844465
+37083	Halifax County, North Carolina	0.1629811626929751
+37085	Harnett County, North Carolina	0.17181404716720675
+37087	Haywood County, North Carolina	0.16658527355320882
+37089	Henderson County, North Carolina	0.17417780445675515
+37091	Hertford County, North Carolina	0.16275796369065235
+37093	Hoke County, North Carolina	0.1682786307067783
+37095	Hyde County, North Carolina	0.14711631335487926
+37097	Iredell County, North Carolina	0.17422205375097904
+37099	Jackson County, North Carolina	0.16489216761813605
+37101	Johnston County, North Carolina	0.17289557078480813
+37103	Jones County, North Carolina	0.15381874851613572
+37105	Lee County, North Carolina	0.1722438659487649
+37107	Lenoir County, North Carolina	0.16820560225929468
+37109	Lincoln County, North Carolina	0.17360006435308353
+37111	McDowell County, North Carolina	0.16600044078878923
+37113	Macon County, North Carolina	0.16302890020827634
+37115	Madison County, North Carolina	0.16034960441560892
+37117	Martin County, North Carolina	0.16046753314149823
+37119	Mecklenburg County, North Carolina	0.1882659583014134
+37121	Mitchell County, North Carolina	0.1628227421301116
+37123	Montgomery County, North Carolina	0.16133370120678878
+37125	Moore County, North Carolina	0.16843394773370576
+37127	Nash County, North Carolina	0.16982146525663624
+37129	New Hanover County, North Carolina	0.18419490987411938
+37131	Northampton County, North Carolina	0.15822775408535078
+37133	Onslow County, North Carolina	0.1727595670552304
+37135	Orange County, North Carolina	0.17544182894949395
+37137	Pamlico County, North Carolina	0.15852975773154646
+37139	Pasquotank County, North Carolina	0.16986560336708803
+37141	Pender County, North Carolina	0.16332311112243764
+37143	Perquimans County, North Carolina	0.16122486861361038
+37145	Person County, North Carolina	0.16575881292150457
+37147	Pitt County, North Carolina	0.17323613965488185
+37149	Polk County, North Carolina	0.16469557883383776
+37151	Randolph County, North Carolina	0.17019938147513106
+37153	Richmond County, North Carolina	0.16529921793040173
+37155	Robeson County, North Carolina	0.16807787036237304
+37157	Rockingham County, North Carolina	0.16922298792167786
+37159	Rowan County, North Carolina	0.17325590448160041
+37161	Rutherford County, North Carolina	0.1669675339314118
+37163	Sampson County, North Carolina	0.16277290752095497
+37165	Scotland County, North Carolina	0.16636027774980786
+37167	Stanly County, North Carolina	0.16913302233406435
+37169	Stokes County, North Carolina	0.16582334190073847
+37171	Surry County, North Carolina	0.16789862235953704
+37173	Swain County, North Carolina	0.1560493853939817
+37175	Transylvania County, North Carolina	0.16500208615845358
+37177	Tyrrell County, North Carolina	0.14890832998255624
+37179	Union County, North Carolina	0.17556360933492557
+37181	Vance County, North Carolina	0.16990417190156132
+37183	Wake County, North Carolina	0.18483046055925859
+37185	Warren County, North Carolina	0.159973596946207
+37187	Washington County, North Carolina	0.1576166218239249
+37189	Watauga County, North Carolina	0.17004368586633406
+37191	Wayne County, North Carolina	0.17160988092626145
+37193	Wilkes County, North Carolina	0.16498715603820577
+37195	Wilson County, North Carolina	0.1716181409255417
+37197	Yadkin County, North Carolina	0.16657781442616443
+37199	Yancey County, North Carolina	0.16166302584658965
+38001	Adams County, North Dakota	0.13767051165058625
+38003	Barnes County, North Dakota	0.1460543173215785
+38005	Benson County, North Dakota	0.14346828385190719
+38007	Billings County, North Dakota	0.13012605557730786
+38009	Bottineau County, North Dakota	0.14149336329047274
+38011	Bowman County, North Dakota	0.13876624546111146
+38013	Burke County, North Dakota	0.13650627383358696
+38015	Burleigh County, North Dakota	0.1617603763943532
+38017	Cass County, North Dakota	0.16593444783738542
+38019	Cavalier County, North Dakota	0.13854831626242284
+38021	Dickey County, North Dakota	0.14248420225750708
+38023	Divide County, North Dakota	0.1360257997481432
+38025	Dunn County, North Dakota	0.13753410776243066
+38027	Eddy County, North Dakota	0.141221547074777
+38029	Emmons County, North Dakota	0.13734069046352199
+38031	Foster County, North Dakota	0.14366358640648663
+38033	Golden Valley County, North Dakota	0.1358703100592084
+38035	Grand Forks County, North Dakota	0.16034437021364184
+38037	Grant County, North Dakota	0.134030466100131
+38039	Griggs County, North Dakota	0.14016997379181267
+38041	Hettinger County, North Dakota	0.137549194708413
+38043	Kidder County, North Dakota	0.13618722626254853
+38045	LaMoure County, North Dakota	0.1410184309469335
+38047	Logan County, North Dakota	0.1362988123266025
+38049	McHenry County, North Dakota	0.13997547083927805
+38051	McIntosh County, North Dakota	0.1386492537375115
+38053	McKenzie County, North Dakota	0.14421420504237997
+38055	McLean County, North Dakota	0.14277262271271315
+38057	Mercer County, North Dakota	0.14691878776716102
+38059	Morton County, North Dakota	0.1523066433077441
+38061	Mountrail County, North Dakota	0.1446547982910674
+38063	Nelson County, North Dakota	0.13964734106237467
+38065	Oliver County, North Dakota	0.13906851891963298
+38067	Pembina County, North Dakota	0.1450313681053938
+38069	Pierce County, North Dakota	0.14175760569277396
+38071	Ramsey County, North Dakota	0.14848528673230335
+38073	Ransom County, North Dakota	0.14499660438198975
+38075	Renville County, North Dakota	0.13890835544052843
+38077	Richland County, North Dakota	0.14958759330409693
+38079	Rolette County, North Dakota	0.15203650945872282
+38081	Sargent County, North Dakota	0.14287584358729005
+38083	Sheridan County, North Dakota	0.13393156937287842
+38085	Sioux County, North Dakota	0.14168877831938648
+38087	Slope County, North Dakota	0.1281406033699048
+38089	Stark County, North Dakota	0.15504499550882925
+38091	Steele County, North Dakota	0.13890977715698835
+38093	Stutsman County, North Dakota	0.1481856487871033
+38095	Towner County, North Dakota	0.13730886260238875
+38097	Traill County, North Dakota	0.14818897028565425
+38099	Walsh County, North Dakota	0.14733279049748357
+38101	Ward County, North Dakota	0.15765632402011023
+38103	Wells County, North Dakota	0.1398578745992844
+38105	Williams County, North Dakota	0.15308489969143335
+39001	Adams County, Ohio	0.16020364418264293
+39003	Allen County, Ohio	0.17260287777342695
+39005	Ashland County, Ohio	0.16744392906020564
+39007	Ashtabula County, Ohio	0.16811762877353956
+39009	Athens County, Ohio	0.16763188699438017
+39011	Auglaize County, Ohio	0.16666171174611624
+39013	Belmont County, Ohio	0.16741270604035777
+39015	Brown County, Ohio	0.16481964129948093
+39017	Butler County, Ohio	0.1812529525453115
+39019	Carroll County, Ohio	0.1628848057478245
+39021	Champaign County, Ohio	0.16499487996431703
+39023	Clark County, Ohio	0.17468981861190178
+39025	Clermont County, Ohio	0.17692529226383033
+39027	Clinton County, Ohio	0.16590674421727394
+39029	Columbiana County, Ohio	0.1705100041718611
+39031	Coshocton County, Ohio	0.16251847235690034
+39033	Crawford County, Ohio	0.16594858427413703
+39035	Cuyahoga County, Ohio	0.19005427569759623
+39037	Darke County, Ohio	0.16455004653791042
+39039	Defiance County, Ohio	0.16514036273175817
+39041	Delaware County, Ohio	0.17717006788333162
+39043	Erie County, Ohio	0.1737040812930061
+39045	Fairfield County, Ohio	0.17412261174688054
+39047	Fayette County, Ohio	0.1630973799780377
+39049	Franklin County, Ohio	0.18940218906921483
+39051	Fulton County, Ohio	0.16599331543516893
+39053	Gallia County, Ohio	0.1624248512348862
+39055	Geauga County, Ohio	0.17198962190343245
+39057	Greene County, Ohio	0.17610025571839683
+39059	Guernsey County, Ohio	0.16353056626044646
+39061	Hamilton County, Ohio	0.1878844050471026
+39063	Hancock County, Ohio	0.16833244921919194
+39065	Hardin County, Ohio	0.1627175133935741
+39067	Harrison County, Ohio	0.15844421434099454
+39069	Henry County, Ohio	0.16251997167894847
+39071	Highland County, Ohio	0.16387935262266448
+39073	Hocking County, Ohio	0.16276241425737847
+39075	Holmes County, Ohio	0.16600309554325499
+39077	Huron County, Ohio	0.1669672194836133
+39079	Jackson County, Ohio	0.16379186939129667
+39081	Jefferson County, Ohio	0.1691829105579789
+39083	Knox County, Ohio	0.16697006419339525
+39085	Lake County, Ohio	0.18274309806871056
+39087	Lawrence County, Ohio	0.16771364728389204
+39089	Licking County, Ohio	0.1727437592770251
+39091	Logan County, Ohio	0.16568302847679867
+39093	Lorain County, Ohio	0.17931288909636672
+39095	Lucas County, Ohio	0.1844020019394877
+39097	Madison County, Ohio	0.16541015715025723
+39099	Mahoning County, Ohio	0.17837626878915522
+39101	Marion County, Ohio	0.16923755926705406
+39103	Medina County, Ohio	0.17642274528084073
+39105	Meigs County, Ohio	0.16105831325052675
+39107	Mercer County, Ohio	0.16485261583457986
+39109	Miami County, Ohio	0.172855599680308
+39111	Monroe County, Ohio	0.15681004466988904
+39113	Montgomery County, Ohio	0.18375933100146008
+39115	Morgan County, Ohio	0.15792396408792667
+39117	Morrow County, Ohio	0.1646810860897865
+39119	Muskingum County, Ohio	0.16763242538440956
+39121	Noble County, Ohio	0.15821511221102041
+39123	Ottawa County, Ohio	0.16913352428309641
+39125	Paulding County, Ohio	0.15978720450516073
+39127	Perry County, Ohio	0.16481404323045962
+39129	Pickaway County, Ohio	0.1668472633057416
+39131	Pike County, Ohio	0.16230776429186758
+39133	Portage County, Ohio	0.17460163248974322
+39135	Preble County, Ohio	0.16543751933257658
+39137	Putnam County, Ohio	0.1630951681799794
+39139	Richland County, Ohio	0.17231682019723873
+39141	Ross County, Ohio	0.16649738080365512
+39143	Sandusky County, Ohio	0.1683656945485134
+39145	Scioto County, Ohio	0.16726472114860588
+39147	Seneca County, Ohio	0.16572080219711433
+39149	Shelby County, Ohio	0.1670069243255796
+39151	Stark County, Ohio	0.17946693909624362
+39153	Summit County, Ohio	0.18471151637593836
+39155	Trumbull County, Ohio	0.17430473875064603
+39157	Tuscarawas County, Ohio	0.16927826326221654
+39159	Union County, Ohio	0.16801539744084945
+39161	Van Wert County, Ohio	0.1629818296749767
+39163	Vinton County, Ohio	0.1572340917953395
+39165	Warren County, Ohio	0.178749934525234
+39167	Washington County, Ohio	0.16531633700190757
+39169	Wayne County, Ohio	0.17113726098955434
+39171	Williams County, Ohio	0.164695952801812
+39173	Wood County, Ohio	0.171258208559327
+39175	Wyandot County, Ohio	0.1610932005471643
+40001	Adair County, Oklahoma	0.15870020011198402
+40003	Alfalfa County, Oklahoma	0.14561664719590078
+40005	Atoka County, Oklahoma	0.15124564471917562
+40007	Beaver County, Oklahoma	0.13963275797901578
+40009	Beckham County, Oklahoma	0.1552449680511612
+40011	Blaine County, Oklahoma	0.14882086330020253
+40013	Bryan County, Oklahoma	0.1610313103398065
+40015	Caddo County, Oklahoma	0.1546952882886976
+40017	Canadian County, Oklahoma	0.16942683525402708
+40019	Carter County, Oklahoma	0.16175347794580333
+40021	Cherokee County, Oklahoma	0.16252117252046552
+40023	Choctaw County, Oklahoma	0.15346429927921562
+40025	Cimarron County, Oklahoma	0.13282846132718418
+40027	Cleveland County, Oklahoma	0.17798596661414137
+40029	Coal County, Oklahoma	0.14916136530437343
+40031	Comanche County, Oklahoma	0.1666082938666202
+40033	Cotton County, Oklahoma	0.14789228257557646
+40035	Craig County, Oklahoma	0.15327941450546725
+40037	Creek County, Oklahoma	0.1636131843189024
+40039	Custer County, Oklahoma	0.15665304325511925
+40041	Delaware County, Oklahoma	0.16172169537343944
+40043	Dewey County, Oklahoma	0.1434289370813526
+40045	Ellis County, Oklahoma	0.1401371536817871
+40047	Garfield County, Oklahoma	0.1616474062735666
+40049	Garvin County, Oklahoma	0.15786234540179364
+40051	Grady County, Oklahoma	0.16069974977617693
+40053	Grant County, Oklahoma	0.1425240994310834
+40055	Greer County, Oklahoma	0.14787454072791814
+40057	Harmon County, Oklahoma	0.14349665746266416
+40059	Harper County, Oklahoma	0.14105763260468812
+40061	Haskell County, Oklahoma	0.15449623716392383
+40063	Hughes County, Oklahoma	0.15240601050425637
+40065	Jackson County, Oklahoma	0.15695648719023644
+40067	Jefferson County, Oklahoma	0.14697474774673955
+40069	Johnston County, Oklahoma	0.15272915506769905
+40071	Kay County, Oklahoma	0.16018793057129987
+40073	Kingfisher County, Oklahoma	0.1528613834123233
+40075	Kiowa County, Oklahoma	0.14757397896990668
+40077	Latimer County, Oklahoma	0.1511649364672116
+40079	Le Flore County, Oklahoma	0.15714896084161545
+40081	Lincoln County, Oklahoma	0.15829277784497392
+40083	Logan County, Oklahoma	0.16247760494020266
+40085	Love County, Oklahoma	0.1538059922549419
+40087	McClain County, Oklahoma	0.16317309022557233
+40089	McCurtain County, Oklahoma	0.1529402012959852
+40091	McIntosh County, Oklahoma	0.1572227613222048
+40093	Major County, Oklahoma	0.1470481904567969
+40095	Marshall County, Oklahoma	0.15991233735627186
+40097	Mayes County, Oklahoma	0.16226475559536332
+40099	Murray County, Oklahoma	0.15769859913168682
+40101	Muskogee County, Oklahoma	0.16441435846248584
+40103	Noble County, Oklahoma	0.1518028203215911
+40105	Nowata County, Oklahoma	0.1529685406325896
+40107	Okfuskee County, Oklahoma	0.1535959494808065
+40109	Oklahoma County, Oklahoma	0.18358461927328995
+40111	Okmulgee County, Oklahoma	0.16131709997152713
+40113	Osage County, Oklahoma	0.1541519793817732
+40115	Ottawa County, Oklahoma	0.16265444878714558
+40117	Pawnee County, Oklahoma	0.15652400984097678
+40119	Payne County, Oklahoma	0.16702273012292126
+40121	Pittsburg County, Oklahoma	0.15762110996966655
+40123	Pontotoc County, Oklahoma	0.16104187114990326
+40125	Pottawatomie County, Oklahoma	0.16510777415273115
+40127	Pushmataha County, Oklahoma	0.1470118294868112
+40129	Roger Mills County, Oklahoma	0.14015201480649112
+40131	Rogers County, Oklahoma	0.16802701437743855
+40133	Seminole County, Oklahoma	0.15862955315655233
+40135	Sequoyah County, Oklahoma	0.1621496146829776
+40137	Stephens County, Oklahoma	0.160528986088856
+40139	Texas County, Oklahoma	0.1485494052091363
+40141	Tillman County, Oklahoma	0.14735058073797846
+40143	Tulsa County, Oklahoma	0.1836986096149153
+40145	Wagoner County, Oklahoma	0.16844218310291822
+40147	Washington County, Oklahoma	0.1673007712074659
+40149	Washita County, Oklahoma	0.1493304907734301
+40151	Woods County, Oklahoma	0.14589655877572852
+40153	Woodward County, Oklahoma	0.15230001992709877
+41001	Baker County, Oregon	0.14395604247939195
+41003	Benton County, Oregon	0.1680795126974177
+41005	Clackamas County, Oregon	0.17165139546533364
+41007	Clatsop County, Oregon	0.16037677308587958
+41009	Columbia County, Oregon	0.16402272954249217
+41011	Coos County, Oregon	0.15901861604019812
+41013	Crook County, Oregon	0.14723415764811465
+41015	Curry County, Oregon	0.15123234772737457
+41017	Deschutes County, Oregon	0.16258747925621195
+41019	Douglas County, Oregon	0.15454220444389802
+41021	Gilliam County, Oregon	0.13511356819533524
+41023	Grant County, Oregon	0.1351269063389866
+41025	Harney County, Oregon	0.12937332890844078
+41027	Hood River County, Oregon	0.15977859342829964
+41029	Jackson County, Oregon	0.16400576733075142
+41031	Jefferson County, Oregon	0.15110404529548932
+41033	Josephine County, Oregon	0.16107633710649588
+41035	Klamath County, Oregon	0.14972752724373242
+41037	Lake County, Oregon	0.1314537569508539
+41039	Lane County, Oregon	0.1644112990827231
+41041	Lincoln County, Oregon	0.16073252816398936
+41043	Linn County, Oregon	0.1615246825065406
+41045	Malheur County, Oregon	0.14003821588947293
+41047	Marion County, Oregon	0.1736901547364346
+41049	Morrow County, Oregon	0.14457394683518668
+41051	Multnomah County, Oregon	0.1873979172761761
+41053	Polk County, Oregon	0.16681856407646917
+41055	Sherman County, Oregon	0.1373937258890582
+41057	Tillamook County, Oregon	0.15533165373440766
+41059	Umatilla County, Oregon	0.15524596693928824
+41061	Union County, Oregon	0.15074246393137658
+41063	Wallowa County, Oregon	0.13782519031934076
+41065	Wasco County, Oregon	0.149547178134406
+41067	Washington County, Oregon	0.1813443139312035
+41069	Wheeler County, Oregon	0.12983176323978335
+41071	Yamhill County, Oregon	0.1686853365514036
+42001	Adams County, Pennsylvania	0.17077737212860233
+42003	Allegheny County, Pennsylvania	0.18648253870246717
+42005	Armstrong County, Pennsylvania	0.16564451384058265
+42007	Beaver County, Pennsylvania	0.17551273482109334
+42009	Bedford County, Pennsylvania	0.16018297518469135
+42011	Berks County, Pennsylvania	0.17747375181540997
+42013	Blair County, Pennsylvania	0.17191598118383095
+42015	Bradford County, Pennsylvania	0.16096260290740233
+42017	Bucks County, Pennsylvania	0.18300070132106971
+42019	Butler County, Pennsylvania	0.17212060713446262
+42021	Cambria County, Pennsylvania	0.17041696233596296
+42023	Cameron County, Pennsylvania	0.1495588549722491
+42025	Carbon County, Pennsylvania	0.16955298726002455
+42027	Centre County, Pennsylvania	0.16852102628157908
+42029	Chester County, Pennsylvania	0.1800755760419557
+42031	Clarion County, Pennsylvania	0.16241199791677416
+42033	Clearfield County, Pennsylvania	0.1629958678915597
+42035	Clinton County, Pennsylvania	0.1595644206532016
+42037	Columbia County, Pennsylvania	0.1678979076579558
+42039	Crawford County, Pennsylvania	0.16438792688600543
+42041	Cumberland County, Pennsylvania	0.17705174789600037
+42043	Dauphin County, Pennsylvania	0.1780268093500319
+42045	Delaware County, Pennsylvania	0.1910275883132422
+42047	Elk County, Pennsylvania	0.15819693898053816
+42049	Erie County, Pennsylvania	0.17469331072711264
+42051	Fayette County, Pennsylvania	0.16934441474993434
+42053	Forest County, Pennsylvania	0.1526082908517473
+42055	Franklin County, Pennsylvania	0.17085719765413337
+42057	Fulton County, Pennsylvania	0.1575697503804118
+42059	Greene County, Pennsylvania	0.16228810426333637
+42061	Huntingdon County, Pennsylvania	0.16082651249277316
+42063	Indiana County, Pennsylvania	0.16583196965486202
+42065	Jefferson County, Pennsylvania	0.1627044670593631
+42067	Juniata County, Pennsylvania	0.16233090660303784
+42069	Lackawanna County, Pennsylvania	0.17693245724397885
+42071	Lancaster County, Pennsylvania	0.17866883723117358
+42073	Lawrence County, Pennsylvania	0.17213725555962486
+42075	Lebanon County, Pennsylvania	0.1757966273948432
+42077	Lehigh County, Pennsylvania	0.1832139224473389
+42079	Luzerne County, Pennsylvania	0.17509817915490908
+42081	Lycoming County, Pennsylvania	0.16511239710107392
+42083	McKean County, Pennsylvania	0.1592138261286943
+42085	Mercer County, Pennsylvania	0.16930479131099602
+42087	Mifflin County, Pennsylvania	0.16656375976183843
+42089	Monroe County, Pennsylvania	0.17331238069044377
+42091	Montgomery County, Pennsylvania	0.1867209117756623
+42093	Montour County, Pennsylvania	0.16819385805456802
+42095	Northampton County, Pennsylvania	0.18130246855120905
+42097	Northumberland County, Pennsylvania	0.17076810439676013
+42099	Perry County, Pennsylvania	0.16441519876440072
+42101	Philadelphia County, Pennsylvania	0.20094467723144863
+42103	Pike County, Pennsylvania	0.1658864877837258
+42105	Potter County, Pennsylvania	0.15183896687118661
+42107	Schuylkill County, Pennsylvania	0.1701145920538961
+42109	Snyder County, Pennsylvania	0.16722710428736431
+42111	Somerset County, Pennsylvania	0.1629019718221484
+42113	Sullivan County, Pennsylvania	0.15091285100775415
+42115	Susquehanna County, Pennsylvania	0.16043836470297762
+42117	Tioga County, Pennsylvania	0.15812519647466852
+42119	Union County, Pennsylvania	0.16830892533771172
+42121	Venango County, Pennsylvania	0.16360031422896482
+42123	Warren County, Pennsylvania	0.15970254292917557
+42125	Washington County, Pennsylvania	0.172218341583131
+42127	Wayne County, Pennsylvania	0.16315893724969893
+42129	Westmoreland County, Pennsylvania	0.17473800844727563
+42131	Wyoming County, Pennsylvania	0.16280150638609175
+42133	York County, Pennsylvania	0.1775461107777496
+44001	Bristol County, Rhode Island	0.18785615807449196
+44003	Kent County, Rhode Island	0.18252625543805254
+44005	Newport County, Rhode Island	0.1810787375567385
+44007	Providence County, Rhode Island	0.1859992612168873
+44009	Washington County, Rhode Island	0.1755963173029617
+45001	Abbeville County, South Carolina	0.16059280938401935
+45003	Aiken County, South Carolina	0.16915987165108498
+45005	Allendale County, South Carolina	0.1542867248255613
+45007	Anderson County, South Carolina	0.17339593803028436
+45009	Bamberg County, South Carolina	0.15811619742438407
+45011	Barnwell County, South Carolina	0.15857506274514277
+45013	Beaufort County, South Carolina	0.1746030343413855
+45015	Berkeley County, South Carolina	0.1710973608959561
+45017	Calhoun County, South Carolina	0.15860049889475733
+45019	Charleston County, South Carolina	0.17679204267737836
+45021	Cherokee County, South Carolina	0.16850115936192753
+45023	Chester County, South Carolina	0.16136664257145414
+45025	Chesterfield County, South Carolina	0.1615764076658674
+45027	Clarendon County, South Carolina	0.16137573864447935
+45029	Colleton County, South Carolina	0.15809643126087752
+45031	Darlington County, South Carolina	0.16697770339938067
+45033	Dillon County, South Carolina	0.16361442166339094
+45035	Dorchester County, South Carolina	0.17341917753342503
+45037	Edgefield County, South Carolina	0.1612251760681784
+45039	Fairfield County, South Carolina	0.1574249297017916
+45041	Florence County, South Carolina	0.16975306327454007
+45043	Georgetown County, South Carolina	0.16378453262679324
+45045	Greenville County, South Carolina	0.17972190216879705
+45047	Greenwood County, South Carolina	0.1689813553005798
+45049	Hampton County, South Carolina	0.15781554933954886
+45051	Horry County, South Carolina	0.17411951774923878
+45053	Jasper County, South Carolina	0.15995862255672416
+45055	Kershaw County, South Carolina	0.16506255359323196
+45057	Lancaster County, South Carolina	0.16998858835609362
+45059	Laurens County, South Carolina	0.165296952823603
+45061	Lee County, South Carolina	0.15913101216557388
+45063	Lexington County, South Carolina	0.1764367551001927
+45065	McCormick County, South Carolina	0.15586153578765097
+45067	Marion County, South Carolina	0.16225877194618082
+45069	Marlboro County, South Carolina	0.16122132621147675
+45071	Newberry County, South Carolina	0.1620618220037111
+45073	Oconee County, South Carolina	0.1674762936784007
+45075	Orangeburg County, South Carolina	0.16386749744078172
+45077	Pickens County, South Carolina	0.17264188699299815
+45079	Richland County, South Carolina	0.1782878564340344
+45081	Saluda County, South Carolina	0.1598493034557211
+45083	Spartanburg County, South Carolina	0.1758701071448268
+45085	Sumter County, South Carolina	0.16920295863207788
+45087	Union County, South Carolina	0.16103982370479278
+45089	Williamsburg County, South Carolina	0.1574126000553499
+45091	York County, South Carolina	0.17618044174695072
+46003	Aurora County, South Dakota	0.14172126838872828
+46005	Beadle County, South Dakota	0.15153170714401726
+46007	Bennett County, South Dakota	0.13941172189719925
+46009	Bon Homme County, South Dakota	0.15020063654783145
+46011	Brookings County, South Dakota	0.1596943597995997
+46013	Brown County, South Dakota	0.15475160369756563
+46015	Brule County, South Dakota	0.14550440050605026
+46017	Buffalo County, South Dakota	0.14223347900961253
+46019	Butte County, South Dakota	0.14302820904757127
+46021	Campbell County, South Dakota	0.13634657396353694
+46023	Charles Mix County, South Dakota	0.14747736971230205
+46025	Clark County, South Dakota	0.14175569697922885
+46027	Clay County, South Dakota	0.15777315164193664
+46029	Codington County, South Dakota	0.1590732902832767
+46031	Corson County, South Dakota	0.13542055808040968
+46033	Custer County, South Dakota	0.14463583416254755
+46035	Davison County, South Dakota	0.1598804442473137
+46037	Day County, South Dakota	0.1439859727553796
+46039	Deuel County, South Dakota	0.1460594061597981
+46041	Dewey County, South Dakota	0.1386412854980454
+46043	Douglas County, South Dakota	0.14582012967599506
+46045	Edmunds County, South Dakota	0.140741260397298
+46047	Fall River County, South Dakota	0.1416739731239241
+46049	Faulk County, South Dakota	0.13798660651162778
+46051	Grant County, South Dakota	0.1489595882618471
+46053	Gregory County, South Dakota	0.14216430288217322
+46055	Haakon County, South Dakota	0.1320547944648758
+46057	Hamlin County, South Dakota	0.15014606540009473
+46059	Hand County, South Dakota	0.1375957485435919
+46061	Hanson County, South Dakota	0.14700946529414916
+46063	Harding County, South Dakota	0.12637188948040115
+46065	Hughes County, South Dakota	0.15505839171192987
+46067	Hutchinson County, South Dakota	0.1479031264771077
+46069	Hyde County, South Dakota	0.13475489934794732
+46071	Jackson County, South Dakota	0.13601885194826946
+46073	Jerauld County, South Dakota	0.14161091993563596
+46075	Jones County, South Dakota	0.13117642954855607
+46077	Kingsbury County, South Dakota	0.14485334621300555
+46079	Lake County, South Dakota	0.15476661838133446
+46081	Lawrence County, South Dakota	0.1573659413312973
+46083	Lincoln County, South Dakota	0.1661331252092524
+46085	Lyman County, South Dakota	0.13786129229782781
+46087	McCook County, South Dakota	0.1485031429216692
+46089	McPherson County, South Dakota	0.137156929714929
+46091	Marshall County, South Dakota	0.14479565175508022
+46093	Meade County, South Dakota	0.14720734708030667
+46095	Mellette County, South Dakota	0.13506433020583022
+46097	Miner County, South Dakota	0.14172676380324556
+46099	Minnehaha County, South Dakota	0.1721534889216493
+46101	Moody County, South Dakota	0.15044905625883748
+46102	Oglala Lakota County, South Dakota	0.14582704384853531
+46103	Pennington County, South Dakota	0.1591222057729238
+46105	Perkins County, South Dakota	0.13168842268865974
+46107	Potter County, South Dakota	0.13846956416146083
+46109	Roberts County, South Dakota	0.14828109791045987
+46111	Sanborn County, South Dakota	0.14215298088549452
+46115	Spink County, South Dakota	0.14237148480595432
+46117	Stanley County, South Dakota	0.13733741461549137
+46119	Sully County, South Dakota	0.13408947333321927
+46121	Todd County, South Dakota	0.14641216388254172
+46123	Tripp County, South Dakota	0.1406839403604922
+46125	Turner County, South Dakota	0.15097027022908432
+46127	Union County, South Dakota	0.1578687460727513
+46129	Walworth County, South Dakota	0.14674737603871096
+46135	Yankton County, South Dakota	0.1596100606681652
+46137	Ziebach County, South Dakota	0.1342148736226117
+47001	Anderson County, Tennessee	0.17180671698522332
+47003	Bedford County, Tennessee	0.1660681459312319
+47005	Benton County, Tennessee	0.15912343254081568
+47007	Bledsoe County, Tennessee	0.15838124194450368
+47009	Blount County, Tennessee	0.17211910749709022
+47011	Bradley County, Tennessee	0.17450152331170737
+47013	Campbell County, Tennessee	0.16433254484525342
+47015	Cannon County, Tennessee	0.16133010649892135
+47017	Carroll County, Tennessee	0.16004962398463748
+47019	Carter County, Tennessee	0.16942111346568378
+47021	Cheatham County, Tennessee	0.16789752615592263
+47023	Chester County, Tennessee	0.1620038982715458
+47025	Claiborne County, Tennessee	0.1634408755011902
+47027	Clay County, Tennessee	0.15734079817908167
+47029	Cocke County, Tennessee	0.16432215871908246
+47031	Coffee County, Tennessee	0.1677474792324396
+47033	Crockett County, Tennessee	0.16110400021080054
+47035	Cumberland County, Tennessee	0.16483896691878958
+47037	Davidson County, Tennessee	0.1850809120468782
+47039	Decatur County, Tennessee	0.15794423467297028
+47041	DeKalb County, Tennessee	0.16278865080448132
+47043	Dickson County, Tennessee	0.16642266826383637
+47045	Dyer County, Tennessee	0.1633387920874574
+47047	Fayette County, Tennessee	0.16173403728568894
+47049	Fentress County, Tennessee	0.1583980636852649
+47051	Franklin County, Tennessee	0.16369578611117613
+47053	Gibson County, Tennessee	0.16420137302849108
+47055	Giles County, Tennessee	0.16032552332148695
+47057	Grainger County, Tennessee	0.16434446346258375
+47059	Greene County, Tennessee	0.16648223868464496
+47061	Grundy County, Tennessee	0.1584183052314059
+47063	Hamblen County, Tennessee	0.17600117296982168
+47065	Hamilton County, Tennessee	0.17984544855752133
+47067	Hancock County, Tennessee	0.156764302133397
+47069	Hardeman County, Tennessee	0.1584702808783081
+47071	Hardin County, Tennessee	0.15972008695550446
+47073	Hawkins County, Tennessee	0.1668443560010951
+47075	Haywood County, Tennessee	0.15740133010893098
+47077	Henderson County, Tennessee	0.16116988166734877
+47079	Henry County, Tennessee	0.16163300465249947
+47081	Hickman County, Tennessee	0.15914586369161815
+47083	Houston County, Tennessee	0.15911662313249705
+47085	Humphreys County, Tennessee	0.15796008882180007
+47087	Jackson County, Tennessee	0.15860156374021414
+47089	Jefferson County, Tennessee	0.1707651701571296
+47091	Johnson County, Tennessee	0.16188931530313244
+47093	Knox County, Tennessee	0.18214239896174805
+47095	Lake County, Tennessee	0.1593604103638582
+47097	Lauderdale County, Tennessee	0.16120269024443662
+47099	Lawrence County, Tennessee	0.16323618234535422
+47101	Lewis County, Tennessee	0.1595617860893455
+47103	Lincoln County, Tennessee	0.16196962603365717
+47105	Loudon County, Tennessee	0.17204684719089638
+47107	McMinn County, Tennessee	0.16736250469639288
+47109	McNairy County, Tennessee	0.15991985668501338
+47111	Macon County, Tennessee	0.16407197809029775
+47113	Madison County, Tennessee	0.16988035706239107
+47115	Marion County, Tennessee	0.16169140478415245
+47117	Marshall County, Tennessee	0.16505902610865558
+47119	Maury County, Tennessee	0.16905129942365443
+47121	Meigs County, Tennessee	0.16237524413514295
+47123	Monroe County, Tennessee	0.16340927031888203
+47125	Montgomery County, Tennessee	0.17571603201381653
+47127	Moore County, Tennessee	0.1606225931785409
+47129	Morgan County, Tennessee	0.15912422794892359
+47131	Obion County, Tennessee	0.1613208988697192
+47133	Overton County, Tennessee	0.16078255885693093
+47135	Perry County, Tennessee	0.1536277520721963
+47137	Pickett County, Tennessee	0.15705540536885657
+47139	Polk County, Tennessee	0.15870519031405855
+47141	Putnam County, Tennessee	0.17083160096645653
+47143	Rhea County, Tennessee	0.16608265860578486
+47145	Roane County, Tennessee	0.16860500073990067
+47147	Robertson County, Tennessee	0.1687430693146811
+47149	Rutherford County, Tennessee	0.1781162263766964
+47151	Scott County, Tennessee	0.15920839987749424
+47153	Sequatchie County, Tennessee	0.16149715685381955
+47155	Sevier County, Tennessee	0.16944555478176193
+47157	Shelby County, Tennessee	0.18422737930928648
+47159	Smith County, Tennessee	0.16243042875715633
+47161	Stewart County, Tennessee	0.15678482030994764
+47163	Sullivan County, Tennessee	0.17562795383925117
+47165	Sumner County, Tennessee	0.17519751267258402
+47167	Tipton County, Tennessee	0.16789269296430606
+47169	Trousdale County, Tennessee	0.16561305129379703
+47171	Unicoi County, Tennessee	0.16541403401101742
+47173	Union County, Tennessee	0.16487777649231503
+47175	Van Buren County, Tennessee	0.15435133157149247
+47177	Warren County, Tennessee	0.1653629098333679
+47179	Washington County, Tennessee	0.175879377263546
+47181	Wayne County, Tennessee	0.15476443264987508
+47183	Weakley County, Tennessee	0.16161469596990458
+47185	White County, Tennessee	0.1633455389432281
+47187	Williamson County, Tennessee	0.17611647230858948
+47189	Wilson County, Tennessee	0.1725744328722699
+48001	Anderson County, Texas	0.16120575777819182
+48003	Andrews County, Texas	0.15033317433363372
+48005	Angelina County, Texas	0.16632641781528903
+48007	Aransas County, Texas	0.16519556925809598
+48009	Archer County, Texas	0.14830489459332097
+48011	Armstrong County, Texas	0.13709547184917853
+48013	Atascosa County, Texas	0.15929461186125324
+48015	Austin County, Texas	0.1600486854965156
+48017	Bailey County, Texas	0.14747563376286196
+48019	Bandera County, Texas	0.15662478927114104
+48021	Bastrop County, Texas	0.16570284011590347
+48023	Baylor County, Texas	0.14202269110620308
+48025	Bee County, Texas	0.158367474588153
+48027	Bell County, Texas	0.17486231327661383
+48029	Bexar County, Texas	0.1862587805962017
+48031	Blanco County, Texas	0.15254744478081422
+48033	Borden County, Texas	0.1293656756093569
+48035	Bosque County, Texas	0.15344987042273114
+48037	Bowie County, Texas	0.16609632483927078
+48039	Brazoria County, Texas	0.1731982270952459
+48041	Brazos County, Texas	0.17578891646865838
+48043	Brewster County, Texas	0.13463873573296134
+48045	Briscoe County, Texas	0.13569791941631665
+48047	Brooks County, Texas	0.14660073484830932
+48049	Brown County, Texas	0.15896096764365655
+48051	Burleson County, Texas	0.15630615354766947
+48053	Burnet County, Texas	0.1603567642697171
+48055	Caldwell County, Texas	0.16407055369869342
+48057	Calhoun County, Texas	0.15930533999652727
+48059	Callahan County, Texas	0.15194446547532797
+48061	Cameron County, Texas	0.1772154695377446
+48063	Camp County, Texas	0.16273843364739102
+48065	Carson County, Texas	0.14545661217033773
+48067	Cass County, Texas	0.1573068366575864
+48069	Castro County, Texas	0.1474354930984804
+48071	Chambers County, Texas	0.16342804625078933
+48073	Cherokee County, Texas	0.16059156424177962
+48075	Childress County, Texas	0.14906059323002258
+48077	Clay County, Texas	0.14841871738915915
+48079	Cochran County, Texas	0.1413260529125248
+48081	Coke County, Texas	0.1413960906002632
+48083	Coleman County, Texas	0.1455004362450397
+48085	Collin County, Texas	0.18424270634240078
+48087	Collingsworth County, Texas	0.14024421718626387
+48089	Colorado County, Texas	0.15465620343944947
+48091	Comal County, Texas	0.1732927504841205
+48093	Comanche County, Texas	0.15147089623982696
+48095	Concho County, Texas	0.139229193322778
+48097	Cooke County, Texas	0.16016018519142974
+48099	Coryell County, Texas	0.1633034638185431
+48101	Cottle County, Texas	0.1349501853803397
+48103	Crane County, Texas	0.14506878323187097
+48105	Crockett County, Texas	0.13325475245018362
+48107	Crosby County, Texas	0.1453796983724446
+48109	Culberson County, Texas	0.12754484743978853
+48111	Dallam County, Texas	0.14335970180201493
+48113	Dallas County, Texas	0.19087362165934674
+48115	Dawson County, Texas	0.15126350828111385
+48117	Deaf Smith County, Texas	0.1502893463713955
+48119	Delta County, Texas	0.15409980366661863
+48121	Denton County, Texas	0.1827873064539692
+48123	DeWitt County, Texas	0.15458895905008002
+48125	Dickens County, Texas	0.13832587239425867
+48127	Dimmit County, Texas	0.14669782540881515
+48129	Donley County, Texas	0.14103066839339204
+48131	Duval County, Texas	0.14520123892745665
+48133	Eastland County, Texas	0.15375735395282009
+48135	Ector County, Texas	0.17026007165685625
+48137	Edwards County, Texas	0.1310241969613982
+48139	Ellis County, Texas	0.17073785692449928
+48141	El Paso County, Texas	0.18132373939588523
+48143	Erath County, Texas	0.15883665904766325
+48145	Falls County, Texas	0.15472663216170032
+48147	Fannin County, Texas	0.15891931411512225
+48149	Fayette County, Texas	0.1559534369535359
+48151	Fisher County, Texas	0.14240604247473712
+48153	Floyd County, Texas	0.14462926746544238
+48155	Foard County, Texas	0.13535440529931866
+48157	Fort Bend County, Texas	0.18227175450679428
+48159	Franklin County, Texas	0.1585091282667209
+48161	Freestone County, Texas	0.15468318957165464
+48163	Frio County, Texas	0.15301207968562552
+48165	Gaines County, Texas	0.15135076549250975
+48167	Galveston County, Texas	0.18196021957658884
+48169	Garza County, Texas	0.146043183222116
+48171	Gillespie County, Texas	0.15562042861875142
+48173	Glasscock County, Texas	0.13501090085407283
+48175	Goliad County, Texas	0.1479188073626875
+48177	Gonzales County, Texas	0.15365136329545942
+48179	Gray County, Texas	0.15505877581184993
+48181	Grayson County, Texas	0.16850643667776513
+48183	Gregg County, Texas	0.17687342577471737
+48185	Grimes County, Texas	0.15830307416733216
+48187	Guadalupe County, Texas	0.17200696586984576
+48189	Hale County, Texas	0.15757925755841848
+48191	Hall County, Texas	0.14064115648118022
+48193	Hamilton County, Texas	0.14879604380757847
+48195	Hansford County, Texas	0.14477212062174954
+48197	Hardeman County, Texas	0.14450094911593322
+48199	Hardin County, Texas	0.16249285490130494
+48201	Harris County, Texas	0.19022442138858733
+48203	Harrison County, Texas	0.16348240616203405
+48205	Hartley County, Texas	0.1415885276612265
+48207	Haskell County, Texas	0.14525326724080134
+48209	Hays County, Texas	0.17473757952578345
+48211	Hemphill County, Texas	0.14232470906450895
+48213	Henderson County, Texas	0.16530777600946314
+48215	Hidalgo County, Texas	0.17834003116310787
+48217	Hill County, Texas	0.15860813841681076
+48219	Hockley County, Texas	0.15557371685618573
+48221	Hood County, Texas	0.16853267471037087
+48223	Hopkins County, Texas	0.16034219566836155
+48225	Houston County, Texas	0.15331238539335573
+48227	Howard County, Texas	0.1590725536492043
+48229	Hudspeth County, Texas	0.13219543225394578
+48231	Hunt County, Texas	0.1668908694913467
+48233	Hutchinson County, Texas	0.15504582236201955
+48235	Irion County, Texas	0.1345007847688636
+48237	Jack County, Texas	0.1485660777359271
+48239	Jackson County, Texas	0.15296272402284408
+48241	Jasper County, Texas	0.15853626859100092
+48243	Jeff Davis County, Texas	0.13173326308208436
+48245	Jefferson County, Texas	0.17349842118867173
+48247	Jim Hogg County, Texas	0.14293472138520574
+48249	Jim Wells County, Texas	0.16010207032245383
+48251	Johnson County, Texas	0.1722545786027129
+48253	Jones County, Texas	0.15440332481292465
+48255	Karnes County, Texas	0.15413944586384248
+48257	Kaufman County, Texas	0.16981810968820024
+48259	Kendall County, Texas	0.1632435016410549
+48261	Kenedy County, Texas	0.12222256936685238
+48263	Kent County, Texas	0.13045280521121402
+48265	Kerr County, Texas	0.1602401585947309
+48267	Kimble County, Texas	0.14088366434683933
+48269	King County, Texas	0.12277728245643245
+48271	Kinney County, Texas	0.13902711115317729
+48273	Kleberg County, Texas	0.15791819740561505
+48275	Knox County, Texas	0.14248680662643629
+48277	Lamar County, Texas	0.1612903561217804
+48279	Lamb County, Texas	0.15046453260280082
+48281	Lampasas County, Texas	0.1568343609461245
+48283	La Salle County, Texas	0.14367328437092505
+48285	Lavaca County, Texas	0.15410913473608184
+48287	Lee County, Texas	0.1561515678899974
+48289	Leon County, Texas	0.1522772237093746
+48291	Liberty County, Texas	0.16369890865802805
+48293	Limestone County, Texas	0.1557312459502697
+48295	Lipscomb County, Texas	0.1408865547929178
+48297	Live Oak County, Texas	0.14989184123476415
+48299	Llano County, Texas	0.15496386303436113
+48301	Loving County, Texas	0.12154466314199233
+48303	Lubbock County, Texas	0.17489365423655462
+48305	Lynn County, Texas	0.1457188159243834
+48307	McCulloch County, Texas	0.1465747308470769
+48309	McLennan County, Texas	0.17240128869631155
+48311	McMullen County, Texas	0.12854250064303221
+48313	Madison County, Texas	0.1569774394363941
+48315	Marion County, Texas	0.15572608870530535
+48317	Martin County, Texas	0.14530325499346444
+48319	Mason County, Texas	0.14297471533956838
+48321	Matagorda County, Texas	0.1576407555289609
+48323	Maverick County, Texas	0.1599593877045831
+48325	Medina County, Texas	0.15874209601779715
+48327	Menard County, Texas	0.13807545908085064
+48329	Midland County, Texas	0.17069620169871866
+48331	Milam County, Texas	0.15529726549363887
+48333	Mills County, Texas	0.14553947999817604
+48335	Mitchell County, Texas	0.14823305826689118
+48337	Montague County, Texas	0.15428656209292613
+48339	Montgomery County, Texas	0.17872958136721978
+48341	Moore County, Texas	0.15494511626265878
+48343	Morris County, Texas	0.16046707853854128
+48345	Motley County, Texas	0.13312639105665586
+48347	Nacogdoches County, Texas	0.1629583295525148
+48349	Navarro County, Texas	0.16053782247225376
+48351	Newton County, Texas	0.1514813719467231
+48353	Nolan County, Texas	0.15223898452632964
+48355	Nueces County, Texas	0.17651939384518187
+48357	Ochiltree County, Texas	0.14921885359041392
+48359	Oldham County, Texas	0.1342268006104753
+48361	Orange County, Texas	0.17247292314244303
+48363	Palo Pinto County, Texas	0.1569785539492861
+48365	Panola County, Texas	0.1564632606364853
+48367	Parker County, Texas	0.16909530795509872
+48369	Parmer County, Texas	0.14934613472519936
+48371	Pecos County, Texas	0.14056730009130708
+48373	Polk County, Texas	0.16037943371702607
+48375	Potter County, Texas	0.16760570258460658
+48377	Presidio County, Texas	0.13578828861178716
+48379	Rains County, Texas	0.16123354721973088
+48381	Randall County, Texas	0.16875477589769675
+48383	Reagan County, Texas	0.14046292686477296
+48385	Real County, Texas	0.14349476968382405
+48387	Red River County, Texas	0.1497500402700529
+48389	Reeves County, Texas	0.14501041420358418
+48391	Refugio County, Texas	0.14794305206576977
+48393	Roberts County, Texas	0.1311202885897375
+48395	Robertson County, Texas	0.15380819786901315
+48397	Rockwall County, Texas	0.18129778818862727
+48399	Runnels County, Texas	0.14853208833767292
+48401	Rusk County, Texas	0.16179901960575838
+48403	Sabine County, Texas	0.15434313497875002
+48405	San Augustine County, Texas	0.1519536210358971
+48407	San Jacinto County, Texas	0.16069419983516312
+48409	San Patricio County, Texas	0.16542696238993546
+48411	San Saba County, Texas	0.1440644839915264
+48413	Schleicher County, Texas	0.13728984693058138
+48415	Scurry County, Texas	0.15322854295522328
+48417	Shackelford County, Texas	0.14110240259041387
+48419	Shelby County, Texas	0.15724239815961294
+48421	Sherman County, Texas	0.14046092023372286
+48423	Smith County, Texas	0.17255296982769508
+48425	Somervell County, Texas	0.16043572223149608
+48427	Starr County, Texas	0.1609999432134277
+48429	Stephens County, Texas	0.14902794003599654
+48431	Sterling County, Texas	0.1341768458044632
+48433	Stonewall County, Texas	0.13456414665502753
+48435	Sutton County, Texas	0.13875049636010242
+48437	Swisher County, Texas	0.14733926829915145
+48439	Tarrant County, Texas	0.18928515190359244
+48441	Taylor County, Texas	0.16874256255222023
+48443	Terrell County, Texas	0.123494913843298
+48445	Terry County, Texas	0.15112775183238453
+48447	Throckmorton County, Texas	0.13537749991283968
+48449	Titus County, Texas	0.16412290653217854
+48451	Tom Green County, Texas	0.16390593962336036
+48453	Travis County, Texas	0.18456365721975426
+48455	Trinity County, Texas	0.15422850948869074
+48457	Tyler County, Texas	0.1549980177136987
+48459	Upshur County, Texas	0.16324625290152125
+48461	Upton County, Texas	0.13968152663041422
+48463	Uvalde County, Texas	0.1527246885184655
+48465	Val Verde County, Texas	0.1519855264715089
+48467	Van Zandt County, Texas	0.1627712838875148
+48469	Victoria County, Texas	0.16602803065397342
+48471	Walker County, Texas	0.16517897865091
+48473	Waller County, Texas	0.1662530881654127
+48475	Ward County, Texas	0.15137809777017996
+48477	Washington County, Texas	0.16186551974955313
+48479	Webb County, Texas	0.16427219615924088
+48481	Wharton County, Texas	0.15861562260212936
+48483	Wheeler County, Texas	0.14432996702232206
+48485	Wichita County, Texas	0.17121187783298777
+48487	Wilbarger County, Texas	0.1507300345209888
+48489	Willacy County, Texas	0.15819958994613006
+48491	Williamson County, Texas	0.17799929097417358
+48493	Wilson County, Texas	0.16236178199007728
+48495	Winkler County, Texas	0.14834571617360598
+48497	Wise County, Texas	0.1638171437420306
+48499	Wood County, Texas	0.1631373626685906
+48501	Yoakum County, Texas	0.14933970735067556
+48503	Young County, Texas	0.15371166396209618
+48505	Zapata County, Texas	0.15129693092158042
+48507	Zavala County, Texas	0.14803112639919708
+49001	Beaver County, Utah	0.1387526706405807
+49003	Box Elder County, Utah	0.1485231425705793
+49005	Cache County, Utah	0.16642414664937868
+49007	Carbon County, Utah	0.151103281622863
+49009	Daggett County, Utah	0.13399044837269836
+49011	Davis County, Utah	0.1839922819069613
+49013	Duchesne County, Utah	0.14513168692998127
+49015	Emery County, Utah	0.13767035347772844
+49017	Garfield County, Utah	0.13152321354001476
+49019	Grand County, Utah	0.13891531022549436
+49021	Iron County, Utah	0.15246548907940838
+49023	Juab County, Utah	0.14104425090080655
+49025	Kane County, Utah	0.13673386064046575
+49027	Millard County, Utah	0.13680897037253129
+49029	Morgan County, Utah	0.15378926579898097
+49031	Piute County, Utah	0.13663452649152694
+49033	Rich County, Utah	0.13820873042709966
+49035	Salt Lake County, Utah	0.18601672576431413
+49037	San Juan County, Utah	0.13666280880938006
+49039	Sanpete County, Utah	0.1536229601091938
+49041	Sevier County, Utah	0.14962012722621426
+49043	Summit County, Utah	0.15470512497156236
+49045	Tooele County, Utah	0.14900264521090487
+49047	Uintah County, Utah	0.14703296229944776
+49049	Utah County, Utah	0.1742434769288653
+49051	Wasatch County, Utah	0.15656011831790265
+49053	Washington County, Utah	0.16340281003560245
+49055	Wayne County, Utah	0.13241677488487305
+49057	Weber County, Utah	0.17684335775125243
+50001	Addison County, Vermont	0.16028912767954503
+50003	Bennington County, Vermont	0.16095900136288405
+50005	Caledonia County, Vermont	0.16001027460994213
+50007	Chittenden County, Vermont	0.17395100921386059
+50009	Essex County, Vermont	0.14816048886515182
+50011	Franklin County, Vermont	0.16387026099806093
+50013	Grand Isle County, Vermont	0.16480339296440288
+50015	Lamoille County, Vermont	0.16133199134271292
+50017	Orange County, Vermont	0.15931382103807418
+50019	Orleans County, Vermont	0.1587536144868191
+50021	Rutland County, Vermont	0.16224964930086014
+50023	Washington County, Vermont	0.1645118694471319
+50025	Windham County, Vermont	0.16112623519113395
+50027	Windsor County, Vermont	0.16153226028402526
+51001	Accomack County, Virginia	0.16327695065735046
+51003	Albemarle County, Virginia	0.16878711207794309
+51005	Alleghany County, Virginia	0.15760321998598975
+51007	Amelia County, Virginia	0.15836837332212333
+51009	Amherst County, Virginia	0.16271854820048398
+51011	Appomattox County, Virginia	0.16024621108682302
+51013	Arlington County, Virginia	0.19903224857235005
+51015	Augusta County, Virginia	0.1638884330128084
+51017	Bath County, Virginia	0.14690666835547403
+51019	Bedford County, Virginia	0.16599726101262435
+51021	Bland County, Virginia	0.15286247801401429
+51023	Botetourt County, Virginia	0.1621505675540753
+51025	Brunswick County, Virginia	0.1564839032761785
+51027	Buchanan County, Virginia	0.15926509447378015
+51029	Buckingham County, Virginia	0.15671625035935044
+51031	Campbell County, Virginia	0.16634194726626278
+51033	Caroline County, Virginia	0.16171902202526506
+51035	Carroll County, Virginia	0.16227090071798142
+51036	Charles City County, Virginia	0.15858222600366054
+51037	Charlotte County, Virginia	0.15547177102685295
+51041	Chesterfield County, Virginia	0.1813681618978484
+51043	Clarke County, Virginia	0.1643446428178676
+51045	Craig County, Virginia	0.15197650526119874
+51047	Culpeper County, Virginia	0.16812714344785062
+51049	Cumberland County, Virginia	0.15761006241866596
+51051	Dickenson County, Virginia	0.15953227446323776
+51053	Dinwiddie County, Virginia	0.16151622369736238
+51057	Essex County, Virginia	0.15940979603415104
+51059	Fairfax County, Virginia	0.19066829863704612
+51061	Fauquier County, Virginia	0.1664124210273846
+51063	Floyd County, Virginia	0.159188152987368
+51065	Fluvanna County, Virginia	0.1653587581599724
+51067	Franklin County, Virginia	0.1641699012719941
+51069	Frederick County, Virginia	0.17139751817440615
+51071	Giles County, Virginia	0.16013351809086243
+51073	Gloucester County, Virginia	0.16969296598669245
+51075	Goochland County, Virginia	0.1644584334004672
+51077	Grayson County, Virginia	0.1579924461660059
+51079	Greene County, Virginia	0.16747155379738293
+51081	Greensville County, Virginia	0.15864199949794658
+51083	Halifax County, Virginia	0.15921054535777626
+51085	Hanover County, Virginia	0.17186122450478683
+51087	Henrico County, Virginia	0.18528109562834555
+51089	Henry County, Virginia	0.16777368633287107
+51091	Highland County, Virginia	0.143983430222251
+51093	Isle of Wight County, Virginia	0.1669062047124312
+51095	James City County, Virginia	0.17812490409707288
+51097	King and Queen County, Virginia	0.15462573658771905
+51099	King George County, Virginia	0.16867481816654967
+51101	King William County, Virginia	0.16225130788828293
+51103	Lancaster County, Virginia	0.16402008108850247
+51105	Lee County, Virginia	0.16113038634936075
+51107	Loudoun County, Virginia	0.18108356753863064
+51109	Louisa County, Virginia	0.16365894624035837
+51111	Lunenburg County, Virginia	0.156376271895277
+51113	Madison County, Virginia	0.15918962062261688
+51115	Mathews County, Virginia	0.16591501831177627
+51117	Mecklenburg County, Virginia	0.16042803415845291
+51119	Middlesex County, Virginia	0.16417320210188133
+51121	Montgomery County, Virginia	0.17262157620247362
+51125	Nelson County, Virginia	0.1572286131732555
+51127	New Kent County, Virginia	0.16642096391471697
+51131	Northampton County, Virginia	0.16133813050329768
+51133	Northumberland County, Virginia	0.16232617738937602
+51135	Nottoway County, Virginia	0.16035930361831344
+51137	Orange County, Virginia	0.16632836168802737
+51139	Page County, Virginia	0.16377094475886253
+51141	Patrick County, Virginia	0.15825949093926836
+51143	Pittsylvania County, Virginia	0.16221544618259776
+51145	Powhatan County, Virginia	0.16667444011960725
+51147	Prince Edward County, Virginia	0.16254720277255202
+51149	Prince George County, Virginia	0.16843631706471443
+51153	Prince William County, Virginia	0.18518931818497722
+51155	Pulaski County, Virginia	0.16616742457637976
+51157	Rappahannock County, Virginia	0.15622222795687682
+51159	Richmond County, Virginia	0.16015362504741995
+51161	Roanoke County, Virginia	0.17548852337156814
+51163	Rockbridge County, Virginia	0.15852142157062268
+51165	Rockingham County, Virginia	0.16544804507146377
+51167	Russell County, Virginia	0.1614433056174831
+51169	Scott County, Virginia	0.1589938680978688
+51171	Shenandoah County, Virginia	0.16458087693144696
+51173	Smyth County, Virginia	0.16272671524179996
+51175	Southampton County, Virginia	0.15667750218395501
+51177	Spotsylvania County, Virginia	0.17473211620593174
+51179	Stafford County, Virginia	0.17854056451558795
+51181	Surry County, Virginia	0.15486454158099633
+51183	Sussex County, Virginia	0.1547810399249224
+51185	Tazewell County, Virginia	0.16389861426118252
+51187	Warren County, Virginia	0.17036818050185523
+51191	Washington County, Virginia	0.16539362845706115
+51193	Westmoreland County, Virginia	0.1639267902203502
+51195	Wise County, Virginia	0.16515231605079891
+51197	Wythe County, Virginia	0.1621936936517514
+51199	York County, Virginia	0.17956089382632873
+51510	Alexandria city, Virginia	0.2001447193835094
+51520	Bristol city, Virginia	0.18457511795490547
+51530	Buena Vista city, Virginia	0.1824669497889493
+51540	Charlottesville city, Virginia	0.19401116723592388
+51550	Chesapeake city, Virginia	0.18032230791611517
+51570	Colonial Heights city, Virginia	0.1888954878143995
+51580	Covington city, Virginia	0.18280803968633969
+51590	Danville city, Virginia	0.18220424390802517
+51595	Emporia city, Virginia	0.18083011015742198
+51600	Fairfax city, Virginia	0.1926681637877948
+51610	Falls Church city, Virginia	0.197218459469719
+51620	Franklin city, Virginia	0.18248175428975458
+51630	Fredericksburg city, Virginia	0.19026783233139513
+51640	Galax city, Virginia	0.18073046182686311
+51650	Hampton city, Virginia	0.18980873881665325
+51660	Harrisonburg city, Virginia	0.19097120786443886
+51670	Hopewell city, Virginia	0.18850055728245632
+51678	Lexington city, Virginia	0.19078249582201764
+51680	Lynchburg city, Virginia	0.18651298190271298
+51683	Manassas city, Virginia	0.1932374426002401
+51685	Manassas Park city, Virginia	0.19696137957676654
+51690	Martinsville city, Virginia	0.18372002670338125
+51700	Newport News city, Virginia	0.18975503620559794
+51710	Norfolk city, Virginia	0.19391377825676592
+51720	Norton city, Virginia	0.17805633274198326
+51730	Petersburg city, Virginia	0.18501835215793325
+51735	Poquoson city, Virginia	0.1810439496244387
+51740	Portsmouth city, Virginia	0.19040930916057283
+51750	Radford city, Virginia	0.18725240979565902
+51760	Richmond city, Virginia	0.19267367722487544
+51770	Roanoke city, Virginia	0.1889656102766756
+51775	Salem city, Virginia	0.18685628314146258
+51790	Staunton city, Virginia	0.18435594436187747
+51800	Suffolk city, Virginia	0.17188583641021207
+51810	Virginia Beach city, Virginia	0.1872126402053841
+51820	Waynesboro city, Virginia	0.18573672432092803
+51830	Williamsburg city, Virginia	0.18653165360888388
+51840	Winchester city, Virginia	0.19092655529559405
+53001	Adams County, Washington	0.14898267398310935
+53003	Asotin County, Washington	0.1580630886421534
+53005	Benton County, Washington	0.1670720324068856
+53007	Chelan County, Washington	0.1558833322019744
+53009	Clallam County, Washington	0.15972753516464971
+53011	Clark County, Washington	0.18085082170096065
+53013	Columbia County, Washington	0.14295269746071643
+53015	Cowlitz County, Washington	0.1654837838917381
+53017	Douglas County, Washington	0.15513217838045887
+53019	Ferry County, Washington	0.1408726957082349
+53021	Franklin County, Washington	0.16375108077409786
+53023	Garfield County, Washington	0.1401290861649949
+53025	Grant County, Washington	0.1582626894464832
+53027	Grays Harbor County, Washington	0.15884721868292329
+53029	Island County, Washington	0.17610606182677765
+53031	Jefferson County, Washington	0.15299083892224474
+53033	King County, Washington	0.18317874939426512
+53035	Kitsap County, Washington	0.17994287361319944
+53037	Kittitas County, Washington	0.15413829951588934
+53039	Klickitat County, Washington	0.15004161064554639
+53041	Lewis County, Washington	0.1576540171756974
+53043	Lincoln County, Washington	0.14318478603689044
+53045	Mason County, Washington	0.1630337871097944
+53047	Okanogan County, Washington	0.14707866382050566
+53049	Pacific County, Washington	0.15519953666950384
+53051	Pend Oreille County, Washington	0.1485582473517851
+53053	Pierce County, Washington	0.17819699838602684
+53055	San Juan County, Washington	0.1657912791761095
+53057	Skagit County, Washington	0.16355453434655845
+53059	Skamania County, Washington	0.14636891708270347
+53061	Snohomish County, Washington	0.17583629940222306
+53063	Spokane County, Washington	0.17373406271122863
+53065	Stevens County, Washington	0.15323207172860576
+53067	Thurston County, Washington	0.1759877514918901
+53069	Wahkiakum County, Washington	0.15265547875453814
+53071	Walla Walla County, Washington	0.1602660297588369
+53073	Whatcom County, Washington	0.16633059497180117
+53075	Whitman County, Washington	0.15492277923737743
+53077	Yakima County, Washington	0.16174089503861275
+54001	Barbour County, West Virginia	0.1603220664437282
+54003	Berkeley County, West Virginia	0.17539393694762787
+54005	Boone County, West Virginia	0.15944074184076054
+54007	Braxton County, West Virginia	0.1561294117683303
+54009	Brooke County, West Virginia	0.17235652500657453
+54011	Cabell County, West Virginia	0.17446422656765406
+54013	Calhoun County, West Virginia	0.15560713653227767
+54015	Clay County, West Virginia	0.15543816369188732
+54017	Doddridge County, West Virginia	0.15588205794285778
+54019	Fayette County, West Virginia	0.1624262145148751
+54021	Gilmer County, West Virginia	0.15489287997347276
+54023	Grant County, West Virginia	0.15524297632829426
+54025	Greenbrier County, West Virginia	0.1577425892164668
+54027	Hampshire County, West Virginia	0.1582046045054492
+54029	Hancock County, West Virginia	0.17493563265168044
+54031	Hardy County, West Virginia	0.15506550789903145
+54033	Harrison County, West Virginia	0.1692582346775436
+54035	Jackson County, West Virginia	0.1621253679992249
+54037	Jefferson County, West Virginia	0.17311558889226047
+54039	Kanawha County, West Virginia	0.1707386692781843
+54041	Lewis County, West Virginia	0.159146889638698
+54043	Lincoln County, West Virginia	0.16008746272194926
+54045	Logan County, West Virginia	0.16313609487920808
+54047	McDowell County, West Virginia	0.157531807423612
+54049	Marion County, West Virginia	0.17011725119746718
+54051	Marshall County, West Virginia	0.16570774555286663
+54053	Mason County, West Virginia	0.16212765427566023
+54055	Mercer County, West Virginia	0.16820838308519273
+54057	Mineral County, West Virginia	0.16424045458290498
+54059	Mingo County, West Virginia	0.16134373041690905
+54061	Monongalia County, West Virginia	0.17365716753595947
+54063	Monroe County, West Virginia	0.15633124969904452
+54065	Morgan County, West Virginia	0.1638825951528158
+54067	Nicholas County, West Virginia	0.1585400846108318
+54069	Ohio County, West Virginia	0.1757856981098991
+54071	Pendleton County, West Virginia	0.1487156568359239
+54073	Pleasants County, West Virginia	0.16160336254726837
+54075	Pocahontas County, West Virginia	0.14773800683337543
+54077	Preston County, West Virginia	0.16081428366237288
+54079	Putnam County, West Virginia	0.16933241198818544
+54081	Raleigh County, West Virginia	0.1671297456419234
+54083	Randolph County, West Virginia	0.15620366959655207
+54085	Ritchie County, West Virginia	0.15423389052975472
+54087	Roane County, West Virginia	0.15639052393759398
+54089	Summers County, West Virginia	0.15793022146475935
+54091	Taylor County, West Virginia	0.16545757992128576
+54093	Tucker County, West Virginia	0.15232545672959955
+54095	Tyler County, West Virginia	0.15763894266410983
+54097	Upshur County, West Virginia	0.16288119797806935
+54099	Wayne County, West Virginia	0.1638636568809547
+54101	Webster County, West Virginia	0.1515316939805679
+54103	Wetzel County, West Virginia	0.1593172979832358
+54105	Wirt County, West Virginia	0.15548364373616413
+54107	Wood County, West Virginia	0.17179797665736415
+54109	Wyoming County, West Virginia	0.15909622710009597
+55001	Adams County, Wisconsin	0.15713732839587533
+55003	Ashland County, Wisconsin	0.15164718088364196
+55005	Barron County, Wisconsin	0.1609440562995743
+55007	Bayfield County, Wisconsin	0.1488340830228822
+55009	Brown County, Wisconsin	0.17758680706759716
+55011	Buffalo County, Wisconsin	0.15360111984258154
+55013	Burnett County, Wisconsin	0.15335332209116537
+55015	Calumet County, Wisconsin	0.1690603626489191
+55017	Chippewa County, Wisconsin	0.16242906466807014
+55019	Clark County, Wisconsin	0.1565042811166257
+55021	Columbia County, Wisconsin	0.1636011517855401
+55023	Crawford County, Wisconsin	0.15638027264499924
+55025	Dane County, Wisconsin	0.17693094052919187
+55027	Dodge County, Wisconsin	0.165733548874047
+55029	Door County, Wisconsin	0.1616120926219498
+55031	Douglas County, Wisconsin	0.15754286547974586
+55033	Dunn County, Wisconsin	0.1610728554942578
+55035	Eau Claire County, Wisconsin	0.1693657874059553
+55037	Florence County, Wisconsin	0.1477617559178506
+55039	Fond du Lac County, Wisconsin	0.16838830193212417
+55041	Forest County, Wisconsin	0.14782737909795482
+55043	Grant County, Wisconsin	0.1597895198775951
+55045	Green County, Wisconsin	0.16233174994855212
+55047	Green Lake County, Wisconsin	0.16117951164553548
+55049	Iowa County, Wisconsin	0.15707247306919012
+55051	Iron County, Wisconsin	0.14658291098040982
+55053	Jackson County, Wisconsin	0.1541501415587647
+55055	Jefferson County, Wisconsin	0.16881905083495385
+55057	Juneau County, Wisconsin	0.15791395773813166
+55059	Kenosha County, Wisconsin	0.17922435164089762
+55061	Kewaunee County, Wisconsin	0.1618982111569957
+55063	La Crosse County, Wisconsin	0.17280208340414743
+55065	Lafayette County, Wisconsin	0.15584828865977443
+55067	Langlade County, Wisconsin	0.15454255642458012
+55069	Lincoln County, Wisconsin	0.15715597749966806
+55071	Manitowoc County, Wisconsin	0.16787265013307723
+55073	Marathon County, Wisconsin	0.1647520736877217
+55075	Marinette County, Wisconsin	0.1565269714767926
+55077	Marquette County, Wisconsin	0.15778191221533325
+55078	Menominee County, Wisconsin	0.15049502803229795
+55079	Milwaukee County, Wisconsin	0.1927917917153614
+55081	Monroe County, Wisconsin	0.1607873104978097
+55083	Oconto County, Wisconsin	0.15857232346560818
+55085	Oneida County, Wisconsin	0.15728564322733668
+55087	Outagamie County, Wisconsin	0.17369192883083212
+55089	Ozaukee County, Wisconsin	0.17562409362625164
+55091	Pepin County, Wisconsin	0.15715895868062288
+55093	Pierce County, Wisconsin	0.163538493799628
+55095	Polk County, Wisconsin	0.16027495448222476
+55097	Portage County, Wisconsin	0.16479806121232451
+55099	Price County, Wisconsin	0.14916945183212713
+55101	Racine County, Wisconsin	0.17882259320705576
+55103	Richland County, Wisconsin	0.1566786380775145
+55105	Rock County, Wisconsin	0.1717797613608025
+55107	Rusk County, Wisconsin	0.15195235991133016
+55109	St. Croix County, Wisconsin	0.167389300963418
+55111	Sauk County, Wisconsin	0.16382817101572975
+55113	Sawyer County, Wisconsin	0.15073972298047664
+55115	Shawano County, Wisconsin	0.15994228422368373
+55117	Sheboygan County, Wisconsin	0.17171862432875587
+55119	Taylor County, Wisconsin	0.15413764730279336
+55121	Trempealeau County, Wisconsin	0.1590264358482507
+55123	Vernon County, Wisconsin	0.15874542536433342
+55125	Vilas County, Wisconsin	0.15572789474003937
+55127	Walworth County, Wisconsin	0.1703355948411896
+55129	Washburn County, Wisconsin	0.1537216608674765
+55131	Washington County, Wisconsin	0.1742046645054413
+55133	Waukesha County, Wisconsin	0.18044443131854299
+55135	Waupaca County, Wisconsin	0.16288391389819212
+55137	Waushara County, Wisconsin	0.15876389229555277
+55139	Winnebago County, Wisconsin	0.17586750782244906
+55141	Wood County, Wisconsin	0.16509979563830054
+56001	Albany County, Wyoming	0.14800703165603088
+56003	Big Horn County, Wyoming	0.14148105813408426
+56005	Campbell County, Wyoming	0.14844327982606792
+56007	Carbon County, Wyoming	0.13634070534301876
+56009	Converse County, Wyoming	0.14040324762803438
+56011	Crook County, Wyoming	0.13891857107090602
+56013	Fremont County, Wyoming	0.1424310314495548
+56015	Goshen County, Wyoming	0.14485572714927888
+56017	Hot Springs County, Wyoming	0.13753178090059756
+56019	Johnson County, Wyoming	0.1369417750546047
+56021	Laramie County, Wyoming	0.15837734762280054
+56023	Lincoln County, Wyoming	0.14338544590827268
+56025	Natrona County, Wyoming	0.15167783717391733
+56027	Niobrara County, Wyoming	0.13090122833244114
+56029	Park County, Wyoming	0.1423121564125076
+56031	Platte County, Wyoming	0.1419896633181916
+56033	Sheridan County, Wyoming	0.15010275446021737
+56035	Sublette County, Wyoming	0.13686499046947956
+56037	Sweetwater County, Wyoming	0.1420517812894038
+56039	Teton County, Wyoming	0.14477497817090093
+56041	Uinta County, Wyoming	0.14849345781187637
+56043	Washakie County, Wyoming	0.14092563868886768
+56045	Weston County, Wyoming	0.13953595739607488

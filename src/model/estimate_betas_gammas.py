@@ -19,9 +19,9 @@ county_density = pd.read_csv("data/counties/population/density.tsv", sep="\t")
 logdens = np.log(county_density["density"])
 r0 = ar.lerp(1.5, 3.0, ar.lerp_inverse(min(logdens), max(logdens), logdens))
 # r0 == beta / gamma => beta = r0 * gamma
+# np.mean(r0) # around mid of [2.0,2.5]
 beta = r0 / 14
-county_betas = pd.DataFrame()
-
-
+county_betas = pd.DataFrame({"fips": county_density["fips"], "location": county_density["location"], "beta": beta})
+county_betas.to_csv("data/counties/betas.tsv", sep="\t", index=False)
 
 
