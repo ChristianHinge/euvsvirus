@@ -44,7 +44,7 @@ fig3 = go.Figure(data=[go.Table(
 fig.show()
 
 fig = px.choropleth_mapbox(df, geojson=counties, locations='fips', color='unemp',
-                           color_continuous_scale="Viridis",
+                           color_continuous_scale = ['#2821FF','#D917E8','#FF4726','#E89817','#FFCB00'],
                            range_color=(0, 12),
                            mapbox_style="carto-positron",
                            zoom=3, center = {"lat": 37.0902, "lon": -95.7129},
@@ -70,34 +70,12 @@ def create_time_series(df):
     return fig2
 
 
-)
+
 fig.update_layout({
     'plot_bgcolor':'rgb(0,0,0,0)',
     'paper_bgcolor':'rgb(0,0,0,0)',
 })
 
-
-def get_info_df(fips):
-    
-    state = 
-    county = 
-    population =
-    p_65 = 
-    ICU_beds = 
-    density = 
-    ensured = 
-    risk = 
-
-    fig = go.Figure(data=[go.Table(
-        header=dict(values=['Property', 'Value'],
-                    line_color='darkslategray',
-                    fill_color='lightskyblue',
-                    align='left'),
-        cells=dict(values=[["State","County","Population","Fraction > 65 yr.", "ICU beds", "Density","Ensured","Risk"], # 1st column
-                        [95, 85, 75, 95]], # 2nd column
-                line_color='darkslategray',
-                fill_color='lightcyan',
-                align='left'))
 
 app.layout = html.Div([
 
@@ -121,11 +99,6 @@ app.layout = html.Div([
 df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/solar.csv')
 
 app = dash.Dash(__name__)
-
-app.layout = 
-)
-
-
 
 @app.callback(
     Output('x-time-series', 'figure'),
