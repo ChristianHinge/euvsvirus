@@ -9,7 +9,7 @@ from django_plotly_dash import DjangoDash
 import json
 from urllib.request import urlopen
 import plotly.express as px
-# from src.model import simulate
+from src.model import simulate
 import website.dash_apps.finished_apps.htmlCssVariables as webVar
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
@@ -51,10 +51,11 @@ fig.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)',
 def get_SIR_from_fips(fips):
     print("This is the fips passed", fips)
 
-    with open('website/static/website/fips1.json') as json_file:
-        data = json.load(json_file)
-    df = pd.DataFrame(data)
-    # df = simulate.simulate_county(fips=fips,duration=500)
+    #with open('website/static/website/fips1.json') as json_file:
+    #    data = json.load(json_file)
+    #df = pd.DataFrame(data)
+    df = simulate.simulate_county(fips=fips,duration=500)
+    df = df[["t","ICU"]]
     df = df.melt('t',var_name='cols',  value_name='vals')
 
     return df
