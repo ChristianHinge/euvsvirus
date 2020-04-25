@@ -34,7 +34,7 @@ def SEIR_betas(y, t, beta, gamma, sigma, intervals, interval_betas):
     """
     _interval_betas = []
     for interval, interval_beta in zip(intervals, interval_betas):
-        if interval[0] <= t <= interval[1]: interval_betas.append(interval_beta)
+        if interval[0] <= t <= interval[1]: _interval_betas.append(interval_beta)
     if len(_interval_betas) > 0: beta = np.mean(_interval_betas)
     return SEIR(y, t, beta, gamma, sigma)
 
