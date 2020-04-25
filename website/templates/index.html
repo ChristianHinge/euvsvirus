@@ -1,16 +1,17 @@
-<!-- {% load static %}
-<img src="{% static "website/test.png" %}" alt="My image"> -->
 <!DOCTYPE HTML>
 <!--
 	Fractal by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+<!-- load static files -->
+{% load static %} 
 <html>
 	<head>
 		<title>W H E T</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		
 		<link rel="stylesheet" href={% static 'website/cssFiles/main.css' %} />
 		<noscript><link rel="stylesheet" href={% static 'website/cssFiles/noscript.css' %} /></noscript>
 	</head>
@@ -28,14 +29,14 @@
 					</ul>
 				</div>
 				<div class="image phone"><div class="inner">
-                        {% load static %}
+                        
                     <img src="{% static "website/test.png" %}" alt=""> 
                 </div></div>
 			</header>
 
 		<!-- One -->
 			<section id="one" class="wrapper style2 special">
-                    {% load static %}
+                    
                     <img src={% static "website/test.png" %} alt=""> 
 				<header class="major">
 					<h2>THIS IS OBVIOUSLY UNDER MAJOR CONSTRUCTION BRUH</h2>
@@ -98,7 +99,7 @@
 			</section>
 
 		<!-- Four -->
-		<!--
+<!-- 		
 			<section id="four" class="wrapper">
 				<div class="inner">
 
@@ -414,7 +415,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				</div>
 			</section>
-		-->
+		 -->
 
 		<!-- Footer -->
 			<footer id="footer">
@@ -426,13 +427,14 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				<p class="copyright">&copy; Untitled. Credits: <a href="http://html5up.net">HTML5 UP</a></p>
 			</footer>
 
-		<!-- Scripts
-			<!-- <script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script> --> -->
+		<!-- Scripts -->
+		
+			<script src={% static 'website/js/jquery.min.js' %}></script>
+			<script src={% static 'website/js//jquery.scrolly.min.js' %}></script>
+			<script src={% static 'website/js/browser.min.js' %}></script>
+			<script src={% static 'website/js/breakpoints.min.js' %}></script>
+			<script src={% static 'website/js/util.js' %}></script>
+			<script src={% static 'website/js/main.js' %}></script>
 
 	</body>
 </html>
