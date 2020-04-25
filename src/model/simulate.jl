@@ -12,7 +12,7 @@ Simulate SEIR.
 https://www.idmod.org/docs/hiv/model-seir.html
 R₀ = β / γ
 - duration [days]
-- β = rate of I->S
+- β = rate of S->E
 - γ = rate of I->R
 - σ = rate of E->I
 """
