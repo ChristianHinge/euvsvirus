@@ -43,14 +43,14 @@ def simulate_SEIR(duration, S0, E0=0, I0=1, R0=0, beta=None, gamma=1/14, sigma=1
     return odeint(SEIR, y0, range(duration), args=(beta, gamma, sigma))
 
 
-def simulate_SEIR_betas(duration, S0, E0=0, I0=1, R0=0, beta=None, gamma=1/14, sigma=1/2, intervals=None, interval_beta_factors=None):
+def simulate_SEIR_betas(duration, S0, E0=0, I0=1, R0=0, beta=None, gamma=1/14, sigma=1/2, intervals=None, beta_factors=None):
     """
-    :param interval_beta_factors: factor on default beta within each intervals, e.g. [2, 1/2] for a panic buying interval then a lockdown interval 
+    :param beta_factors: factor on default beta within each intervals, e.g. higher and lower than 1 for a panic buying interval then a lockdown interval 
     """
     assert beta is not None
     if intervals is None: intervals = []
-    if interval_beta_factors is None: interval_betas = []
-    else: interval_betas = beta * np.asarray(interval_beta_factors)
+    if beta_factors is None: interval_betas = []
+    else: interval_betas = beta * np.asarray(beta_factors)
     y0 = [S0, E0, I0, R0]
     return odeint(SEIR_betas, y0, range(duration), args=(beta, gamma, sigma, intervals, interval_betas))
 
