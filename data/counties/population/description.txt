@@ -1,0 +1,2 @@
+co-est2019-annres.xlsx downloaded from https://www.census.gov/data/datasets/time-series/demo/popest/2010s-counties-total.html
+county_area.xlsx taken from UNCOVER/esri_covid-19/cdcs-social-vulnerability-index-svi-2016-overall-svi-county-level.csv
