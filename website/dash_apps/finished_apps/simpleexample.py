@@ -8,6 +8,7 @@ from django_plotly_dash import DjangoDash
 import json
 from urllib.request import urlopen
 import plotly.express as px
+from src.model import simulate
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
@@ -29,9 +30,12 @@ styles = {
 }
 
 def get_SIR_from_fips(fips):
-    with open('website/static/website/fips1.json') as json_file:
-        data = json.load(json_file)
-    df = pd.DataFrame(data)
+    print("This is the fips passed", fips)
+    df = simulate.simulate_county(fips=fips,duration=100,beta=1/7)
+    
+    #with open('website/static/website/fips1.json') as json_file:
+    #    data = json.load(json_file)
+    #df = pd.DataFrame(data)
     df = df.melt('t',var_name='cols',  value_name='vals')
     return df
 
@@ -89,10 +93,10 @@ app.layout = html.Div([
     ])
 def display_graph(clickData):
     if clickData == None:
-        fips = "123"
+        fips = 1043
     else:
         clickData = dict(clickData)
-        fips = str(clickData['points'][0]['location'])
+        fips = clickData['points'][0]['location']
     
     data = get_SIR_from_fips(fips)
     return create_time_series(data)
@@ -105,6 +109,5 @@ def display_graph(clickData):
         Input('my-graph', 'clickData'),
     ])
 def display_data(clickData):
-    print(clickData)
     Input('my-graph', 'clickData'),
     return json.dumps(clickData, indent=2)  
