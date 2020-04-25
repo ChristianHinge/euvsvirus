@@ -19,6 +19,9 @@
 
 		<!-- Header -->
 			<header id="header">
+				<div class="{% plotly_class name='SimpleExample' %} card" style="height: 100%; width: 100%" id="usaPlot">
+						{% plotly_app name='SimpleExample' ratio=1 %}
+					</div>
 				<div class="content">
 					<img id="logoTop" src="{% static "website/images/WHET_Logo_ClearBackground_75_v0.1.png" %}" alt="">
 					<p>This is where we can put some kewl text</p>
@@ -30,9 +33,6 @@
 			<section id="one" class="wrapper style2 special">
                     
                     <img src={% static "website/images/overlay.png" %} alt=""> 
-					<div class="{% plotly_class name='SimpleExample' %} card" style="height: 100%; width: 100%">
-    					{% plotly_app name='SimpleExample' ratio=1 %}
-   					</div>
 				<header class="major">
 					<h2>THIS IS OBVIOUSLY UNDER MAJOR CONSTRUCTION BRUH!!</h2>
 				</header>
