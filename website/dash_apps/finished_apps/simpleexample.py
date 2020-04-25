@@ -1,7 +1,6 @@
 import os
 import dash_core_components as dcc
 import dash_html_components as html
-# import dash
 import dash_table
 from dash.dependencies import Input, Output
 import plotly.graph_objs as go
@@ -11,6 +10,7 @@ import json
 from urllib.request import urlopen
 import plotly.express as px
 from src.model import simulate
+import htmlCssVariables as webVar
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
@@ -23,13 +23,6 @@ with urlopen('https://raw.githubusercontent.com/plotly/datasets/master/geojson-c
 df = pd.read_csv("https://raw.githubusercontent.com/plotly/datasets/master/fips-unemp-16.csv",
                    dtype={"fips": str})
 
-
-styles = {
-    'pre': {
-        'border': 'thin lightgrey solid',
-        'overflowX': 'scroll'
-    }
-}
 
 df3 = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/2014_usa_states.csv')
 
@@ -75,18 +68,17 @@ def create_time_series(df):
 
 app.layout = html.Div([
 
-    html.Div([html.H1("Demographic Data by Country")], id='teeesting', style={'textAlign': "center", "padding-bottom": "30"}),
+    html.Div([html.H1("Demographic Data by Country")], id='teeesting', style=webVar.demoStyle),
     html.Div([
-        html.Span("Metric to display : ", className="six columns", style={"text-align": "right", "width": "40%", "padding-top": 10}),
+        html.Span("Metric to display : ", className="six columns", style=webVar.metricStyle),
         dcc.Dropdown(id="value-selected", value='lifeExp', options=[
                                                        {'label': "Population ", 'value': 'pop'},
                                                        {'label': "GDP Per Capita ", 'value': 'gdpPercap'},
                                                        {'label': "Life Expectancy ", 'value': 'lifeExp'}],
-                                              style={"display": "block", "margin-left": "auto", "margin-right": "auto",
-                                                     "width": "70%"},
+                                              style=webVar.dropStyle,
                                               className="six columns")], className="row"
     ),
-    dcc.Graph(figure=fig,id="my-graph"),
+    dcc.Graph(figure=fig,id="my-graph", style=webVar.graphStyle),
     html.Div([dcc.Graph(id='x-time-series'),]),
     ], 
     className="container",
