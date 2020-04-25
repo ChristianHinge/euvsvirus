@@ -3,7 +3,7 @@ django-heroku
 gunicorn
 plotly
 pandas
-urllib
+urllib3
 django_plotly_dash
 dash-core-components
 dash-html-components
