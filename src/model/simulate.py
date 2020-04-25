@@ -2,7 +2,7 @@
 import pandas as pd
 from src.model.simulation.ODEs import simulate_SEIR_betas
 
-populations = pd.read_csv("data/counties/population.tsv", sep="\t")
+populations = pd.read_csv("data/counties/population/density.tsv", sep="\t")
 # betas = pd.read_csv("data/counties/betas.tsv", sep="\t")
 # gammas = pd.read_csv("data/counties/gammas.tsv", sep="\t")
 fips2pop = dict(zip(populations["fips"], populations["population"]))
