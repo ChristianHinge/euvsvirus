@@ -11,7 +11,9 @@ from urllib.request import urlopen
 import plotly.express as px
 from src.model import simulate
 import website.dash_apps.finished_apps.htmlCssVariables as webVar
+from website.dash_apps.finished_apps.county_table import table_fig
 
+current_fips = 1043
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = DjangoDash('SimpleExample', external_stylesheets=external_stylesheets)
@@ -48,14 +50,12 @@ fig = px.choropleth_mapbox(df, geojson=counties, locations='fips', color='unemp'
 fig.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)',
                       'paper_bgcolor': 'rgba(0, 0, 0, 0)',})
 
-def get_SIR_from_fips(fips):
-    print("This is the fips passed", fips)
-
+def get_SIR_from_fips(fips,lockdown=None,panic = None, partial_lockdown = None):
     #with open('website/static/website/fips1.json') as json_file:
     #    data = json.load(json_file)
     #df = pd.DataFrame(data)
-    df = simulate.simulate_county(fips=fips,duration=500)
-    df = df[["t","ICU"]]
+    df = simulate.simulate_county(fips=fips,duration=500,lockdown = lockdown,panic=panic,partial_lockdown=partial_lockdown)
+    #df = df[["t","ICU"]]
     df = df.melt('t',var_name='cols',  value_name='vals')
 
     return df
@@ -63,8 +63,8 @@ def get_SIR_from_fips(fips):
 def create_time_series(df):
     fig2 = px.line(df, x='t', y='vals', color='cols')
     fig2.update_traces(mode='markers+lines')
-    fig2.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)',
-                      'paper_bgcolor': 'rgba(0, 0, 0, 0)',})
+   # fig2.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)',
+   #                   'paper_bgcolor': 'rgba(0, 0, 0, 0)',})
     return fig2
 
 
@@ -84,7 +84,34 @@ app.layout = html.Div([
     ),
     dcc.Graph(figure=fig,id="my-graph", style=webVar.graphStyle),
     html.Div([dcc.Graph(id='x-time-series'),]),
-    ], 
+    html.Div([dcc.RangeSlider(
+        count=1,
+        min=0,
+        max=500,
+        step=1,
+        value=[0, 10],id='slider-1')]),
+    html.Div([dcc.RangeSlider(
+        count=1,
+        min=0,
+        max=500,
+        step=1,
+        value=[0, 10],id='slider-2')]),
+    html.Div([dcc.RangeSlider(
+        count=1,
+        min=0,
+        max=500,
+        step=1,
+        value=[0, 10],id='slider-3')]),
+    html.Div([dcc.Graph(id='county-table')]),
+    html.Div([dcc.Graph(id='county-table')]),
+    html.Div([dcc.Checklist(
+        options=[
+            {'label': 'Full lockdown' ,'value':'FP'},
+            {'label': 'Partial lockdown', 'value': 'PP'},
+            {'label': 'Panic', 'value': 'P'}
+        ],
+        value=['P'],id='checks')])
+    ],
     className="container",
 )
 
@@ -92,20 +119,32 @@ df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/solar
 
 # app = DjangoDash.dash(__name__)
 
+
+
 @app.callback(
-    Output('x-time-series', 'figure'),
     [
-        Input('my-graph','clickData')
+        Output('x-time-series', 'figure'),
+        Output('county-table', 'figure'),
+    ],
+    [
+        Input('my-graph','clickData'),
+        Input('checks','value'),
+        Input('slider-1','value'),
+        Input('slider-2','value'),
+        Input('slider-3','value')
+
     ])
-def display_graph(clickData):
+def display_graph(clickData,checks,slider_value_1,slider_value_2,slider_value_3):
+    global current_fips
     if clickData == None:
-        fips = 1043
+        fips = current_fips
     else:
         clickData = dict(clickData)
         fips = int(clickData['points'][0]['location'])
-    
-    data = get_SIR_from_fips(fips)
-    return create_time_series(data)
+    current_fips = fips
+    data = get_SIR_from_fips(fips,lockdown=slider_value_1,partial_lockdown=slider_value_2,panic=slider_value_3)
+    county_table = table_fig(fips)
+    return create_time_series(data), county_table
 
 
 """
