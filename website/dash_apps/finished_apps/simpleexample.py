@@ -1,6 +1,7 @@
 import os
 import dash_core_components as dcc
 import dash_html_components as html
+import dash_table
 from dash.dependencies import Input, Output
 import plotly.graph_objs as go
 import pandas as pd
@@ -29,60 +30,86 @@ styles = {
     }
 }
 
+df3 = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/2014_usa_states.csv')
+
+fig3 = go.Figure(data=[go.Table(
+    header=dict(values=list(df.columns),
+                fill_color='paleturquoise',
+                align='left'),
+    cells=dict(values=[df.Rank, df.State, df.Postal, df.Population],
+               fill_color='lavender',
+               align='left'))
+])
+
+fig.show()
+
+fig = px.choropleth_mapbox(df, geojson=counties, locations='fips', color='unemp',
+                           color_continuous_scale="Viridis",
+                           range_color=(0, 12),
+                           mapbox_style="carto-positron",
+                           zoom=3, center = {"lat": 37.0902, "lon": -95.7129},
+                           opacity=0.5,
+                           labels={'unemp':'unemployment rate'}
+                          )
+fig.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)',
+                      'paper_bgcolor': 'rgba(0, 0, 0, 0)',})
 def get_SIR_from_fips(fips):
     print("This is the fips passed", fips)
-    df = simulate.simulate_county(fips=fips,duration=100,beta=1/7)
-    
-    #with open('website/static/website/fips1.json') as json_file:
-    #    data = json.load(json_file)
-    #df = pd.DataFrame(data)
+
+    df = simulate.simulate_county(fips=fips,duration=500)
     df = df.melt('t',var_name='cols',  value_name='vals')
+
     return df
 
 def create_time_series(df):
     fig2 = px.line(df, x='t', y='vals', color='cols')
     fig2.update_traces(mode='markers+lines')
-    
+    fig2.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)',
+                      'paper_bgcolor': 'rgba(0, 0, 0, 0)',})
     return fig2
 
-fig = px.choropleth(df, geojson=counties, locations='fips', color='unemp',
-                        color_continuous_scale="Viridis",
-                        range_color=(0, 12),
-                        scope="usa",
-                        labels={'unemp':'unemployment rate'}
-)
 
 
+def get_info_df(fips):
+    
+    state = 
+    county = 
+    population =
+    p_65 = 
+    ICU_beds = 
+    density = 
+    ensured = 
+    risk = 
 
+    fig = go.Figure(data=[go.Table(
+        header=dict(values=['Property', 'Value'],
+                    line_color='darkslategray',
+                    fill_color='lightskyblue',
+                    align='left'),
+        cells=dict(values=[["State","County","Population","Fraction > 65 yr.", "ICU beds", "Density","Ensured","Risk"], # 1st column
+                        [95, 85, 75, 95]], # 2nd column
+                line_color='darkslategray',
+                fill_color='lightcyan',
+                align='left'))
 
 app.layout = html.Div([
-    html.Div([html.H1("Demographic Data by Country")], style={'textAlign': "center", "padding-bottom": "30"}),
-    html.Div([
-        html.Span("Metric to display : ", className="six columns", style={"text-align": "right", "width": "40%", "padding-top": 10}),
-        dcc.Dropdown(id="value-selected", value='lifeExp', options=[
-                                                       {'label': "Population ", 'value': 'pop'},
-                                                       {'label': "GDP Per Capita ", 'value': 'gdpPercap'},
-                                                       {'label': "Life Expectancy ", 'value': 'lifeExp'}],
-                                              style={"display": "block", "margin-left": "auto", "margin-right": "auto",
-                                                     "width": "70%"},
-                                              className="six columns")], className="row"
-    ),
     dcc.Graph(figure=fig,id="my-graph"),
-    html.Div([
-        dcc.Markdown("""
-                **Click Data**
-
-                Click on points in the graph.
-            """),
-        html.Pre(id='click-data', style=styles['pre']),
-        ], className='three columns'),
-    html.Div([
-        dcc.Graph(id='x-time-series'),
-    ]),
+    html.Div([dcc.Graph(id='x-time-series'),]),
     ], 
     className="container", 
+
+    dash_table.DataTable(
+    id='table',
+    columns=[{"name": i, "id": i} for i in df.columns],
+    data=df.to_dict('records'),
 )
 
+df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/solar.csv')
+
+app = dash.Dash(__name__)
+
+app.layout = 
+)
 
 
 
@@ -96,13 +123,13 @@ def display_graph(clickData):
         fips = 1043
     else:
         clickData = dict(clickData)
-        fips = clickData['points'][0]['location']
+        fips = int(clickData['points'][0]['location'])
     
     data = get_SIR_from_fips(fips)
     return create_time_series(data)
 
 
-
+"""
 @app.callback(
     Output('click-data', 'children'),
     [
@@ -111,3 +138,4 @@ def display_graph(clickData):
 def display_data(clickData):
     Input('my-graph', 'clickData'),
     return json.dumps(clickData, indent=2)  
+"""
