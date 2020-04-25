@@ -11,6 +11,8 @@ from urllib.request import urlopen
 import plotly.express as px
 from src.model import simulate
 import website.dash_apps.finished_apps.htmlCssVariables as webVar
+from website.dash_apps.finished_apps.county_table import table_fig
+
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
@@ -84,6 +86,7 @@ app.layout = html.Div([
     ),
     dcc.Graph(figure=fig,id="my-graph", style=webVar.graphStyle),
     html.Div([dcc.Graph(id='x-time-series'),]),
+    html.Div([dcc.Graph(id='county-table')]),
     ], 
     className="container",
 )
@@ -93,7 +96,10 @@ df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/solar
 # app = DjangoDash.dash(__name__)
 
 @app.callback(
-    Output('x-time-series', 'figure'),
+    [
+        Output('x-time-series', 'figure'),
+        Output('county-table', 'figure'),
+    ],
     [
         Input('my-graph','clickData')
     ])
@@ -105,7 +111,8 @@ def display_graph(clickData):
         fips = int(clickData['points'][0]['location'])
     
     data = get_SIR_from_fips(fips)
-    return create_time_series(data)
+    county_table = table_fig(fips)
+    return create_time_series(data), county_table
 
 
 """
