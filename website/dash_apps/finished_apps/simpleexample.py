@@ -53,6 +53,7 @@ fig = px.choropleth_mapbox(df, geojson=counties, locations='fips', color='unemp'
                           )
 fig.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)',
                       'paper_bgcolor': 'rgba(0, 0, 0, 0)',})
+
 def get_SIR_from_fips(fips):
     print("This is the fips passed", fips)
 
@@ -68,6 +69,12 @@ def create_time_series(df):
                       'paper_bgcolor': 'rgba(0, 0, 0, 0)',})
     return fig2
 
+
+)
+fig.update_layout({
+    'plot_bgcolor':'rgb(0,0,0,0)',
+    'paper_bgcolor':'rgb(0,0,0,0)',
+})
 
 
 def get_info_df(fips):
@@ -93,15 +100,22 @@ def get_info_df(fips):
                 align='left'))
 
 app.layout = html.Div([
+
+    html.Div([html.H1("Demographic Data by Country")], id='teeesting', style={'textAlign': "center", "padding-bottom": "30"}),
+    html.Div([
+        html.Span("Metric to display : ", className="six columns", style={"text-align": "right", "width": "40%", "padding-top": 10}),
+        dcc.Dropdown(id="value-selected", value='lifeExp', options=[
+                                                       {'label': "Population ", 'value': 'pop'},
+                                                       {'label': "GDP Per Capita ", 'value': 'gdpPercap'},
+                                                       {'label': "Life Expectancy ", 'value': 'lifeExp'}],
+                                              style={"display": "block", "margin-left": "auto", "margin-right": "auto",
+                                                     "width": "70%"},
+                                              className="six columns")], className="row"
+    ),
     dcc.Graph(figure=fig,id="my-graph"),
     html.Div([dcc.Graph(id='x-time-series'),]),
     ], 
-    className="container", 
-
-    dash_table.DataTable(
-    id='table',
-    columns=[{"name": i, "id": i} for i in df.columns],
-    data=df.to_dict('records'),
+    className="container",
 )
 
 df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/solar.csv')

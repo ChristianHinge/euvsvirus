@@ -6,6 +6,27 @@ import numpy as np
 This script is for utilities related to numpy arrays.
 """
 
+def lerp(start, end, progress):
+    """
+    Interpolation between a start and an end value using a factor indicating progress.
+    :param start: value to start with
+    :param end: value to end with
+    :param progress: number between 0 and 1 indicating how far we are between the values
+    :return: 
+    """
+    return start * (1 - progress) + end * progress
+
+
+def lerp_log(start, end, progress):
+    """Interpolation between a start and an end value using a factor indicating progress. 
+    The interpolation is not linear, it is logarithmic."""
+    return np.exp(progress * (np.log(end) - np.log(start)) + np.log(start))
+
+
+def lerp_inverse(start, end, value):
+    """:return a value (ideally) from zero to one indicating how far a value has progressed between a start and an end."""
+    return (value - start) / (end - start)
+
 
 def ndim(arr):
     """
