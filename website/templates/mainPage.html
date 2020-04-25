@@ -1,65 +1,36 @@
-<!DOCTYPE HTML>
-<!--
-	Fractal by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+{% extends 'base.html' %}
 {% load static %} 
 {% load plotly_dash %}
-<html>
-	<head>
-		<title>W 22H E T</title>
-		<meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+{% block body %}
         
-		<link rel="stylesheet" href={% static 'website/cssFiles/main.css' %} />
-		<noscript><link rel="stylesheet" href={% static 'website/cssFiles/noscript.css' %} /></noscript>
-	</head>
-	<body class="is-preload">
+<!-- first gradient section -->
+    <header id="header1">
+        <!-- <div class="{% plotly_class name='SimpleExample' %} card" style="height: 100%; width: 100%" id="usaPlot">
+            {% plotly_app name='SimpleExample' ratio=1 %}
+        </div> -->
+        <div class="front">
+            <img id="logoTop" src="{% static 'website/images/WHET_Logo_ClearBackground_75_v0.1.png' %}" alt="">
+            <p>World Heatmap Epidemioligy Tool</p>
+            <p2>The tool that allows decision makers to visualize stuff while making the bestest solutions!</p2>
+        </div>
+    </header>
 
-		<!-- Header -->
-			<header id="header">
-				<div class="{% plotly_class name='SimpleExample' %} card" style="height: 100%; width: 100%" id="usaPlot">
-						{% plotly_app name='SimpleExample' ratio=1 %}
-					</div>
-				<div class="content">
-					<img id="logoTop" src="{% static "website/images/WHET_Logo_ClearBackground_75_v0.1.png" %}" alt="">
-					<p>This is where we can put some kewl text</p>
-				</div>
+<!-- White section -->
+    <section id="one" class="wrapper style2 special">
+        <div class="{% plotly_class name='SimpleExample' %} card" style="height: 100%; width: 100%" id="usaPlot">
+                {% plotly_app name='SimpleExample' ratio=1 %}
+            </div>
+        <header class="major">
+            <h2>THIS IS OBVIOUSLY UNDER MAJOR CONSTRUCTION BRUH!!</h2>
+        </header>
+    </section>
 
-			</header>
-
-		<!-- One -->
-			<section id="one" class="wrapper style2 special">
-                    
-                    <img src={% static "website/images/overlay.png" %} alt=""> 
-				<header class="major">
-					<h2>THIS IS OBVIOUSLY UNDER MAJOR CONSTRUCTION BRUH!!</h2>
-				</header>
-				<ul class="icons major">
-					<li><span class="icon solid fa-camera-retro"><span class="label">Shoot</span></span></li>
-					<li><span class="icon solid fa-sync"><span class="label">Process</span></span></li>
-					<li><span class="icon solid fa-cloud"><span class="label">Upload</span></span></li>
-                </ul>
-                
-			</section>
-
-			<section id="header2">
-				<div class="content">
-					<img id="logoTop" src="{% static "website/images/WHET_Logo_ClearBackground_75_v0.1.png" %}" alt="">
-					<p>This is where we can put some kewl text</p>
-				</div>
-
-			</section>
-
-		<!-- Scripts -->
-		
-			<script src={% static 'website/js/jquery.min.js' %}></script>
-			<script src={% static 'website/js//jquery.scrolly.min.js' %}></script>
-			<script src={% static 'website/js/browser.min.js' %}></script>
-			<script src={% static 'website/js/breakpoints.min.js' %}></script>
-			<script src={% static 'website/js/util.js' %}></script>
-			<script src={% static 'website/js/main.js' %}></script>
-
-	</body>
-</html>
+    <!-- second gradient section -->
+    <section id="header2">
+        <div class="content">
+            <img id="logoTop" src="{% static "website/images/WHET_Logo_ClearBackground_75_v0.1.png" %}" alt="">
+            <p>This is where we can put some kewl text</p>
+        </div>
+    </section>           
+{% endblock %}

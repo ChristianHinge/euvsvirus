@@ -42,17 +42,20 @@ def create_time_series(df):
     return fig2
 
 fig = px.choropleth(df, geojson=counties, locations='fips', color='unemp',
-                        color_continuous_scale="Viridis",
+                        color_continuous_scale = ['#2821FF','#D917E8','#FF4726','#E89817','#FFCB00'],
                         range_color=(0, 12),
                         scope="usa",
                         labels={'unemp':'unemployment rate'}
 )
-
+fig.update_layout({
+    'plot_bgcolor':'rgb(0,0,0,0)',
+    'paper_bgcolor':'rgb(0,0,0,0)',
+})
 
 
 
 app.layout = html.Div([
-    html.Div([html.H1("Demographic Data by Country")], style={'textAlign': "center", "padding-bottom": "30"}),
+    html.Div([html.H1("Demographic Data by Country")], id='teeesting', style={'textAlign': "center", "padding-bottom": "30"}),
     html.Div([
         html.Span("Metric to display : ", className="six columns", style={"text-align": "right", "width": "40%", "padding-top": 10}),
         dcc.Dropdown(id="value-selected", value='lifeExp', options=[

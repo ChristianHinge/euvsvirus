@@ -7,6 +7,95 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
+/* Css by us */
+
+
+
+/* 
+#logoTop{
+	
+} */
+
+
+#one {
+	background-color: #e59b46;
+	background-image: url('../images/overlay.png'), url('../images/pattern-size1.svg'),  linear-gradient(90deg, rgb(51, 23, 1) 0%, #e59b46 35%, rgb(228, 177, 143) 100%);
+	background-position: top left, center center;
+	background-attachment: fixed, fixed;
+	background-size: auto, cover;
+
+}
+
+#header1 {
+	background-color: #e59b46;
+	color: #d1e5f9;
+	padding: 4.5em 0 2.5em 0 ;
+	-moz-align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-justify-content: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	background-image: url('../images/overlay.png'), url('../images/pattern-size1.svg'),  linear-gradient(90deg, rgb(51, 23, 1) 0%, #e59b46 35%, rgb(228, 177, 143) 100%);
+	background-position: top left, center center;
+	background-attachment: fixed, fixed;
+	background-size: auto, cover;
+	height: 100vh;
+	min-height: 35em;
+}
+
+#header2 {
+	background-color: #e59b46;
+	color: #d1e5f9;
+	padding: 4.5em 0 2.5em 0 ;
+	-moz-align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-justify-content: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	background-image: url('../images/overlay.png'), url('../images/pattern-size1.svg'),  linear-gradient(90deg, rgb(51, 23, 1) 0%, #725a3e 35%, rgb(149, 143, 228) 100%);
+	background-position: top left, center center;
+	background-attachment: fixed, fixed;
+	background-size: auto, cover;
+	height: 100vh;
+	min-height: 35em;
+}
+
+
+.front{
+	text-align: center;
+	padding: 0 0 0 0;
+}
+
+.front img{
+	padding: 2em 2em 2em 2em;
+}
+
+.front p{
+	font-size: 2.5em;
+}
+.front p2{
+	font-size: 1.5em;
+}
+
+
+
+/* css from template */
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -3614,7 +3703,6 @@ input, select, textarea {
 		width: 450px;
 	}
 
-/* Header */
 
 
 /* adding scrolling lock */
@@ -3626,29 +3714,9 @@ input, select, textarea {
 	scroll-snap-align: start;
 }
 
-#header2 {
-	background-color: #e59b46;
-	color: #d1e5f9;
-	padding: 4.5em 0 2.5em 0 ;
-	-moz-align-items: center;
-	-webkit-align-items: center;
-	-ms-align-items: center;
-	align-items: center;
-	display: -moz-flex;
-	display: -webkit-flex;
-	display: -ms-flex;
-	display: flex;
-	-moz-justify-content: center;
-	-webkit-justify-content: center;
-	-ms-justify-content: center;
-	justify-content: center;
-	background-image: url('../images/overlay.png'), url('../images/pattern-size1.svg'),  linear-gradient(90deg, rgb(51, 23, 1) 0%, #725a3e 35%, rgb(149, 143, 228) 100%);
-	background-position: top left, center center;
-	background-attachment: fixed, fixed;
-	background-size: auto, cover;
-	height: 100vh;
-	min-height: 35em;
-}
+/* Header */
+
+
 	#header {
 		/* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
 		background-color: #e59b46;
