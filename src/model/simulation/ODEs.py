@@ -32,8 +32,10 @@ def SEIR_betas(y, t, beta, gamma, sigma, intervals, interval_betas):
     :param intervals: inclusive intervals, e.g. [[start0,end0],[start1,end1],...]
     :param interval_betas: beta value for each of the intervals
     """
+    _interval_betas = []
     for interval, interval_beta in zip(intervals, interval_betas):
-        if interval[0] <= t <= interval[1]: return SEIR(y, t, interval_beta, gamma, sigma)
+        if interval[0] <= t <= interval[1]: interval_betas.append(interval_beta)
+    if len(_interval_betas) > 0: beta = np.mean(_interval_betas)
     return SEIR(y, t, beta, gamma, sigma)
 
 
