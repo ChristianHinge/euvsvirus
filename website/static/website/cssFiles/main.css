@@ -3824,7 +3824,6 @@ input, select, textarea {
 
 
 	/* #header {
-		/* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
 		background-color: #e59b46;
 		color: #d1e5f9;
 		padding: 4.5em 0 2.5em 0 ;
@@ -4105,7 +4104,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#header {
-				background-image: url('../images/overlay.png'), url('../images/pattern-size2.svg');
+				/* background-image: url('../images/overlay.png'), url('../images/pattern-size2.svg'); */
 			}
 
 		}
@@ -4156,7 +4155,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#header {
-				background-image: url('../images/overlay.png'), url('../images/pattern-size3.svg');
+				/* background-image: url('../images/overlay.png'), url('../images/pattern-size3.svg'); */
 			}
 
 				#header h1 {
