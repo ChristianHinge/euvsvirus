@@ -103,7 +103,6 @@ app.layout = html.Div([
         step=1,
         value=[0, 10],id='slider-3')]),
     html.Div([dcc.Graph(id='county-table')]),
-    html.Div([dcc.Graph(id='county-table')]),
     html.Div([dcc.Checklist(
         options=[
             {'label': 'Full lockdown' ,'value':'FP'},

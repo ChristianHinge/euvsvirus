@@ -13,3 +13,4 @@ django-chartjs
 channels
 channels_redis
 scipy
+numpy
