@@ -123,15 +123,16 @@ CRISPY_TEMPLATE_PACK = 'bootstap4'
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 ASGI_APPLICATION = 'website.routing.application'
+"""
 CHANNEL_LAYERS = { 
     'default': {
         'BACKEND': 'channels_redis.core.RedisChannelLayer',
         'CONFIG': {
-            'hosts': [('http://whet.herokuapp.com/', 6379),],
+            'hosts': [os.environ.get('REDIS_URL')],
         }
     }
 }
-
+"""
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
