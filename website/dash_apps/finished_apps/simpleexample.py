@@ -14,9 +14,9 @@ import website.dash_apps.finished_apps.htmlCssVariables as webVar
 from website.dash_apps.finished_apps.county_table import table_fig
 
 current_fips = 1043
-external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
+external_stylesheets = 'website/static/website/cssFiles/main.css'
 
-app = DjangoDash('SimpleExample', external_stylesheets=external_stylesheets)
+app = DjangoDash('SimpleExample')
 
 
 with urlopen('https://raw.githubusercontent.com/plotly/datasets/master/geojson-counties-fips.json') as response:

@@ -1,0 +1,8 @@
+body {
+    font-family: 'Din';
+}
+
+@font-face{
+	font-family: 'Din';
+	src: url('../dinFont/d-din/D-DIN.otf') format('opentype')
+}
