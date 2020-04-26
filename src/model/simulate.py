@@ -52,7 +52,7 @@ def simulate_county(fips, duration, I0=1, lockdown=None, panic=None, partial_loc
     arr = _add_AD(arr, fips)
     arr = _add_ICU(arr)
     arr = _add_beds(arr, fips)
-    return arr.iloc[:len(arr)-ICU_duration, :]
+    return np.floor(arr.iloc[:len(arr)-ICU_duration, :])
 
 
 def _simulate_county(fips, duration, I0=1, intervals=None, beta_factors=None):
@@ -70,7 +70,7 @@ def _simulate_county(fips, duration, I0=1, intervals=None, beta_factors=None):
     beta = fips2beta[fips]
     arr = simulate_SEIR_betas(duration, N-I0-R0, I0=I0, R0=R0, beta=beta, intervals=intervals, beta_factors=beta_factors)
     arr = pd.DataFrame(arr, columns=["Susceptible", "Exposed", "Infected", "Removed"])
-    arr["Days"] = arr.index
+    arr["Day"] = arr.index
     return arr
 
 
