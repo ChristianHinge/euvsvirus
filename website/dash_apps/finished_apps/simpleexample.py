@@ -74,18 +74,18 @@ def get_SIR_from_fips(fips,lockdown=None,panic = None, partial_lockdown = None):
     
 
 def create_time_series(df):
-    df = df[["Susceptible","Exposed","Infected","Recovered","Days"]]
-    df = df.melt('Days',var_name='Population at interest',  value_name='Individuals')
-    fig2 = px.line(df, x='Days', y='Individuals', color='Population at interest')
+    df = df[["Susceptible","Exposed","Infected","Recovered","Day"]]
+    df = df.melt('Day',var_name='Population at interest',  value_name='Individuals')
+    fig2 = px.line(df, x='Day', y='Individuals', color='Population at interest')
     fig2.update_traces(mode='lines')
    # fig2.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)',
    #                   'paper_bgcolor': 'rgba(0, 0, 0, 0)',})
     return fig2
 
 def create_time_series_2(df):
-    df = df[["ICU","Hospital beds","ICU beds","Days","Dead"]]
-    df = df.melt('Days',var_name='Population at interest',  value_name='Individuals')
-    fig2 = px.line(df, x='Days', y='Individuals', color='Population at interest')
+    df = df[["ICU","Hospital beds","ICU beds","Day","Dead"]]
+    df = df.melt('Day',var_name='Population at interest',  value_name='Individuals')
+    fig2 = px.line(df, x='Day', y='Individuals', color='Population at interest')
     fig2.update_traces(mode='lines')
    # fig2.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)',
    #                   'paper_bgcolor': 'rgba(0, 0, 0, 0)',})
