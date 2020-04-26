@@ -25,7 +25,7 @@ age_groups[,age_fatality_rate:=age_fatality_rate]
 # https://www.worldometers.info/coronavirus/coronavirus-age-sex-demographics/
 # source says 5-10 times more deadly with preexisting condition. 
 # We conservatively say that someone classified with "fair or poor health" will have "unhealthy_factor" times the fatality rate.
-unhealthy_factor = 1.0
+unhealthy_factor = 2.0
 # We want to add this consideration while keeping the overall fatality rate of the nation unchanged.
 populations = populations[age_groups[,.(fips,age_fatality_rate)],on="fips"]
 populations = populations[health_table[,.(fips,health)], on="fips"]
