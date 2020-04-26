@@ -2,12 +2,10 @@
 import numpy as np
 import pandas as pd
 from src.model.simulation.ODEs import simulate_SEIR_betas
+import sys
 
 ## constants
 ICU_duration = 5
-# fractions of removed that die as a function of age group [<18, otherwise, >=65]
-# numbers from Hinge.
-removed_fatality = np.asarray([0.103181947, 0.842995744, 8.199770342]) / 100
 # beta_factors for lock-down, panic and partial lock-down 
 # for a typical beta, gamma, r0 (1/7, 1/14, r0=2) to a beta that results in r0 < 1, 3, 1.5
 # r0 = beta_factor * beta / gamma => beta_factor = r0 * gamma / beta = r0 / 2
@@ -15,18 +13,17 @@ BETA_FACTORS = [1/2.5, 3/2.5, 1.5/2.5]
 
 # read
 populations = pd.read_csv("data/counties/population/density.tsv", sep="\t")
-age_groups = pd.read_csv("data/counties/county_health_rankings/county_age.tsv", sep="\t")
 betas = pd.read_csv("data/counties/betas.tsv", sep="\t")
 beds = pd.read_csv("data/counties/hospital_capacity/beds.tsv", sep="\t")
-recovered = pd.read_csv("data/counties/deaths/fatality_estimates.tsv", sep="\t")
+fatality_estimates = pd.read_csv("data/counties/deaths/fatality_estimates.tsv", sep="\t")
 fips2pop = dict(zip(populations["fips"], populations["population"]))
 fips2beta = dict(zip(betas["fips"], betas["beta"]))
-fips2age = dict(zip(age_groups["fips"], zip(age_groups["percent_less_than_18_years_of_age"], age_groups["percent_65_and_over"])))
 fips2beds = dict(zip(beds["fips"], zip(beds["hospital_beds"], beds["icu_beds"])))
-fips2recovered = dict(zip(recovered["fips"], recovered["recovered_est"]))
+fips2recovered = dict(zip(fatality_estimates["fips"], fatality_estimates["recovered_est"]))
+fips2fatality_rate = dict(zip(fatality_estimates["fips"], fatality_estimates["fatality_rate"]))
 
 
-def simulate_county(fips, duration, I0=1, lockdown=None, panic=None, partial_lockdown=None):
+def simulate_county(fips, duration, I0=1, lockdown=None, panic=None, partial_lockdown=None, floats=False):
     """
     Simulate S,E,I,R,t,A,D,ICU from a county 
     :param fips: FIPS ID for county
@@ -35,6 +32,7 @@ def simulate_county(fips, duration, I0=1, lockdown=None, panic=None, partial_loc
     :param lockdown: inclusive time interval for reduction of transmission rate
     :param panic: inclusive time interval for increase in transmission rate
     :param partial_lockdown: inclusive time interval for partial reduction of transmission rate
+    :param floats: 
     :return: pandas DataFrame
     """
     intervals, beta_factors = [], []
@@ -56,7 +54,7 @@ def simulate_county(fips, duration, I0=1, lockdown=None, panic=None, partial_loc
     arr = arr.iloc[:len(arr)-ICU_duration, :]
     # return rounded version. 
     # We round instead of round down since there is some imprecision where I=1, fluctuates to e.g. .98
-    return round(arr).astype(int)
+    return arr if floats else round(arr).astype(int)
 
 
 def _simulate_county(fips, duration, I0=1, intervals=None, beta_factors=None):
@@ -85,9 +83,7 @@ def _add_AD(arr, fips):
     :param fips: 
     :return: 
     """
-    ages = fips2age[fips]
-    ages = np.asarray([ages[0], 100 - sum(ages), ages[1]]) / 100
-    arr["Dead"] = sum(removed_fatality * ages) * arr["Removed"]
+    arr["Dead"] = fips2fatality_rate[fips] * arr["Removed"]
     arr["Recovered"] = arr["Removed"] - arr["Dead"]
     return arr
 
