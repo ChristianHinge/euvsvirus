@@ -59,8 +59,10 @@ def get_map(ix = "r"):
                             opacity=0.5,
                             labels={'risk':'County risk'}
                             )
-    fig.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)',
-                        'paper_bgcolor': 'rgba(0, 0, 0, 0)',})
+    fig.update_layout(
+        margin=dict(l=0, r=0, t=0, b=0),
+        plot_bgcolor='rgba(0, 0, 0, 0)',
+        paper_bgcolor='rgba(0, 0, 0, 0)',)
     return fig
 
 def get_SIR_from_fips(fips,lockdown=None,panic = None, partial_lockdown = None):
