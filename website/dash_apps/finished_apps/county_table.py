@@ -3,7 +3,7 @@ import numpy as np
 import plotly.graph_objs as go
 
 
-def table_fig(fips=1017):
+def table_fig(fips=1039):
     
     df = pd.read_csv('data/counties/population/density.tsv', sep='\t')
     df_health = pd.read_csv('data/counties/county_health_rankings/county_age.tsv', sep='\t')

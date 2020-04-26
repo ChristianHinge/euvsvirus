@@ -17,12 +17,8 @@
 		<noscript><link rel="stylesheet" href={% static 'website/cssFiles/noscript.css' %} /></noscript>
 	</head>
 	<body class="is-preload">
-		<div class='masterScroll'>
-			{% block body %}
-			{% endblock %}
-		</div>
-
-
+		{% block body %}
+		{% endblock %}
 	</body>
 	{% plotly_footer %}
 </html>
