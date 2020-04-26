@@ -13,7 +13,7 @@ from src.model import simulate
 import website.dash_apps.finished_apps.htmlCssVariables as webVar
 from website.dash_apps.finished_apps.county_table import table_fig
 
-current_fips = 1043
+current_fips = 1039 #COVIngton county
 external_stylesheets = 'website/static/website/cssFiles/main.css'
 
 app = DjangoDash('SimpleExample')
@@ -85,24 +85,24 @@ app.layout = html.Div([
 
 #    html.Div([html.H1("Demographic Data by Country")], id='teeesting', style=webVar.demoStyle),
     html.Div([
-        html.Span("Risk metric : ", className="six columns", style=webVar.metricStyle),
+        html.Span("Risk metric : ", className="six columns", id='metToDisp'),
         dcc.Dropdown(id="value-selected", value='ic', options=[
                                                        {'label': "Intensive care", 'value': 'ic'},
                                                        {'label': "Mortality index", 'value': 'mi'},
                                                        {'label': "Total fatalities", 'value': 'tf'}],
-                                              style=webVar.dropStyle,
                                               className="six columns")], className="row"
     ),
-    dcc.Graph(figure=fig,id="my-graph", style=webVar.graphStyle),
-    html.Div([dcc.Graph(id='county-table')], style={'width': '30%', 'display': 'inline-block', 'vertical-align': 'middle'}),
-    html.Div([html.H2(["Some title"],style=webVar.demoStyle),html.P([""" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lacinia pretium dui, at dictum massa elementum at. Nam nec laoreet mi. Aliquam molestie eget mi at dictum. Aliquam mattis mauris metus, at pellentesque elit eleifend id. Integer feugiat purus et sollicitudin fringilla. Vivamus a nunc et diam ullamcorper luctus nec quis diam. Nunc vitae lorem vitae purus tincidunt cursus. Nullam ac viverra leo.
+    dcc.Graph(figure=fig,id="my-graph"),
+    html.Div([
+        dcc.Graph(id='county-table'),
+        html.Div([html.H2(["Some title"],id='titleBetweenPlots'),html.P([""" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lacinia pretium dui, at dictum massa elementum at. Nam nec laoreet mi. Aliquam molestie eget mi at dictum. Aliquam mattis mauris metus, at pellentesque elit eleifend id. Integer feugiat purus et sollicitudin fringilla. Vivamus a nunc et diam ullamcorper luctus nec quis diam. Nunc vitae lorem vitae purus tincidunt cursus. Nullam ac viverra leo.
 
 Vestibulum quis volutpat nisi. Duis nec fermentum leo, condimentum cursus felis. Cras nisi elit, suscipit sed risus eu, tristique finibus nunc. Integer ut placerat arcu, eget feugiat mauris. Nam justo nisi, iaculis rhoncus nibh vitae, blandit dictum sapien. Integer commodo odio diam, et lacinia ante condimentum sed. Phasellus lacinia, tortor sit amet feugiat gravida, justo mauris imperdiet ante, sed maximus mauris ligula malesuada ligula.
 
 Vestibulum varius, ante sollicitudin ullamcorper facilisis, quam nisl fermentum nisi, non fringilla eros justo sed nunc. Pellentesque urna massa, finibus sed auctor quis, molestie venenatis nisi. Nam porta ante nec ligula condimentum fringilla. Nulla vulputate odio vel orci fermentum, eu rhoncus felis tristique. Maecenas ac dictum dui, nec rutrum metus. Quisque sed tellus mauris. Curabitur ut dignissim diam. Sed diam massa, aliquam eu consequat id, semper et libero. Pellentesque auctor nec libero at sollicitudin. Etiam pellentesque molestie risus, nec eleifend arcu maximus nec.
 
 In eu mauris a leo aliquam scelerisque. Ut facilisis viverra odio, interdum pulvinar nisl interdum ac. Sed facilisis tellus at purus auctor, ut luctus odio mattis. Sed aliquam massa a augue egestas, porta efficitur ante malesuada. Vestibulum quis finibus dui, vitae convallis arcu. Phasellus tempus euismod diam at auctor. Nullam dapibus, mi et placerat fringilla, nulla lacus imperdiet dui, luctus dignissim dui sem vitae turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In interdum ipsum dolor, ut sollicitudin risus lacinia in. In aliquet accumsan vehicula. Curabitur laoreet augue ante. """
-        ])], style={'width': '65%', 'display': 'inline-block', 'vertical-align': 'middle'}),
+        ])], id='textBetweenPlots')]),
     html.Div([dcc.Graph(id='x-time-series'),]),
     html.Div([dcc.Graph(id='x-time-series-2'),]),
     html.Div(
@@ -187,7 +187,7 @@ In eu mauris a leo aliquam scelerisque. Ut facilisis viverra odio, interdum pulv
 
 df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/solar.csv')
 
-# app = DjangoDash.dash(__name__)
+
 
 
 

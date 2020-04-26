@@ -8,8 +8,7 @@ df_beds = pd.read_csv('data/counties/hospital_capacity/beds.tsv', sep='\t')
 df_ensured = pd.read_csv('data/counties/county_health_rankings/county_uninsured.tsv', sep='\t')
 
 
-
-def table_fig(fips=1017):
+def table_fig(fips=1039):
     
     global df
     global df_health
