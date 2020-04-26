@@ -13,10 +13,6 @@ def SEIR(y, t, beta, gamma, sigma):
     """
     S, E, I, R = y
     N = S + E + I + R
-    # if infected dips below 1 there are no cases, and they cannot go back up
-    if I < 1:
-        R += I
-        I = 0
     
     dSdt = - beta * S * I / N
     dEdt = beta * S * I / N - sigma * E
@@ -46,7 +42,7 @@ def SEIR_betas(y, t, beta, gamma, sigma, intervals, interval_betas):
 def simulate_SEIR(duration, S0, E0=0, I0=1, R0=0, beta=None, gamma=1/14, sigma=1/2):
     assert beta is not None
     y0 = [S0, E0, I0, R0]
-    return odeint(SEIR, y0, range(duration), args=(beta, gamma, sigma))
+    return _eradication(odeint(SEIR, y0, range(duration), args=(beta, gamma, sigma)))
 
 
 def simulate_SEIR_betas(duration, S0, E0=0, I0=1, R0=0, beta=None, gamma=1/14, sigma=1/2, intervals=None, beta_factors=None):
@@ -58,4 +54,17 @@ def simulate_SEIR_betas(duration, S0, E0=0, I0=1, R0=0, beta=None, gamma=1/14, s
     if beta_factors is None: interval_betas = []
     else: interval_betas = beta * np.asarray(beta_factors)
     y0 = [S0, E0, I0, R0]
-    return odeint(SEIR_betas, y0, range(duration), args=(beta, gamma, sigma, intervals, interval_betas))
+    return _eradication(odeint(SEIR_betas, y0, range(duration), args=(beta, gamma, sigma, intervals, interval_betas)))
+
+
+def _eradication(solution):
+    idx = np.where(solution[:, 2] < 0.1)[0]
+    if len(idx) > 0:
+        idx = idx[0]
+        # move remaining E and I to R
+        solution[idx, 3] += sum(solution[idx, 1:3])
+        solution[idx, 1:3] = 0  # remove E and I
+        solution[idx+1:,] = solution[idx,]  # everything is static
+    return solution
+
+

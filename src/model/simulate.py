@@ -69,8 +69,8 @@ def _simulate_county(fips, duration, I0=1, intervals=None, beta_factors=None):
     R0 = fips2recovered[fips]
     beta = fips2beta[fips]
     arr = simulate_SEIR_betas(duration, N-I0-R0, I0=I0, R0=R0, beta=beta, intervals=intervals, beta_factors=beta_factors)
-    arr = pd.DataFrame(arr, columns=["S", "E", "I", "R"])
-    arr["t"] = arr.index
+    arr = pd.DataFrame(arr, columns=["Susceptible", "Exposed", "Infected", "Removed"])
+    arr["days"] = arr.index
     return arr
 
 
@@ -83,8 +83,8 @@ def _add_AD(arr, fips):
     """
     ages = fips2age[fips]
     ages = np.asarray([ages[0], 100 - sum(ages), ages[1]]) / 100
-    arr["D"] = sum(removed_fatality * ages) * arr["R"]
-    arr["A"] = arr["R"] - arr["D"]
+    arr["Dead"] = sum(removed_fatality * ages) * arr["Recovered"]
+    arr["Recovered"] = arr["Recovered"] - arr["Dead"]
     return arr
 
 
@@ -94,7 +94,7 @@ def _add_ICU(arr):
     :param arr: has column D
     :return: 
     """
-    daily_dead = np.diff(arr["D"])
+    daily_dead = np.diff(arr["Dead"])
     ICU = np.zeros(len(arr))
     for ICU_day in range(ICU_duration):
         ICU[:-ICU_day - 1] += daily_dead[ICU_day:]
