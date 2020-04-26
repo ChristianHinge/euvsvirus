@@ -105,7 +105,10 @@ In eu mauris a leo aliquam scelerisque. Ut facilisis viverra odio, interdum pulv
         ])], style={'width': '65%', 'display': 'inline-block', 'vertical-align': 'middle'}),
     html.Div([dcc.Graph(id='x-time-series'),]),
     html.Div([dcc.Graph(id='x-time-series-2'),]),
-    html.Div([dcc.RangeSlider(
+    html.Div(
+        [
+            html.Div([html.H4("Full lockdown")],style={'width': '10%', 'display': 'inline-block','vertical-align': 'middle'}),
+            html.Div([dcc.RangeSlider(
         count=1,
         min=0,
         max=500,
@@ -124,11 +127,10 @@ In eu mauris a leo aliquam scelerisque. Ut facilisis viverra odio, interdum pulv
             450: {'label': ''},
             500: {'label': ''}
         }
-        
-        )]),
+        )],style={'width': '89%', 'display': 'inline-block','vertical-align': 'middle'})]),
     html.Div(
         [
-            html.Div([html.H4("Full lockdown")],style={'width': '10%', 'display': 'inline-block','vertical-align': 'middle'}),
+            html.Div([html.H4("Partial lockdown")],style={'width': '10%', 'display': 'inline-block','vertical-align': 'middle'}),
             html.Div([dcc.RangeSlider(
         count=1,
         min=0,
@@ -149,13 +151,16 @@ In eu mauris a leo aliquam scelerisque. Ut facilisis viverra odio, interdum pulv
             500: {'label': ''}
         }
         )],style={'width': '89%', 'display': 'inline-block','vertical-align': 'middle'})]),
-    html.Div([dcc.RangeSlider(
+        html.Div(
+        [
+            html.Div([html.H4("Full lockdown")],style={'width': '10%', 'display': 'inline-block','vertical-align': 'middle'}),
+            html.Div([dcc.RangeSlider(
         count=1,
         min=0,
         max=500,
         step=1,
         value=[0, 10],id='slider-3',
-        marks={
+        marks = {
             0: {'label': 'Day 0'},
             50: {'label': 'Day 50'},
             100: {'label': 'Day 100'},
@@ -167,8 +172,8 @@ In eu mauris a leo aliquam scelerisque. Ut facilisis viverra odio, interdum pulv
             400: {'label': 'Day 400'},
             450: {'label': 'Day 450'},
             500: {'label': 'Day 500'}
-    }
-        )]),
+        }
+        )],style={'width': '89%', 'display': 'inline-block','vertical-align': 'middle'})]),
     html.Div([dcc.Checklist(
         options=[
             {'label': 'Full lockdown' ,'value':'FP'},
