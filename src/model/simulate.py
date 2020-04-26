@@ -83,8 +83,8 @@ def _add_AD(arr, fips):
     """
     ages = fips2age[fips]
     ages = np.asarray([ages[0], 100 - sum(ages), ages[1]]) / 100
-    arr["Dead"] = sum(removed_fatality * ages) * arr["Recovered"]
-    arr["Recovered"] = arr["Recovered"] - arr["Dead"]
+    arr["Dead"] = sum(removed_fatality * ages) * arr["Removed"]
+    arr["Recovered"] = arr["Removed"] - arr["Dead"]
     return arr
 
 
@@ -103,6 +103,6 @@ def _add_ICU(arr):
 
 
 def _add_beds(arr, fips):
-    arr["hospital_beds"], arr["icu_beds"] = fips2beds[fips]
+    arr["Hospital beds"], arr["ICU beds"] = fips2beds[fips]
     return arr
 
