@@ -45,14 +45,18 @@ def get_map(ix = "r"):
     risk_str = ""
     if ix == "r":
         risk_str = "Risk index"
+        colormap='Reds'
     elif ix == "ic":
         risk_str = "Peak ICU/ICU beds"
+        colormap='Blues'
     elif ix == "mi":
         risk_str = "Fatalities/population"
+        colormap='Greens'
     elif ix == "tf":
         risk_str = "Fatalities"
+        colormap='Magenta'
     fig = px.choropleth_mapbox(df, geojson=counties, locations='fips', color=risk_str,
-                            color_continuous_scale = 'Reds',#['#2821FF','#D917E8','#FF4726','#E89817','#FFCB00'],
+                            color_continuous_scale = colormap,
                             range_color=(df.quantile(0.05)[risk_str], df.quantile(0.95)[risk_str]),
                             mapbox_style="carto-positron",
                             zoom=3, center = {"lat": 37.0902, "lon": -95.7129},
