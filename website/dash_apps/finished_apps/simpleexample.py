@@ -14,6 +14,8 @@ import website.dash_apps.finished_apps.htmlCssVariables as webVar
 from website.dash_apps.finished_apps.county_table import table_fig
 
 current_fips = 1039 #COVIngton county
+fl_visible = False
+
 external_stylesheets = 'website/static/website/cssFiles/main.css'
 
 app = DjangoDash('SimpleExample')
@@ -26,7 +28,6 @@ with urlopen('https://raw.githubusercontent.com/plotly/datasets/master/geojson-c
 #                   dtype={"fips": str})
 df = pd.read_csv("data/counties/simulations/county_risk.tsv",sep='\t')
 
-df3 = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/2014_usa_states.csv')
 
 fig3 = go.Figure(data=[go.Table(
     header=dict(values=list(df.columns),
@@ -107,7 +108,9 @@ In eu mauris a leo aliquam scelerisque. Ut facilisis viverra odio, interdum pulv
     html.Div([dcc.Graph(id='x-time-series-2'),]),
     html.Div(
         [
-            html.Div([html.H4("Full lockdown")],style={'width': '10%', 'display': 'inline-block','vertical-align': 'middle'}),
+            html.Div([
+            html.Button('Full lockdown', id='fl-button'),
+                ],style={'width': '10%', 'display': 'inline-block','vertical-align': 'middle'}),
             html.Div([dcc.RangeSlider(
         count=1,
         min=0,
@@ -127,7 +130,7 @@ In eu mauris a leo aliquam scelerisque. Ut facilisis viverra odio, interdum pulv
             450: {'label': ''},
             500: {'label': ''}
         }
-        )],style={'width': '89%', 'display': 'inline-block','vertical-align': 'middle'})]),
+        )],id="flsliderdiv")]),
     html.Div(
         [
             html.Div([html.H4("Partial lockdown")],style={'width': '10%', 'display': 'inline-block','vertical-align': 'middle'}),
@@ -173,14 +176,49 @@ In eu mauris a leo aliquam scelerisque. Ut facilisis viverra odio, interdum pulv
             450: {'label': 'Day 450'},
             500: {'label': 'Day 500'}
         }
-        )],style={'width': '89%', 'display': 'inline-block','vertical-align': 'middle'})]),
+        )])]),
     html.Div([dcc.Checklist(
         options=[
             {'label': 'Full lockdown' ,'value':'FP'},
             {'label': 'Partial lockdown', 'value': 'PP'},
             {'label': 'Panic', 'value': 'P'}
         ],
-        value=['P'],id='checks')])
+        value=['P'],id='checks')]),
+        
+        dcc.Dropdown(
+            id = 'dropdown-to-show_or_hide-element',
+            options=[
+                {'label': 'Show element', 'value': 'on'},
+                {'label': 'Hide element', 'value': 'off'}
+            ],
+            value = 'on'
+        ),
+
+        # Create Div to place a conditionally visible element inside
+        html.Div([
+            # Create element to hide/show, in this case an 'Input Component'
+            dcc.RangeSlider(
+            count=1,
+            min=0,
+            max=500,
+            step=1,
+            value=[0, 10],id='element-to-hide-3',
+            marks={
+                0: {'label': ''},
+                50: {'label': ''},
+                100: {'label': ''},
+                150: {'label': ''},
+                200: {'label': ''},
+                250: {'label': ''},
+                300: {'label': ''},
+                350: {'label': ''},
+                400: {'label': ''},
+                450: {'label': ''},
+                500: {'label': ''}
+            })
+        ], id='element-to-hide', style= {'display': 'block'} # <-- This is the line that will be changed by the dropdown callback
+        )
+    
     ],
     className="container",
 )
@@ -188,6 +226,34 @@ In eu mauris a leo aliquam scelerisque. Ut facilisis viverra odio, interdum pulv
 df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/solar.csv')
 
 
+@app.callback(
+   Output(component_id='element-to-hide', component_property='style'),
+   [Input(component_id='dropdown-to-show_or_hide-element', component_property='value')])
+
+def show_hide_element(visibility_state):
+    if visibility_state == 'on':
+        return {'display': 'block'}
+    if visibility_state == 'off':
+        return {'display': 'none'}
+
+
+
+@app.callback(
+   Output(component_id='flsliderdiv', component_property='style'),
+   [Input(component_id='dropdown-to-show_or_hide-element', component_property='value')])
+
+def toggle_fl(value):
+    print(value)
+    print("Hey2")
+    global fl_visible
+    
+    if fl_visible:
+        fl_visible = not fl_visible
+        return {'display': 'block'}
+    else:
+        fl_visible = not fl_visible
+        return {'display': 'none'}
+    
 
 
 
@@ -206,6 +272,7 @@ df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/solar
 
     ])
 def display_graph(clickData,checks,slider_value_1,slider_value_2,slider_value_3):
+    print("Hey")
     global current_fips
     if clickData == None:
         fips = current_fips
