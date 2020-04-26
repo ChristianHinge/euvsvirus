@@ -25,15 +25,12 @@
         </div>
         <div class="instructions">
             <p>
-                US county data has been curated and processsed to showcase the tool. You can interact with the data through the map below where you can click on counties to analyse them individually. 
-		The heatmap display on the map indicates the risks a county would be exposed to in case of an outbreak. This means it does not visualize the probability of an outbreak but rather the potential ramifications. 
-		The risks are currently measured from peak ICU bed requirement, peak ICU beds per available ICU beds, total fatalities, and fatalities per capita all based on a 500 day simulation without lockdown. 
-		The default heatmap displays an overall risk index, which is the product of peak ICU/available ICU beds and fatalities per capita. 
-		The simulation is a simple SEIR simulation with parameters currently estimated from population size, age distribution, and other factors. 
-            </p><p>
-                Data for the selected county is displayed under the map, followed by a visualization of simulation progression through time. 
-		Sliders activated with the buttons "Lockdown", "Partial lockdown", and "Panic dynamics" allows for playing around with the dynamics of introducing a lockdown, partial lockdown, and population panics for time intervals selected from the end points of each slider. 
-		All dynamics are modelled as temporary changes to the beta parameter of a SEIR model. A lockdown is modelled to match a reduction of r0 from approximately 2 to &lt;1, partial lockdown is to &gt;1, and panic is approximately 3, although it varies by county.
+                US county data has been curated and processsed to showcase the tool. You can interact with the data through the map below, where you can click on counties to analyse them individually. 
+		Select different risk metric with the dropdown menu above the map to change the map visualization. 
+		The map is interactive, you can zoom in and move around using your scrool and cursor. Click on a county to select it. 
+		Values are plotted for the selected counties underneath. 
+		Press "Lockdown", "Partial lockdown", or "Panic dynamics" to reveal a slider for each. Move end points of the sliders to control the start and end time for each effect.
+		The plot will automatically update to the changes.
             </p>
             <br>
         </div>
@@ -45,10 +42,32 @@
         <div class="{% plotly_class name='SimpleExample' %} card" style="height: 100%; width: 100%" id="usaPlot">
                 {% plotly_direct  name='SimpleExample' %}
             </div>
-        <header class="major">
-            <h2>THIS IS OBVIOUSLY UNDER MAJOR CONSTRUCTION BRUH!!</h2>
-        </header>
     </section>
+
+
+<!-- White section -->
+    <section id='TechnicalText' class='getScrolled'>
+        <div class="titleTextinTechnical">
+            <h2>
+                Details
+            </h2>
+        </div>
+        <div class="details">
+	    <p>
+                The heatmap displayed on the map indicates the risks a county would be exposed to in case of an outbreak. This means it does not visualize the probability of an outbreak but rather the p
+otential ramifications.
+                The risks are currently measured from peak ICU bed requirement, peak ICU beds per available ICU beds, total fatalities, and fatalities per capita all based on a 500 day simulation without lockdown.
+                The default heatmap displays an overall risk index, which is the product of peak ICU/available ICU beds and fatalities per capita.
+                The simulation is built on a SEIR model with parameters currently estimated from population size, age distribution, and other factors.
+                ICU numbers are currently found from a simple model of each fatality having a 5 day ICU stay preceding it.
+            </p><p>
+                Data for the selected county is displayed under the map, followed by a visualization of simulation progression through time.
+                Sliders activated with the buttons "Lockdown", "Partial lockdown", and "Panic dynamics" allows for playing around with the dynamics of introducing a lockdown, partial lockdown, and population panics for time intervals selected from the end points of each slider.
+                All dynamics are modelled as temporary changes to the beta parameter of a SEIR model. A lockdown is modelled to match a reduction of r0 from approximately 2 to &lt;1, partial lockdown is to &gt;1, and panic is approximately 3, although it varies by county. Overlapping dynamics will result in averaged effects.<p>
+            <br>
+        </div>
+    </section>
+
 
     <!-- second gradient section -->
     <!-- <section id="header2">
@@ -58,9 +77,10 @@
         </div>
     </section>            -->
 
-    		<!-- Footer -->
+<!-- Footer -->
     <footer id="footer">
-        </footer>
+	    <p class="copyright">Built on fractal template from <a href="http://html5up.net">HTML5 UP</a></p>
+    </footer>
         <!-- Scripts -->
         {% load static %}
         <script src={% static 'website/js/jquery.min.js' %}></script>
