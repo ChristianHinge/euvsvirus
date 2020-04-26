@@ -19,6 +19,8 @@ age_groups[,from18to65:=1-under18-over65]
 # this fraction of who is infected will die
 age_fatality_rate = rowSums(age_fatalities * age_groups[,.(under18,from18to65,over65)])
 age_groups[,age_fatality_rate:=age_fatality_rate]
+
+
 # we also add conservative consideration to the health of the population. 
 # https://www.worldometers.info/coronavirus/coronavirus-age-sex-demographics/
 # source says 5-10 times more deadly with preexisting condition. 
@@ -38,6 +40,7 @@ health_table = health_table[age_groups[,.(fips,age_fatality_rate)],on="fips"]
 health_table[,fatality_rate:=age_fatality_rate*(unhealthy_factor * health + (1-health)) * constant]
 
 cases_deaths = cases_deaths[health_table[,.(fips, fatality_rate)], on="fips"]
+
 cases_deaths[,cases_fatality_est:=deaths / fatality_rate]
 # some of the confirmed cases are actually higher (mostly for small numbers) 
 # but I will not use something like pmax(cases, cases_fatality_est) since those cases are "ahead" of deaths.
