@@ -54,8 +54,7 @@
         </div>
         <div class="details">
 	    <p>
-                The heatmap displayed on the map indicates the risks a county would be exposed to in case of an outbreak. This means it does not visualize the probability of an outbreak but rather the p
-otential ramifications.
+                The heatmap displayed on the map indicates the risks a county would be exposed to in case of an outbreak. This means it does not visualize the probability of an outbreak but rather the potential ramifications.
                 The risks are currently measured from peak ICU bed requirement, peak ICU beds per available ICU beds, total fatalities, and fatalities per capita all based on a 500 day simulation without lockdown.
                 The default heatmap displays an overall risk index, which is the product of peak ICU/available ICU beds and fatalities per capita.
                 The simulation is built on a SEIR model with parameters currently estimated from population size, age distribution, and other factors.
@@ -63,7 +62,15 @@ otential ramifications.
             </p><p>
                 Data for the selected county is displayed under the map, followed by a visualization of simulation progression through time.
                 Sliders activated with the buttons "Lockdown", "Partial lockdown", and "Panic dynamics" allows for playing around with the dynamics of introducing a lockdown, partial lockdown, and population panics for time intervals selected from the end points of each slider.
-                All dynamics are modelled as temporary changes to the beta parameter of a SEIR model. A lockdown is modelled to match a reduction of r0 from approximately 2 to &lt;1, partial lockdown is to &gt;1, and panic is approximately 3, although it varies by county. Overlapping dynamics will result in averaged effects.<p>
+                All dynamics are modelled as temporary changes to the beta parameter of a SEIR model. A lockdown is modelled to match a reduction of r0 from approximately 2 to &lt;1, partial lockdown is to &gt;1, and panic is approximately 3, although it varies by county. Overlapping dynamics will result in averaged effects.
+	    </p>
+            <p>
+                Sources: <br />
+                https://www.census.gov/data/datasets/time-series/demo/popest/2010s-counties-total.html <br />
+		https://www.kaggle.com/roche-data-science-coalition/uncover <br />
+		https://data.humdata.org/dataset/nyt-covid-19-data <br />
+		https://github.com/CSSEGISandData/COVID-19
+            </p>
             <br>
         </div>
     </section>
