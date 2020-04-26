@@ -106,6 +106,5 @@ def _add_ICU(arr):
 
 def _add_beds(arr, fips):
     arr["Total hospital beds"], arr["ICU beds"] = fips2beds[fips]
-    arr["Total hospital beds"] += arr["ICU beds"]
     return arr
 
