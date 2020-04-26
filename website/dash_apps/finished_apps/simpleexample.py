@@ -99,13 +99,17 @@ app.layout = html.Div([
 #    html.Div([html.H1("Demographic Data by Country")], id='teeesting', style=webVar.demoStyle),
     html.Div([
         html.Span("Risk metric : ", className="six columns", id='metToDisp'),
-        dcc.Dropdown(id="value-selected", value='r', options=[
-                                                       {'label': "Combined risk index", 'value': 'r'},
-                                                       {'label': "Intensive care", 'value': 'ic'},
-                                                       {'label': "Mortality index", 'value': 'mi'},
-                                                       {'label': "Total fatalities", 'value': 'tf'}],
-                                              className="six columns")], className="row"
-    ),
+        dcc.Dropdown(
+            id="value-selected", 
+            value='r', 
+            options=[
+                    {'label': "Combined risk index", 'value': 'r'},
+                    {'label': "Intensive care", 'value': 'ic'},
+                    {'label': "Mortality index", 'value': 'mi'},
+                    {'label': "Total fatalities", 'value': 'tf'}],
+            className="six columns", 
+            searchable=False)], 
+        className="row" ),
     html.Div([
     html.Div([dcc.Graph(id='county-table')],style = {'width': '25%', 'display': 'inline-block','vertical-align': 'middle'}),
     html.Div([dcc.Graph(id="my-graph")],style = {'width': '74%', 'display': 'inline-block','vertical-align': 'middle'}),

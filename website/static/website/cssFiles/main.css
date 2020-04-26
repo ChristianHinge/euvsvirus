@@ -88,9 +88,9 @@
 }
 
 
-#HowToText {
+.HowToText {
 	display: inline-block;
-	background-color: white;
+	background-color: rgb(255, 241, 224);
 	color: #d1e5f9;
 	padding: 0 0 0 0 ;
 	-moz-align-items: center;
@@ -178,10 +178,14 @@
 
 #metToDisp{
 	font-family: 'Din';
-	text-align:right;
-	width:40%;
-	padding-top: 10;
+	text-align:center;
+	width:100%;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	font-weight: bold;
+	font-stretch: condensed;
 	color:black;
+	font-size: 3em;
 }
 
 
@@ -192,12 +196,18 @@
 
 #value-selected{
 	font-family: 'Din';
+	/* font-weight: bold; */
 	display: block; 
 	margin-left: auto; 
 	margin-right: auto; 
-	width:70%; 
+	width:50%; 
+	font-size: 1.8em;
+	/* height: 2.5em; */
 	color:black;
+	text-align: center;
 }
+
+
 
 #teeesting h1{
 	font-family: 'Din';
