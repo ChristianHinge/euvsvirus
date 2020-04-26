@@ -280,7 +280,15 @@
 }
 
 
-
+.details a{
+	font-family: 'Din';
+    font-weight: bold;
+    font-stretch: condensed;
+    font-size: 2.2em;
+    text-align: center;
+    display: block;
+    color: red;
+}
 
 
 .sliderPlacement{
@@ -520,7 +528,7 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		text-decoration: none;
-		border-bottom: dotted 1px;
+		/* border-bottom: dotted 1px; */
 	}
 
 		a:hover {
