@@ -6,7 +6,7 @@ density = pd.read_csv("data/counties/population/density.tsv", sep="\t")
 
 print("fips\tPeak ICU\tPeak ICU/ICU beds\tFatalities\tFatalities/population")
 for fips, pop in zip(density["fips"], density["population"]):
-    arr = simulate_county(fips, 500)
+    arr = simulate_county(fips, 500, floats=True)
     max_icu = max(arr["ICU"])
     icu_beds = arr.at[0, "ICU beds"]
     dead = arr.at[len(arr)-1, "Dead"]

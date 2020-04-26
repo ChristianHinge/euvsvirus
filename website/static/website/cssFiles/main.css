@@ -180,6 +180,12 @@
 	margin-top: 0%;
 }
 
+#county-div{
+	width: 25%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
 #metToDisp{
 	font-family: 'Din';
 	text-align:center;
@@ -198,6 +204,11 @@
 	color:black;
 }
 
+#graph-div{
+	width: 74%;
+	display: inline-block;
+	vertical-align: middle;
+}
 
 /* drop down settings */
 #value-selected{
