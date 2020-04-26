@@ -58,6 +58,7 @@ def get_SIR_from_fips(fips,lockdown=None,panic = None, partial_lockdown = None):
     #df = df[["t","ICU"]]
 
     return df
+    
 
 def create_time_series(df):
     df = df[["S","E","I","A","t"]]
@@ -109,19 +110,65 @@ In eu mauris a leo aliquam scelerisque. Ut facilisis viverra odio, interdum pulv
         min=0,
         max=500,
         step=1,
-        value=[0, 10],id='slider-1')]),
+        value=[0, 10],id='slider-1',
+        marks={
+            0: {'label': ''},
+            50: {'label': ''},
+            100: {'label': ''},
+            150: {'label': ''},
+            200: {'label': ''},
+            250: {'label': ''},
+            300: {'label': ''},
+            350: {'label': ''},
+            400: {'label': ''},
+            450: {'label': ''},
+            500: {'label': ''}
+        }
+        
+        )]),
+    html.Div(
+        [
+            html.Div([html.H4("Full lockdown")],style={'width': '10%', 'display': 'inline-block','vertical-align': 'middle'}),
+            html.Div([dcc.RangeSlider(
+        count=1,
+        min=0,
+        max=500,
+        step=1,
+        value=[0, 10],id='slider-2',
+        marks={
+            0: {'label': ''},
+            50: {'label': ''},
+            100: {'label': ''},
+            150: {'label': ''},
+            200: {'label': ''},
+            250: {'label': ''},
+            300: {'label': ''},
+            350: {'label': ''},
+            400: {'label': ''},
+            450: {'label': ''},
+            500: {'label': ''}
+        }
+        )],style={'width': '89%', 'display': 'inline-block','vertical-align': 'middle'})]),
     html.Div([dcc.RangeSlider(
         count=1,
         min=0,
         max=500,
         step=1,
-        value=[0, 10],id='slider-2')]),
-    html.Div([dcc.RangeSlider(
-        count=1,
-        min=0,
-        max=500,
-        step=1,
-        value=[0, 10],id='slider-3')]),
+        value=[0, 10],id='slider-3',
+        marks={
+            0: {'label': 'Day 0'},
+            50: {'label': 'Day 50'},
+            100: {'label': 'Day 100'},
+            150: {'label': 'Day 150'},
+            200: {'label': 'Day 200'},
+            250: {'label': 'Day 250'},
+            300: {'label': 'Day 300'},
+            350: {'label': 'Day 350'},
+            400: {'label': 'Day 400'},
+            450: {'label': 'Day 450'},
+            500: {'label': 'Day 500'}
+    }
+        )]),
     html.Div([dcc.Checklist(
         options=[
             {'label': 'Full lockdown' ,'value':'FP'},
