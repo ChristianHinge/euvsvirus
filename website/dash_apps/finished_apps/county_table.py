@@ -6,6 +6,7 @@ df = pd.read_csv('data/counties/population/density.tsv', sep='\t')
 df_health = pd.read_csv('data/counties/county_health_rankings/county_age.tsv', sep='\t')
 df_beds = pd.read_csv('data/counties/hospital_capacity/beds.tsv', sep='\t')
 df_ensured = pd.read_csv('data/counties/county_health_rankings/county_uninsured.tsv', sep='\t')
+df_risk = pd.read_csv("data/counties/simulations/risk_index0.csv")
 
 
 def table_fig(fips=1039):
@@ -21,9 +22,16 @@ def table_fig(fips=1039):
     county_uninsured = df_ensured.loc[df_ensured.fips == fips]
     population = county_data.population.item()
     county, state = county_data.location.item().split(', ')
-    
+    county_risk = df_risk.loc[df_risk.fips==fips]
     age = county_health_data["percent_65_and_over"].item()    
     
+    county = county.split(" ")[0]
+
+    risk1 = round(county_risk["Risk index"].item(),3)
+    risk2 = round(county_risk["Peak ICU/ICU beds"].item(),3)
+    risk3 = round(county_risk["Fatalities/population"].item(),3)
+    risk4 = round(county_risk["Fatalities"].item(),3)
+
     demographic = ""
     if age < 16.2:
         demographic = "Young"
@@ -59,8 +67,8 @@ def table_fig(fips=1039):
                     font_size=20,
                     height=32,
                     font_color='white',),
-        cells=dict(values=[["State","County","Population","Age demographic", "ICU beds", "Pop. density","Uninsured","Risk"], # 1st column
-                        [state, county, population, demographic,round(ICU_beds),density,str(round(ensured,2))+"%",2]], # 2nd column
+        cells=dict(values=[["State","County","Population","Demographic", "ICU beds", "Pop. density","Uninsured","Risk: Combined","Risk: Intensive care","Risk: Mortality","Risk: Total fatalities"], # 1st column
+                        [state, county, population, demographic,round(ICU_beds),density,str(round(ensured,2))+"%",risk1,risk2,risk3,risk4]], # 2nd column
                 line_color='darkslategray',
                 fill_color='white',
                 align='left',
