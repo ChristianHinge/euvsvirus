@@ -2,14 +2,19 @@ import pandas as pd
 import numpy as np
 import plotly.graph_objs as go
 
+df = pd.read_csv('data/counties/population/density.tsv', sep='\t')
+df_health = pd.read_csv('data/counties/county_health_rankings/county_age.tsv', sep='\t')
+df_beds = pd.read_csv('data/counties/hospital_capacity/beds.tsv', sep='\t')
+df_ensured = pd.read_csv('data/counties/county_health_rankings/county_uninsured.tsv', sep='\t')
+
 
 def table_fig(fips=1017):
     
-    df = pd.read_csv('data/counties/population/density.tsv', sep='\t')
-    df_health = pd.read_csv('data/counties/county_health_rankings/county_age.tsv', sep='\t')
-    df_beds = pd.read_csv('data/counties/hospital_capacity/beds.tsv', sep='\t')
-    df_ensured = pd.read_csv('data/counties/county_health_rankings/county_uninsured.tsv', sep='\t')
-    
+    global df
+    global df_health
+    global df_beds
+    global df_ensured
+
     
     county_data = df.loc[df.fips == fips]
     county_health_data = df_health.loc[df_health.fips == fips]

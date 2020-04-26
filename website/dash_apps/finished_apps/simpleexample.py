@@ -56,11 +56,21 @@ def get_SIR_from_fips(fips,lockdown=None,panic = None, partial_lockdown = None):
     #df = pd.DataFrame(data)
     df = simulate.simulate_county(fips=fips,duration=500,lockdown = lockdown,panic=panic,partial_lockdown=partial_lockdown)
     #df = df[["t","ICU"]]
-    df = df.melt('t',var_name='cols',  value_name='vals')
 
     return df
 
 def create_time_series(df):
+    df = df[["S","E","I","A","t"]]
+    df = df.melt('t',var_name='cols',  value_name='vals')
+    fig2 = px.line(df, x='t', y='vals', color='cols')
+    fig2.update_traces(mode='markers+lines')
+   # fig2.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)',
+   #                   'paper_bgcolor': 'rgba(0, 0, 0, 0)',})
+    return fig2
+
+def create_time_series_2(df):
+    df = df[["ICU","hospital_beds","icu_beds","t","D"]]
+    df = df.melt('t',var_name='cols',  value_name='vals')
     fig2 = px.line(df, x='t', y='vals', color='cols')
     fig2.update_traces(mode='markers+lines')
    # fig2.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)',
@@ -93,6 +103,7 @@ Vestibulum varius, ante sollicitudin ullamcorper facilisis, quam nisl fermentum 
 In eu mauris a leo aliquam scelerisque. Ut facilisis viverra odio, interdum pulvinar nisl interdum ac. Sed facilisis tellus at purus auctor, ut luctus odio mattis. Sed aliquam massa a augue egestas, porta efficitur ante malesuada. Vestibulum quis finibus dui, vitae convallis arcu. Phasellus tempus euismod diam at auctor. Nullam dapibus, mi et placerat fringilla, nulla lacus imperdiet dui, luctus dignissim dui sem vitae turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In interdum ipsum dolor, ut sollicitudin risus lacinia in. In aliquet accumsan vehicula. Curabitur laoreet augue ante. """
         ])], style={'width': '65%', 'display': 'inline-block', 'vertical-align': 'middle'}),
     html.Div([dcc.Graph(id='x-time-series'),]),
+    html.Div([dcc.Graph(id='x-time-series-2'),]),
     html.Div([dcc.RangeSlider(
         count=1,
         min=0,
@@ -132,6 +143,7 @@ df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/solar
     [
         Output('x-time-series', 'figure'),
         Output('county-table', 'figure'),
+        Output('x-time-series-2','figure'),
     ],
     [
         Input('my-graph','clickData'),
@@ -151,7 +163,7 @@ def display_graph(clickData,checks,slider_value_1,slider_value_2,slider_value_3)
     current_fips = fips
     data = get_SIR_from_fips(fips,lockdown=slider_value_1,partial_lockdown=slider_value_2,panic=slider_value_3)
     county_table = table_fig(fips)
-    return create_time_series(data), county_table
+    return create_time_series(data), county_table, create_time_series_2(data)
 
 
 """
