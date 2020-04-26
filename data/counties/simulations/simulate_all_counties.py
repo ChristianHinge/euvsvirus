@@ -4,6 +4,9 @@ from src.model.simulate import simulate_county
 
 density = pd.read_csv("data/counties/population/density.tsv", sep="\t")
 
+arr = simulate_county(1043, 500)
+
+
 print("fips\tmax_icu\tmax_icu/icu_beds\tD\tD/pop")
 for fips, pop in zip(density["fips"], density["population"]):
     arr = simulate_county(fips, 500)
