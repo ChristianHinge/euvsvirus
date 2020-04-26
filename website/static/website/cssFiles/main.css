@@ -10,12 +10,61 @@
 
 /* Css by us */
 
+.getScrolled{
+	scroll-snap-align: start;
+}
+
+.masterScroll{
+	scroll-snap-type: y mandatory;
+}
+
+#front{
+	height: 33.5em;
+	width:50em;
+	text-align: center;
+}
+
+.content #front img {
+	width: 65%; 
+	height: auto;
+	padding: 0 0 0 0;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+} 
+.content #front p{
+	font-size: 2.9em;
+	color:white;
+	font-stretch: condensed;
+	/* font-weight: bold; */
+	font-family: 'Din';
+	margin-top: 1.3em;
+	text-align: center;
+}
 
 
-/* 
-#logoTop{
-	
-} */
+
+#HowToText .titleTextinHowto h2{
+	font-family: 'Din';
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	font-size: 3em;
+	margin-top: 0.5em;
+}
+
+#HowToText .instructions p{
+	font-family: 'Din';
+	color: black;
+	font-size: 1.9em;
+	/* font-weight: bold; */
+	font-stretch: condensed;
+	text-align: center;
+	margin-left: 15%;
+	line-height: 40px;
+	margin-right: 15%;
+}
+
 
 
 #one {
@@ -27,7 +76,28 @@
 
 }
 
-#header1 {
+
+#HowToText {
+	display: inline-block;
+	background-color: white;
+	color: #d1e5f9;
+	padding: 0 0 0 0 ;
+	-moz-align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	-moz-justify-content: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	background-position: top left, center center;
+	background-attachment: fixed, fixed;
+	background-size: auto, cover;
+	height: 100vh;
+	min-height: 35em;
+}
+
+#header {
 	background-color: rgb(226,179,118);
 	color: #d1e5f9;
 	padding: 4.5em 0 2.5em 0 ;
@@ -43,7 +113,7 @@
 	-webkit-justify-content: center;
 	-ms-justify-content: center;
 	justify-content: center;
-	background-image: url('../images/overlay.png'), url('../images/pattern-size1.svg');
+	/* background-image: url('../images/overlay.png'), url('../images/pattern-size1.svg'); */
 	background-position: top left, center center;
 	background-attachment: fixed, fixed;
 	background-size: auto, cover;
@@ -76,21 +146,57 @@
 }
 
 
-.front{
-	text-align: center;
-	padding: 0 0 0 0;
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face{
+	font-family: 'Din';
+	src: url('../dinFont/d-din/D-DIN.otf') format('opentype')
+}
+@font-face{
+	font-family: 'Din';
+	font-weight: bold;
+	src: url('../dinFont/d-din/D-DIN-Bold.otf') format('opentype')
+}
+@font-face{
+	font-family: 'Din';
+	font-style: italic;
+	src: url('../dinFont/d-din/D-DIN-Italic.otf') format('opentype')
+}
+@font-face{
+	font-family: 'Din';
+	font-style: italic;
+	src: url('../dinFont/d-din/D-DIN-Italic.otf') format('opentype')
+}
+@font-face{
+	font-family: 'Din';
+	font-stretch: condensed;
+	src: url('../dinFont/d-din/D-DINCondensed.otf') format('opentype')
+}
+@font-face{
+	font-family: 'Din';
+	font-stretch: condensed;
+	font-weight: bold;
+	src: url('../dinFont/d-din/D-DINCondensed-Bold.otf') format('opentype')
 }
 
-.front img{
-	padding: 2em 2em 2em 2em;
-}
 
-.front p{
-	font-size: 2.5em;
-}
-.front p2{
-	font-size: 1.5em;
-}
+
+
+
+
+
+
+
 
 
 
@@ -3717,7 +3823,7 @@ input, select, textarea {
 /* Header */
 
 
-	#header {
+	/* #header {
 		/* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
 		background-color: #e59b46;
 		color: #d1e5f9;
@@ -3740,7 +3846,7 @@ input, select, textarea {
 		background-size: auto, cover;
 		height: 100vh;
 		min-height: 35em;
-	}
+	} */
 
 		#header input[type="submit"],
 		#header input[type="reset"],
@@ -4185,7 +4291,7 @@ input, select, textarea {
 	#footer {
 		background-color: #f7f7f7;
 		color: #999999;
-		padding: 0 1em 0 0 ;
+		padding: 0 0 0 0 ;
 		color: #b0b0b0;
 		text-align: right;
 	}
@@ -4202,6 +4308,11 @@ input, select, textarea {
 			#footer a:hover {
 				color: #4696e5;
 			}
+
+		#footer p{
+			padding: 0 0 0 0;
+			bottom: 0;
+		}
 
 		#footer strong, #footer b {
 			color: #828282;
@@ -4230,6 +4341,8 @@ input, select, textarea {
 
 		#footer .copyright {
 			font-size: 0.8em;
+			padding-right: 2em;
+			margin-bottom: 0;
 		}
 
 		@media screen and (max-width: 980px) {

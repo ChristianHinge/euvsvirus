@@ -3,20 +3,40 @@
 {% load plotly_dash %}
 
 {% block body %}
-        
-<!-- first gradient section -->
-    <header id="header1">
+<!-- Header -->
+    <header id="header" class='getScrolled'>
         <!-- <div class="{% plotly_class name='SimpleExample' %} card" style="height: 100%; width: 100%" id="usaPlot">
             {% plotly_app name='SimpleExample' ratio=1 %}
         </div> -->
-        <div class="front">
-            <img id="logoTop" src="{% static 'website/images/WHET_Logo_ClearBackground_75_v0.1.png' %}" alt="">
-            <p>World Heatmap Epidemioligy Tool</p>
-            <p2>The tool that allows decision makers to visualize stuff while making the bestest solutions!</p2>
+        <div class="content">
+            <div id="front">
+                <img src="{% static 'website/images/WHET_LogoWithText_Short_Vector_WHITE_v0.1.svg' %}" alt="" >
+                <p>Making information accessible.</p>
+            </div>
         </div>
     </header>
 
 <!-- White section -->
+    <section id='HowToText' class='getScrolled'>
+        <div class="titleTextinHowto">
+            <h2>
+                How to use
+            </h2>
+        </div>
+        <div class="instructions">
+            <p>
+                Cupcake ipsum dolor sit amet chupa chups dragée sesame snaps. Marzipan tootsie roll topping chocolate toffee brownie brownie marzipan. Croissant croissant lollipop dragée donut pastry sugar plum. Sesame snaps tart sesame snaps. Dessert chocolate cake marzipan sweet liquorice cake icing brownie. Croissant topping candy canes donut tootsie roll dragée. Cotton candy carrot cake muffin pudding gingerbread soufflé. Powder cupcake chocolate bar topping bear claw sweet soufflé jelly beans.
+            </p><p>
+                Ice cream jelly muffin bonbon gingerbread cotton candy liquorice dessert. Apple pie chocolate liquorice. Carrot cake chupa chups toffee lemon drops tiramisu. Chocolate bar tiramisu powder halvah. Toffee tiramisu jelly. Candy canes macaroon cake. Icing gingerbread icing lemon drops cookie chocolate cake pastry.
+            </p><p>    
+                Croissant dessert sesame snaps. Sweet roll cookie gummi bears bonbon chocolate cake tart cupcake gingerbread. Tart cheesecake biscuit wafer liquorice topping marzipan. Sweet carrot cake tiramisu oat cake jelly-o marzipan candy canes dragée jelly. Caramels gummi bears chocolate sugar plum candy canes. Lemon drops pastry chocolate cake macaroon gummi bears carrot cake bonbon sugar plum toffee. Candy cookie powder muffin gummies gummi bears brownie sweet pastry.
+            </p>
+            <br>
+        </div>
+    </section>
+
+
+<!-- Plot Section -->
     <section id="one" class="wrapper style2 special">
         <div class="{% plotly_class name='SimpleExample' %} card" style="height: 100%; width: 100%" id="usaPlot">
                 {% plotly_app name='SimpleExample' ratio=1 %}
@@ -27,10 +47,23 @@
     </section>
 
     <!-- second gradient section -->
-    <section id="header2">
+    <!-- <section id="header2">
         <div class="content">
             <img id="logoTop" src="{% static "website/images/WHET_Logo_ClearBackground_75_v0.1.png" %}" alt="">
             <p>This is where we can put some kewl text</p>
         </div>
-    </section>           
+    </section>            -->
+
+    		<!-- Footer -->
+    <footer id="footer">
+            <p class="copyright">Built on fractal template from <a href="http://html5up.net">HTML5 UP</a></p>
+        </footer>
+        <!-- Scripts -->
+        {% load static %}
+        <script src={% static 'website/js/jquery.min.js' %}></script>
+        <script src={% static 'website/js//jquery.scrolly.min.js' %}></script>
+        <script src={% static 'website/js/browser.min.js' %}></script>
+        <script src={% static 'website/js/breakpoints.min.js' %}></script>
+        <script src={% static 'website/js/util.js' %}></script>
+        <script src={% static 'website/js/main.js' %}></script>
 {% endblock %}

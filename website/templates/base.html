@@ -11,20 +11,15 @@
 		<title>W H E T</title>
 		<meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        
 		<link rel="stylesheet" href={% static 'website/cssFiles/main.css' %} />
 		<noscript><link rel="stylesheet" href={% static 'website/cssFiles/noscript.css' %} /></noscript>
 	</head>
 	<body class="is-preload">
-        {% block body %}
-        {% endblock %}
+		<div class='masterScroll'>
+			{% block body %}
+			{% endblock %}
+		</div>
 
-        <script src={% static 'website/js/jquery.min.js' %}></script>
-        <script src={% static 'website/js//jquery.scrolly.min.js' %}></script>
-        <script src={% static 'website/js/browser.min.js' %}></script>
-        <script src={% static 'website/js/breakpoints.min.js' %}></script>
-        <script src={% static 'website/js/util.js' %}></script>
-        <script src={% static 'website/js/main.js' %}></script>
 
 	</body>
 </html>
