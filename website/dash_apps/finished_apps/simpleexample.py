@@ -30,7 +30,7 @@ with urlopen('https://raw.githubusercontent.com/plotly/datasets/master/geojson-c
 #                   dtype={"fips": str})
 df = pd.read_csv("data/counties/simulations/risk_index0.csv",dtype={"fips": str})
 
-
+"""
 fig3 = go.Figure(data=[go.Table(
     header=dict(values=list(df.columns),
                 fill_color='paleturquoise',
@@ -39,19 +39,29 @@ fig3 = go.Figure(data=[go.Table(
                fill_color='lavender',
                align='left'))
 ])
-
+"""
 # fig.show()
-
-fig = px.choropleth_mapbox(df, geojson=counties, locations='fips', color='risk',
-                           color_continuous_scale = 'Reds',#['#2821FF','#D917E8','#FF4726','#E89817','#FFCB00'],
-                           range_color=(df.quantile(0.05)["risk"], df.quantile(0.95)["risk"]),
-                           mapbox_style="carto-positron",
-                           zoom=3, center = {"lat": 37.0902, "lon": -95.7129},
-                           opacity=0.5,
-                           labels={'risk':'County risk'}
-                          )
-fig.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)',
-                      'paper_bgcolor': 'rgba(0, 0, 0, 0)',})
+def get_map(ix = "r"):
+    risk_str = ""
+    if ix == "r":
+        risk_str = "Risk index"
+    elif ix == "ic":
+        risk_str = "Peak ICU/ICU beds"
+    elif ix == "mi":
+        risk_str = "Fatalities/population"
+    elif ix == "tf":
+        risk_str = "Fatalities"
+    fig = px.choropleth_mapbox(df, geojson=counties, locations='fips', color=risk_str,
+                            color_continuous_scale = 'Reds',#['#2821FF','#D917E8','#FF4726','#E89817','#FFCB00'],
+                            range_color=(df.quantile(0.05)[risk_str], df.quantile(0.95)[risk_str]),
+                            mapbox_style="carto-positron",
+                            zoom=3, center = {"lat": 37.0902, "lon": -95.7129},
+                            opacity=0.5,
+                            labels={'risk':'County risk'}
+                            )
+    fig.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)',
+                        'paper_bgcolor': 'rgba(0, 0, 0, 0)',})
+    return fig
 
 def get_SIR_from_fips(fips,lockdown=None,panic = None, partial_lockdown = None):
     #with open('website/static/website/fips1.json') as json_file:
@@ -90,12 +100,13 @@ app.layout = html.Div([
     html.Div([
         html.Span("Risk metric : ", className="six columns", id='metToDisp'),
         dcc.Dropdown(id="value-selected", value='ic', options=[
+                                                       {'label': "Combined risk index", 'value': 'r'},
                                                        {'label': "Intensive care", 'value': 'ic'},
                                                        {'label': "Mortality index", 'value': 'mi'},
                                                        {'label': "Total fatalities", 'value': 'tf'}],
                                               className="six columns")], className="row"
     ),
-    dcc.Graph(figure=fig,id="my-graph"),
+    dcc.Graph(id="my-graph"),
     html.Div([
         dcc.Graph(id='county-table'),
         html.Div([html.H2(["Some title"],id='titleBetweenPlots'),html.P([""" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lacinia pretium dui, at dictum massa elementum at. Nam nec laoreet mi. Aliquam molestie eget mi at dictum. Aliquam mattis mauris metus, at pellentesque elit eleifend id. Integer feugiat purus et sollicitudin fringilla. Vivamus a nunc et diam ullamcorper luctus nec quis diam. Nunc vitae lorem vitae purus tincidunt cursus. Nullam ac viverra leo.
@@ -189,7 +200,14 @@ html.Div(
     ],
     className="container",
 )
+@app.callback(
+   Output(component_id='my-graph', component_property='figure'),
+   [Input(component_id='value-selected', component_property='value')])
 
+def change_risk(ix):
+    print(ix)
+    return get_map()
+    
 
 #region Slider callbacks
 @app.callback(
