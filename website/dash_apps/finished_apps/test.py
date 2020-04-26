@@ -1,44 +1,76 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Apr 26 13:45:26 2020
-
-@author: chris
-"""
-import os
-import dash_core_components as dcc
-import dash_html_components as html
-import dash_table
-from dash.dependencies import Input, Output
-import plotly.graph_objs as go
 import pandas as pd
-from django_plotly_dash import DjangoDash
-import json
-from urllib.request import urlopen
-import plotly.express as px
-from src.model import simulate
-import website.dash_apps.finished_apps.htmlCssVariables as webVar
-from website.dash_apps.finished_apps.county_table import table_fig
+import numpy as np
+import plotly.graph_objs as go
+import time
+df = pd.read_csv('data/counties/population/density.tsv', sep='\t')
+df_health = pd.read_csv('data/counties/county_health_rankings/county_age.tsv', sep='\t')
+df_beds = pd.read_csv('data/counties/hospital_capacity/beds.tsv', sep='\t')
+df_ensured = pd.read_csv('data/counties/county_health_rankings/county_uninsured.tsv', sep='\t')
 
-df = pd.read_csv("data/counties/simulations/risk_index0.csv",dtype={"fips": str})
+time_start = time.time()
 
-ix = "r"
-risk_str = ""
-if ix == "r":
-    risk_str = "Risk index"
-elif ix == "ic":
-    risk_str = "Peak ICU/ICU beds"
-elif ix == "mi":
-    risk_str = "Fatalities/population"
-elif ix == "tf":
-    risk_str = "Fatalities"
-fig = px.choropleth_mapbox(df, geojson=counties, locations='fips', color=risk_str,
-                        color_continuous_scale = 'Reds',#['#2821FF','#D917E8','#FF4726','#E89817','#FFCB00'],
-                        range_color=(df.quantile(0.05)[risk_str], df.quantile(0.95)[risk_str]),
-                        mapbox_style="carto-positron",
-                        zoom=3, center = {"lat": 37.0902, "lon": -95.7129},
-                        opacity=0.5,
-                        labels={'risk':'County risk'}
-                        )
-fig.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)',
-                    'paper_bgcolor': 'rgba(0, 0, 0, 0)',})
+def table_fig(fips=1039):
+    
+    global df
+    global df_health
+    global df_beds
+    global df_ensured
+
+    
+    county_data = df.loc[df.fips == fips]
+    county_health_data = df_health.loc[df_health.fips == fips]
+    county_uninsured = df_ensured.loc[df_ensured.fips == fips]
+    population = county_data.population.item()
+    county, state = county_data.location.item().split(', ')
+    
+    age = county_health_data["percent_65_and_over"].item()    
+    
+    demographic = ""
+    if age < 16.2:
+        demographic = "Young"
+    elif age < 18.8:
+        demographic = "Normal"
+    elif age < 21.7:
+        demographic = "Old"
+    else:
+        demographic = "Very old"
+    
+    logdens = np.log(county_data["density"].item())
+    
+    if logdens < 2:
+        density = "Low"
+    elif logdens < 6:
+        density = "Normal"
+    else:
+        density = "High"
+    
+    
+    p_65 = demographic
+    ICU_beds = df_beds.loc[df_beds.fips == fips]["icu_beds"].item()
+    ensured = county_uninsured["num_uninsured"].item()/population*100
+    risk = 8
+    
+    
+    fig = go.Figure(data=[go.Table(
+        header=dict(values=['Property', 'Value'],
+                    line_color='darkslategray',
+                    fill_color='lightskyblue',
+                    align='left'),
+        cells=dict(values=[["State","County","Population","Age demographic", "ICU beds", "Pop. density","Uninsured","Risk"], # 1st column
+                        [state, county, population, demographic,round(ICU_beds),density,str(round(ensured,2))+"%",2]], # 2nd column
+                line_color='darkslategray',
+                fill_color='white',
+                align='left'))
+        ])
+    return fig
+
+time_start_sim = time.time()
+for i in range(100):
+    a = table_fig()
+
+time_end_sim = time.time()
+
+print(time_start_sim-time_start)
+print((time_end_sim-time_start_sim)/100)
+
 
