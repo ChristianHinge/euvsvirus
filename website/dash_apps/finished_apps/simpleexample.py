@@ -22,9 +22,9 @@ app = DjangoDash('SimpleExample')
 with urlopen('https://raw.githubusercontent.com/plotly/datasets/master/geojson-counties-fips.json') as response:
     counties = json.load(response)
 
-df = pd.read_csv("https://raw.githubusercontent.com/plotly/datasets/master/fips-unemp-16.csv",
-                   dtype={"fips": str})
-
+#df = pd.read_csv("https://raw.githubusercontent.com/plotly/datasets/master/fips-unemp-16.csv",
+#                   dtype={"fips": str})
+df = pd.read_csv("data/counties/simulations/county_risk.tsv",sep='\t')
 
 df3 = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/2014_usa_states.csv')
 
@@ -32,20 +32,20 @@ fig3 = go.Figure(data=[go.Table(
     header=dict(values=list(df.columns),
                 fill_color='paleturquoise',
                 align='left'),
-    cells=dict(values=[df.rank, df.fips,df.unemp],
+    cells=dict(values=[df.rank, df.fips,df['max_icu/icu_beds']],
                fill_color='lavender',
                align='left'))
 ])
 
 # fig.show()
 
-fig = px.choropleth_mapbox(df, geojson=counties, locations='fips', color='unemp',
-                           color_continuous_scale = ['#2821FF','#D917E8','#FF4726','#E89817','#FFCB00'],
-                           range_color=(0, 12),
+fig = px.choropleth_mapbox(df, geojson=counties, locations='fips', color='max_icu/icu_beds',
+                           color_continuous_scale = 'Reds',#['#2821FF','#D917E8','#FF4726','#E89817','#FFCB00'],
+                           range_color=(df.quantile(0.05)["max_icu/icu_beds"], df.quantile(0.95)["max_icu/icu_beds"]),
                            mapbox_style="carto-positron",
                            zoom=3, center = {"lat": 37.0902, "lon": -95.7129},
                            opacity=0.5,
-                           labels={'unemp':'unemployment rate'}
+                           labels={'max_icu/icu_beds':'County risk'}
                           )
 fig.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)',
                       'paper_bgcolor': 'rgba(0, 0, 0, 0)',})
@@ -61,18 +61,18 @@ def get_SIR_from_fips(fips,lockdown=None,panic = None, partial_lockdown = None):
     
 
 def create_time_series(df):
-    df = df[["S","E","I","A","t"]]
-    df = df.melt('t',var_name='cols',  value_name='vals')
-    fig2 = px.line(df, x='t', y='vals', color='cols')
+    df = df[["Susceptible","Exposed","Infected","Recovered","Days"]]
+    df = df.melt('Days',var_name='cols',  value_name='vals')
+    fig2 = px.line(df, x='Days', y='vals', color='cols')
     fig2.update_traces(mode='markers+lines')
    # fig2.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)',
    #                   'paper_bgcolor': 'rgba(0, 0, 0, 0)',})
     return fig2
 
 def create_time_series_2(df):
-    df = df[["ICU","hospital_beds","icu_beds","t","D"]]
-    df = df.melt('t',var_name='cols',  value_name='vals')
-    fig2 = px.line(df, x='t', y='vals', color='cols')
+    df = df[["ICU","Hospital beds","ICU beds","Days","Dead"]]
+    df = df.melt('Days',var_name='cols',  value_name='vals')
+    fig2 = px.line(df, x='Days', y='vals', color='cols')
     fig2.update_traces(mode='markers+lines')
    # fig2.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)',
    #                   'paper_bgcolor': 'rgba(0, 0, 0, 0)',})
@@ -83,13 +83,13 @@ def create_time_series_2(df):
 
 app.layout = html.Div([
 
-    html.Div([html.H1("Demographic Data by Country")], id='teeesting', style=webVar.demoStyle),
+#    html.Div([html.H1("Demographic Data by Country")], id='teeesting', style=webVar.demoStyle),
     html.Div([
-        html.Span("Metric to display : ", className="six columns", style=webVar.metricStyle),
-        dcc.Dropdown(id="value-selected", value='lifeExp', options=[
-                                                       {'label': "Population ", 'value': 'pop'},
-                                                       {'label': "GDP Per Capita ", 'value': 'gdpPercap'},
-                                                       {'label': "Life Expectancy ", 'value': 'lifeExp'}],
+        html.Span("Risk metric : ", className="six columns", style=webVar.metricStyle),
+        dcc.Dropdown(id="value-selected", value='ic', options=[
+                                                       {'label': "Intensive care", 'value': 'ic'},
+                                                       {'label': "Mortality index", 'value': 'mi'},
+                                                       {'label': "Total fatalities", 'value': 'tf'}],
                                               style=webVar.dropStyle,
                                               className="six columns")], className="row"
     ),
@@ -213,8 +213,8 @@ def display_graph(clickData,checks,slider_value_1,slider_value_2,slider_value_3)
         clickData = dict(clickData)
         fips = int(clickData['points'][0]['location'])
     current_fips = fips
-    #data = get_SIR_from_fips(fips,lockdown=slider_value_1,partial_lockdown=slider_value_2,panic=slider_value_3)
-    data = get_SIR_from_fips(fips)
+    data = get_SIR_from_fips(fips,lockdown=slider_value_1,partial_lockdown=slider_value_2,panic=slider_value_3)
+    #data = get_SIR_from_fips(fips)
     county_table = table_fig(fips)
     return create_time_series(data), county_table, create_time_series_2(data)
 
