@@ -10,6 +10,15 @@
 
 /* Css by us */
 
+#shortBreak hr{
+    border: none;
+    height: 1.5px;
+    /* Set the hr color */
+    color: rgb(177, 175, 175); /* old IE */
+	background-color: rgb(177, 175, 175); /* Modern Browsers */
+	margin-left: 15%;
+	margin-right: 15%;
+}
 
 
 .getScrolled{
@@ -46,7 +55,7 @@
 
 
 
-#HowToText .titleTextinHowto h2{
+.titleTextDetails h2{
 	font-family: 'Din';
 	color: black;
 	font-weight: bold;
@@ -55,7 +64,7 @@
 	margin-top: 0.5em;
 }
 
-#HowToText .instructions p{
+.details p{
 	font-family: 'Din';
 	color: black;
 	font-size: 1.9em;
@@ -95,8 +104,8 @@
 	background-position: top left, center center;
 	background-attachment: fixed, fixed;
 	background-size: auto, cover;
-	height: 100vh;
-	min-height: 35em;
+	/* height: 100vh; */
+	/* min-height: 35em; */
 }
 
 #header {
@@ -235,8 +244,26 @@
 
 
 
+/* .titleTextinTechnical h2{
+	margin-right: 15%;
+	margin-left: 15%;
+	text-align: center;
+	color: black;
+	font-family: 'Din';
+	font-stretch: condensed;
+	font-size: 2.5em;
+}	
 
-
+.details p{
+	margin-right: 15%;
+	margin-left: 15%;
+	text-align: center;
+	color: black;
+	font-family: 'Din';
+	font-stretch: condensed;
+	font-size: 
+	
+} */
 
 
 @font-face{
