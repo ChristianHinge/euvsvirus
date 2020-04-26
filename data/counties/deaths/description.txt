@@ -1,0 +1,1 @@
+from https://data.humdata.org/dataset/nyt-covid-19-data
