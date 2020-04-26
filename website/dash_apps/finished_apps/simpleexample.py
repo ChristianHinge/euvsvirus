@@ -61,8 +61,8 @@ def get_SIR_from_fips(fips,lockdown=None,panic = None, partial_lockdown = None):
     
 
 def create_time_series(df):
-    df = df[["S","E","I","A","t"]]
-    df = df.melt('t',var_name='cols',  value_name='vals')
+    df = df[["Susceptible","Exposed","Infected","Recovered","Days"]]
+    df = df.melt('Days',var_name='cols',  value_name='vals')
     fig2 = px.line(df, x='t', y='vals', color='cols')
     fig2.update_traces(mode='markers+lines')
    # fig2.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)',
@@ -70,9 +70,9 @@ def create_time_series(df):
     return fig2
 
 def create_time_series_2(df):
-    df = df[["ICU","hospital_beds","icu_beds","t","D"]]
-    df = df.melt('t',var_name='cols',  value_name='vals')
-    fig2 = px.line(df, x='t', y='vals', color='cols')
+    df = df[["ICU","hospital_beds","icu_beds","Days","Dead"]]
+    df = df.melt('Day',var_name='cols',  value_name='vals')
+    fig2 = px.line(df, x='Day', y='vals', color='cols')
     fig2.update_traces(mode='markers+lines')
    # fig2.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)',
    #                   'paper_bgcolor': 'rgba(0, 0, 0, 0)',})
