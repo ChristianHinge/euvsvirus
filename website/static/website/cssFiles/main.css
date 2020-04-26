@@ -68,8 +68,8 @@
 
 
 #one {
-	background-color: #e59b46;
-	background-image: url('../images/overlay.png'), url('../images/pattern-size1.svg'),  linear-gradient(90deg, rgb(51, 23, 1) 0%, #e59b46 35%, rgb(228, 177, 143) 100%);
+	background-color: white;
+	/* background-image: url('../images/overlay.png'), url('../images/pattern-size1.svg'),  linear-gradient(90deg, rgb(51, 23, 1) 0%, #e59b46 35%, rgb(228, 177, 143) 100%); */
 	background-position: top left, center center;
 	background-attachment: fixed, fixed;
 	background-size: auto, cover;
