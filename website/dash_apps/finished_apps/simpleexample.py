@@ -77,7 +77,7 @@ def create_time_series(df):
     df = df[["Susceptible","Exposed","Infected","Recovered","Days"]]
     df = df.melt('Days',var_name='Population at interest',  value_name='Individuals')
     fig2 = px.line(df, x='Days', y='Individuals', color='Population at interest')
-    fig2.update_traces(mode='markers+lines')
+    fig2.update_traces(mode='lines')
    # fig2.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)',
    #                   'paper_bgcolor': 'rgba(0, 0, 0, 0)',})
     return fig2
@@ -86,7 +86,7 @@ def create_time_series_2(df):
     df = df[["ICU","Hospital beds","ICU beds","Days","Dead"]]
     df = df.melt('Days',var_name='Population at interest',  value_name='Individuals')
     fig2 = px.line(df, x='Days', y='Individuals', color='Population at interest')
-    fig2.update_traces(mode='markers+lines')
+    fig2.update_traces(mode='lines')
    # fig2.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)',
    #                   'paper_bgcolor': 'rgba(0, 0, 0, 0)',})
     return fig2
@@ -99,26 +99,19 @@ app.layout = html.Div([
 #    html.Div([html.H1("Demographic Data by Country")], id='teeesting', style=webVar.demoStyle),
     html.Div([
         html.Span("Risk metric : ", className="six columns", id='metToDisp'),
-        dcc.Dropdown(id="value-selected", value='ic', options=[
+        dcc.Dropdown(id="value-selected", value='r', options=[
                                                        {'label': "Combined risk index", 'value': 'r'},
                                                        {'label': "Intensive care", 'value': 'ic'},
                                                        {'label': "Mortality index", 'value': 'mi'},
                                                        {'label': "Total fatalities", 'value': 'tf'}],
                                               className="six columns")], className="row"
     ),
-    dcc.Graph(id="my-graph"),
     html.Div([
-        dcc.Graph(id='county-table'),
-        html.Div([html.H2(["Some title"],id='titleBetweenPlots'),html.P([""" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lacinia pretium dui, at dictum massa elementum at. Nam nec laoreet mi. Aliquam molestie eget mi at dictum. Aliquam mattis mauris metus, at pellentesque elit eleifend id. Integer feugiat purus et sollicitudin fringilla. Vivamus a nunc et diam ullamcorper luctus nec quis diam. Nunc vitae lorem vitae purus tincidunt cursus. Nullam ac viverra leo.
-
-Vestibulum quis volutpat nisi. Duis nec fermentum leo, condimentum cursus felis. Cras nisi elit, suscipit sed risus eu, tristique finibus nunc. Integer ut placerat arcu, eget feugiat mauris. Nam justo nisi, iaculis rhoncus nibh vitae, blandit dictum sapien. Integer commodo odio diam, et lacinia ante condimentum sed. Phasellus lacinia, tortor sit amet feugiat gravida, justo mauris imperdiet ante, sed maximus mauris ligula malesuada ligula.
-
-Vestibulum varius, ante sollicitudin ullamcorper facilisis, quam nisl fermentum nisi, non fringilla eros justo sed nunc. Pellentesque urna massa, finibus sed auctor quis, molestie venenatis nisi. Nam porta ante nec ligula condimentum fringilla. Nulla vulputate odio vel orci fermentum, eu rhoncus felis tristique. Maecenas ac dictum dui, nec rutrum metus. Quisque sed tellus mauris. Curabitur ut dignissim diam. Sed diam massa, aliquam eu consequat id, semper et libero. Pellentesque auctor nec libero at sollicitudin. Etiam pellentesque molestie risus, nec eleifend arcu maximus nec.
-
-In eu mauris a leo aliquam scelerisque. Ut facilisis viverra odio, interdum pulvinar nisl interdum ac. Sed facilisis tellus at purus auctor, ut luctus odio mattis. Sed aliquam massa a augue egestas, porta efficitur ante malesuada. Vestibulum quis finibus dui, vitae convallis arcu. Phasellus tempus euismod diam at auctor. Nullam dapibus, mi et placerat fringilla, nulla lacus imperdiet dui, luctus dignissim dui sem vitae turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In interdum ipsum dolor, ut sollicitudin risus lacinia in. In aliquet accumsan vehicula. Curabitur laoreet augue ante. """
-        ])], id='textBetweenPlots')]),
-    html.Div([dcc.Graph(id='x-time-series'),]),
-    html.Div([dcc.Graph(id='x-time-series-2'),]),
+    html.Div([dcc.Graph(id='county-table')],style = {'width': '25%', 'display': 'inline-block','vertical-align': 'middle'}),
+    html.Div([dcc.Graph(id="my-graph")],style = {'width': '74%', 'display': 'inline-block','vertical-align': 'middle'}),
+    ]),
+    html.Div([dcc.Graph(id='x-time-series')]),
+    html.Div([dcc.Graph(id='x-time-series-2')]),
     html.Div(
         [
             html.Div([
@@ -131,17 +124,17 @@ In eu mauris a leo aliquam scelerisque. Ut facilisis viverra odio, interdum pulv
         step=1,
         value=[0, 10],id='slider-1',
         marks={
-            0: {'label': ''},
-            50: {'label': ''},
-            100: {'label': ''},
-            150: {'label': ''},
-            200: {'label': ''},
-            250: {'label': ''},
-            300: {'label': ''},
-            350: {'label': ''},
-            400: {'label': ''},
-            450: {'label': ''},
-            500: {'label': ''}
+            0: {'label':   'Day 0'},
+            50: {'label':  'Day 50'},
+            100: {'label': 'Day 100'},
+            150: {'label': 'Day 150'},
+            200: {'label': 'Day 200'},
+            250: {'label': 'Day 250'},
+            300: {'label': 'Day 300'},
+            350: {'label': 'Day 350'},
+            400: {'label': 'Day 400'},
+            450: {'label': 'Day 450'},
+            500: {'label': 'Day 500'}
         }
         )],id="flsliderdiv-1",style={'width': '89%', 'display': 'none','vertical-align': 'middle'})
         ]),
@@ -157,17 +150,17 @@ In eu mauris a leo aliquam scelerisque. Ut facilisis viverra odio, interdum pulv
         step=1,
         value=[0, 10],id='slider-2',
         marks={
-            0: {'label': ''},
-            50: {'label': ''},
-            100: {'label': ''},
-            150: {'label': ''},
-            200: {'label': ''},
-            250: {'label': ''},
-            300: {'label': ''},
-            350: {'label': ''},
-            400: {'label': ''},
-            450: {'label': ''},
-            500: {'label': ''}
+            0: {'label':   'Day 0'},
+            50: {'label':  'Day 50'},
+            100: {'label': 'Day 100'},
+            150: {'label': 'Day 150'},
+            200: {'label': 'Day 200'},
+            250: {'label': 'Day 250'},
+            300: {'label': 'Day 300'},
+            350: {'label': 'Day 350'},
+            400: {'label': 'Day 400'},
+            450: {'label': 'Day 450'},
+            500: {'label': 'Day 500'}
         }
         )],id="flsliderdiv-2",style={'width': '89%', 'display': 'none','vertical-align': 'middle'})
         ]),
@@ -183,17 +176,17 @@ html.Div(
         step=1,
         value=[0, 10],id='slider-3',
         marks={
-            0: {'label': ''},
-            50: {'label': ''},
-            100: {'label': ''},
-            150: {'label': ''},
-            200: {'label': ''},
-            250: {'label': ''},
-            300: {'label': ''},
-            350: {'label': ''},
-            400: {'label': ''},
-            450: {'label': ''},
-            500: {'label': ''}
+            0: {'label':   'Day 0'},
+            50: {'label':  'Day 50'},
+            100: {'label': 'Day 100'},
+            150: {'label': 'Day 150'},
+            200: {'label': 'Day 200'},
+            250: {'label': 'Day 250'},
+            300: {'label': 'Day 300'},
+            350: {'label': 'Day 350'},
+            400: {'label': 'Day 400'},
+            450: {'label': 'Day 450'},
+            500: {'label': 'Day 500'}
         }
         )],id="flsliderdiv-3",style={'width': '89%', 'display': 'none','vertical-align': 'middle'})
         ]),
@@ -205,8 +198,7 @@ html.Div(
    [Input(component_id='value-selected', component_property='value')])
 
 def change_risk(ix):
-    print(ix)
-    return get_map()
+    return get_map(ix)
     
 
 #region Slider callbacks
