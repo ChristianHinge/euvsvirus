@@ -2,7 +2,7 @@ Django==3.0
 django-heroku
 gunicorn
 plotly
-pandas==0.24.2
+pandas==1.0.3
 urllib3
 django_plotly_dash
 dash-core-components==1.9.0

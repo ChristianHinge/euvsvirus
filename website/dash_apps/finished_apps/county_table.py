@@ -4,16 +4,16 @@ import plotly.graph_objs as go
 
 
 def table_fig(fips=1017):
-
-    df = pd.DataFrame.from_csv('data/counties/population/density.tsv', sep='\t')
-    df_health = pd.DataFrame.from_csv('data/counties/county_health_rankings/county_age.tsv', sep='\t')
-    df_beds = pd.DataFrame.from_csv('data/counties/hospital_capacity/beds.tsv', sep='\t')
-    df_ensured = pd.DataFrame.from_csv('data/counties/county_health_rankings/county_uninsured.tsv', sep='\t')
+    
+    df = pd.read_csv('data/counties/population/density.tsv', sep='\t')
+    df_health = pd.read_csv('data/counties/county_health_rankings/county_age.tsv', sep='\t')
+    df_beds = pd.read_csv('data/counties/hospital_capacity/beds.tsv', sep='\t')
+    df_ensured = pd.read_csv('data/counties/county_health_rankings/county_uninsured.tsv', sep='\t')
     
     
     county_data = df.loc[df.fips == fips]
-    county_health_data = df_health.loc[df_health.index == fips]
-    county_uninsured = df_ensured.loc[df_ensured.index == fips]
+    county_health_data = df_health.loc[df_health.fips == fips]
+    county_uninsured = df_ensured.loc[df_ensured.fips == fips]
     population = county_data.population.item()
     county, state = county_data.location.item().split(', ')
     
