@@ -1662,7 +1662,7 @@ date,county,state,fips,cases,deaths
 2020-04-23,Monroe,New York,36055,1152,77
 2020-04-23,Montgomery,New York,36057,39,1
 2020-04-23,Nassau,New York,36059,32124,1813
-2020-04-23,New York City,New York,,145855,10889
+2020-04-23,New York,New York,36061,145855,10889
 2020-04-23,Niagara,New York,36063,295,11
 2020-04-23,Oneida,New York,36065,317,8
 2020-04-23,Onondaga,New York,36067,600,28

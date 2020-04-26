@@ -44,3 +44,5 @@ cases_deaths[,recovered_est:=cases_fatality_est - deaths]
 cases_deaths$recovered_est[is.na(cases_deaths$recovered_est)] = 0.0
 
 fwrite(cases_deaths, "fatality_estimates.tsv", sep="\t")
+
+
