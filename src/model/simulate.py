@@ -100,11 +100,12 @@ def _add_ICU(arr):
     ICU = np.zeros(len(arr))
     for ICU_day in range(ICU_duration):
         ICU[:-ICU_day - 1] += daily_dead[ICU_day:]
-    arr["ICU"] = ICU
+    arr["ICU patients"] = ICU
     return arr
 
 
 def _add_beds(arr, fips):
-    arr["Hospital beds"], arr["ICU beds"] = fips2beds[fips]
+    arr["Total hospital beds"], arr["ICU beds"] = fips2beds[fips]
+    arr["Total hospital beds"] += arr["ICU beds"]
     return arr
 
