@@ -8,10 +8,10 @@ arr = simulate_county(1043, 500)
 from matplotlib import pyplot as plt
 plt.plot(arr["t"], arr["S"])
 
-print("fips\tmax_icu\tmax_icu/icu_beds\tD\tD/pop")
+print("fips\tmax_icu\tmax_icu/icu_beds\tDead\tDead/pop")
 for fips, pop in zip(density["fips"], density["population"]):
     arr = simulate_county(fips, 500)
     max_icu = max(arr["ICU"])
     icu_beds = arr.at[0, "icu_beds"]
-    D = arr.at[len(arr)-1, "D"]
+    D = arr.at[len(arr)-1, "Dead"]
     print("\t".join(map(str, (fips, max_icu, max_icu/icu_beds, D, D/pop))))
