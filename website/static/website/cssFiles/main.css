@@ -177,14 +177,21 @@
 	width: 100%;
 	display: inline-block; 
 	vertical-align: middle;
-	margin-top: 0%;
+	margin: 0 0 0 0 0;
 }
 
 #county-div{
 	width: 25%;
 	display: inline-block;
 	vertical-align: middle;
+	margin: 0 0 0 0 0;
 }
+
+#county-div .modebar{
+	display: none !important;
+}
+
+
 
 #metToDisp{
 	font-family: 'Din';
@@ -208,6 +215,10 @@
 	width: 74%;
 	display: inline-block;
 	vertical-align: middle;
+}
+
+#graph-div .modebar{
+	display: none !important;
 }
 
 /* drop down settings */

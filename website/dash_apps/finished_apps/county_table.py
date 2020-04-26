@@ -60,5 +60,6 @@ def table_fig(fips=1039):
                 line_color='darkslategray',
                 fill_color='white',
                 align='left'))
-        ])
+        ],
+        layout=go.Layout(margin=dict(t=0,r=0,l=0,b=0)))
     return fig
