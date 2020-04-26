@@ -70,7 +70,10 @@
                     without a lockdown. The default heatmap displays an overall risk index, which is 
                     the product of peak ICU versus available ICU beds and fatalities per capita. The 
                     simulation is built on an SEIR model with parameters currently estimated from 
-                    population size, age distribution, and other factors. ICU numbers are currently 
+                    population size, age distribution, and other factors. 
+		    Fatality rates are estimated from age specific fatality rates, age distributions for each county, 
+		    contribution from prior health issues, and health data for each county.
+		    ICU numbers are currently 
                     found from a simple model of each fatality having a 5 day ICU stay preceding it.
                 </p><p>
                     Data for the selected county is displayed under the map, followed by a visualization 
