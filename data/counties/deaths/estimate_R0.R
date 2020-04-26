@@ -1,4 +1,4 @@
-
+#!/usr/bin/env Rscript
 library(data.table)
 
 setwd("/Users/christian/cwd/data/counties/deaths")
