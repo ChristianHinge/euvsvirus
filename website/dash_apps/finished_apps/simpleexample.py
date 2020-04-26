@@ -111,8 +111,8 @@ app.layout = html.Div([
             searchable=False)], 
         className="row" ),
     html.Div([
-    html.Div([dcc.Graph(id='county-table')],style = {'width': '25%', 'display': 'inline-block','vertical-align': 'middle'}),
-    html.Div([dcc.Graph(id="my-graph")],style = {'width': '74%', 'display': 'inline-block','vertical-align': 'middle'}),
+    html.Div([dcc.Graph(id='county-table')], id='county-div'),
+    html.Div([dcc.Graph(id="my-graph")],id='graph-div'),
     ]),
     html.Div([dcc.Graph(id='x-time-series')]),
     html.Div([dcc.Graph(id='x-time-series-2')]),
