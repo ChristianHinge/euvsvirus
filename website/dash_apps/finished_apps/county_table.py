@@ -51,14 +51,23 @@ def table_fig(fips=1039):
     
     
     fig = go.Figure(data=[go.Table(
-        header=dict(values=['Property', 'Value'],
+        columnwidth=[25, 30],
+        header=dict(values=['<b>Property</b>', '<b>Value</b>'],
                     line_color='darkslategray',
-                    fill_color='lightskyblue',
-                    align='left'),
+                    fill_color='rgb(255, 109, 90)',
+                    align='left',
+                    font_size=20,
+                    height=32,
+                    font_color='white',),
         cells=dict(values=[["State","County","Population","Age demographic", "ICU beds", "Pop. density","Uninsured","Risk"], # 1st column
                         [state, county, population, demographic,round(ICU_beds),density,str(round(ensured,2))+"%",2]], # 2nd column
                 line_color='darkslategray',
                 fill_color='white',
-                align='left'))
-        ])
+                align='left',
+                font_size=18,
+                height=30),)
+        ],
+        layout=go.Layout(
+            margin=dict(t=0,r=0,l=0,b=0),
+            ))
     return fig
