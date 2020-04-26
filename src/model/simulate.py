@@ -18,10 +18,12 @@ populations = pd.read_csv("data/counties/population/density.tsv", sep="\t")
 age_groups = pd.read_csv("data/counties/county_health_rankings/county_age.tsv", sep="\t")
 betas = pd.read_csv("data/counties/betas.tsv", sep="\t")
 beds = pd.read_csv("data/counties/hospital_capacity/beds.tsv", sep="\t")
+recovered = pd.read_csv("data/counties/deaths/fatality_estimates.tsv", sep="\t")
 fips2pop = dict(zip(populations["fips"], populations["population"]))
 fips2beta = dict(zip(betas["fips"], betas["beta"]))
 fips2age = dict(zip(age_groups["fips"], zip(age_groups["percent_less_than_18_years_of_age"], age_groups["percent_65_and_over"])))
 fips2beds = dict(zip(beds["fips"], zip(beds["hospital_beds"], beds["icu_beds"])))
+fips2recovered = dict(zip(recovered["fips"], recovered["recovered_est"]))
 
 
 def simulate_county(fips, duration, I0=1, lockdown=None, panic=None, partial_lockdown=None):
@@ -64,8 +66,9 @@ def _simulate_county(fips, duration, I0=1, intervals=None, beta_factors=None):
     :return: 
     """
     N = fips2pop[fips]
+    R0 = fips2recovered[fips]
     beta = fips2beta[fips]
-    arr = simulate_SEIR_betas(duration, N-I0, I0=I0, beta=beta, intervals=intervals, beta_factors=beta_factors)
+    arr = simulate_SEIR_betas(duration, N-I0-R0, I0=I0, R0=R0, beta=beta, intervals=intervals, beta_factors=beta_factors)
     arr = pd.DataFrame(arr, columns=["S", "E", "I", "R"])
     arr["t"] = arr.index
     return arr

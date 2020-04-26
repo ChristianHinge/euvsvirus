@@ -13,6 +13,10 @@ def SEIR(y, t, beta, gamma, sigma):
     """
     S, E, I, R = y
     N = S + E + I + R
+    # if infected dips below 1 there are no cases, and they cannot go back up
+    if I < 1:
+        R += I
+        I = 0
     
     dSdt = - beta * S * I / N
     dEdt = beta * S * I / N - sigma * E
@@ -55,17 +59,3 @@ def simulate_SEIR_betas(duration, S0, E0=0, I0=1, R0=0, beta=None, gamma=1/14, s
     else: interval_betas = beta * np.asarray(beta_factors)
     y0 = [S0, E0, I0, R0]
     return odeint(SEIR_betas, y0, range(duration), args=(beta, gamma, sigma, intervals, interval_betas))
-
-
-# simulate_SEIR(100, S0=100, beta=1/7)
-
-    
-
-
-
-
-
-
-
-
-
