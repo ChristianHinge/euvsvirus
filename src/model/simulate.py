@@ -2,7 +2,6 @@
 import numpy as np
 import pandas as pd
 from src.model.simulation.ODEs import simulate_SEIR_betas
-import sys
 
 ## constants
 ICU_duration = 5

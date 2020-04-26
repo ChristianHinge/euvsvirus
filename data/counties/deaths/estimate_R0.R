@@ -22,19 +22,20 @@ age_groups[,age_fatality_rate:=age_fatality_rate]
 # we also add conservative consideration to the health of the population. 
 # https://www.worldometers.info/coronavirus/coronavirus-age-sex-demographics/
 # source says 5-10 times more deadly with preexisting condition. 
-# We conservatively say that someone classified with "fair or poor health" will have 2 times the fatality rate.
+# We conservatively say that someone classified with "fair or poor health" will have "unhealthy_factor" times the fatality rate.
+unhealthy_factor = 1.0
 # We want to add this consideration while keeping the overall fatality rate of the nation unchanged.
 populations = populations[age_groups[,.(fips,age_fatality_rate)],on="fips"]
 populations = populations[health_table[,.(fips,health)], on="fips"]
 # number of fatalities if everyone contracted corona
 nation_fatalities = sum(populations$population * populations$age_fatality_rate, na.rm=T)
 # it should hold:
-# nation_fatalities == sum(populations$population * populations$age_fatality_rate * (2 * populations$health + (1-populations$health)) * constant, na.rm=T)
-constant = nation_fatalities / sum(populations$population * populations$age_fatality_rate * (populations$health + 1), na.rm=T)
+# nation_fatalities == sum(populations$population * populations$age_fatality_rate * (unhealthy_factor * populations$health + (1-populations$health)) * constant, na.rm=T)
+constant = nation_fatalities / sum(populations$population * populations$age_fatality_rate * (unhealthy_factor * populations$health + (1-populations$health)), na.rm=T)
 # check
-stopifnot(nation_fatalities == sum(populations$population * populations$age_fatality_rate * (2 * populations$health + (1-populations$health)) * constant, na.rm=T))
+stopifnot(nation_fatalities == sum(populations$population * populations$age_fatality_rate * (unhealthy_factor * populations$health + (1-populations$health)) * constant, na.rm=T))
 health_table = health_table[age_groups[,.(fips,age_fatality_rate)],on="fips"]
-health_table[,fatality_rate:=age_fatality_rate*(health + 1) * constant]
+health_table[,fatality_rate:=age_fatality_rate*(unhealthy_factor * health + (1-health)) * constant]
 
 cases_deaths = cases_deaths[health_table[,.(fips, fatality_rate)], on="fips"]
 cases_deaths[,cases_fatality_est:=deaths / fatality_rate]
@@ -44,3 +45,5 @@ cases_deaths[,recovered_est:=cases_fatality_est - deaths]
 cases_deaths$recovered_est[is.na(cases_deaths$recovered_est)] = 0.0
 
 fwrite(cases_deaths, "fatality_estimates.tsv", sep="\t")
+
+
