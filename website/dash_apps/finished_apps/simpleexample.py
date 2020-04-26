@@ -14,9 +14,9 @@ import website.dash_apps.finished_apps.htmlCssVariables as webVar
 from website.dash_apps.finished_apps.county_table import table_fig
 
 current_fips = 1043
-external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
+external_stylesheets = 'website/static/website/cssFiles/main.css'
 
-app = DjangoDash('SimpleExample', external_stylesheets=external_stylesheets)
+app = DjangoDash('SimpleExample')
 
 
 with urlopen('https://raw.githubusercontent.com/plotly/datasets/master/geojson-counties-fips.json') as response:
@@ -56,11 +56,21 @@ def get_SIR_from_fips(fips,lockdown=None,panic = None, partial_lockdown = None):
     #df = pd.DataFrame(data)
     df = simulate.simulate_county(fips=fips,duration=500,lockdown = lockdown,panic=panic,partial_lockdown=partial_lockdown)
     #df = df[["t","ICU"]]
-    df = df.melt('t',var_name='cols',  value_name='vals')
 
     return df
 
 def create_time_series(df):
+    df = df[["S","E","I","A","t"]]
+    df = df.melt('t',var_name='cols',  value_name='vals')
+    fig2 = px.line(df, x='t', y='vals', color='cols')
+    fig2.update_traces(mode='markers+lines')
+   # fig2.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)',
+   #                   'paper_bgcolor': 'rgba(0, 0, 0, 0)',})
+    return fig2
+
+def create_time_series_2(df):
+    df = df[["ICU","hospital_beds","icu_beds","t","D"]]
+    df = df.melt('t',var_name='cols',  value_name='vals')
     fig2 = px.line(df, x='t', y='vals', color='cols')
     fig2.update_traces(mode='markers+lines')
    # fig2.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)',
@@ -83,7 +93,17 @@ app.layout = html.Div([
                                               className="six columns")], className="row"
     ),
     dcc.Graph(figure=fig,id="my-graph", style=webVar.graphStyle),
+    html.Div([dcc.Graph(id='county-table')], style={'width': '30%', 'display': 'inline-block', 'vertical-align': 'middle'}),
+    html.Div([html.H2(["Some title"],style=webVar.demoStyle),html.P([""" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lacinia pretium dui, at dictum massa elementum at. Nam nec laoreet mi. Aliquam molestie eget mi at dictum. Aliquam mattis mauris metus, at pellentesque elit eleifend id. Integer feugiat purus et sollicitudin fringilla. Vivamus a nunc et diam ullamcorper luctus nec quis diam. Nunc vitae lorem vitae purus tincidunt cursus. Nullam ac viverra leo.
+
+Vestibulum quis volutpat nisi. Duis nec fermentum leo, condimentum cursus felis. Cras nisi elit, suscipit sed risus eu, tristique finibus nunc. Integer ut placerat arcu, eget feugiat mauris. Nam justo nisi, iaculis rhoncus nibh vitae, blandit dictum sapien. Integer commodo odio diam, et lacinia ante condimentum sed. Phasellus lacinia, tortor sit amet feugiat gravida, justo mauris imperdiet ante, sed maximus mauris ligula malesuada ligula.
+
+Vestibulum varius, ante sollicitudin ullamcorper facilisis, quam nisl fermentum nisi, non fringilla eros justo sed nunc. Pellentesque urna massa, finibus sed auctor quis, molestie venenatis nisi. Nam porta ante nec ligula condimentum fringilla. Nulla vulputate odio vel orci fermentum, eu rhoncus felis tristique. Maecenas ac dictum dui, nec rutrum metus. Quisque sed tellus mauris. Curabitur ut dignissim diam. Sed diam massa, aliquam eu consequat id, semper et libero. Pellentesque auctor nec libero at sollicitudin. Etiam pellentesque molestie risus, nec eleifend arcu maximus nec.
+
+In eu mauris a leo aliquam scelerisque. Ut facilisis viverra odio, interdum pulvinar nisl interdum ac. Sed facilisis tellus at purus auctor, ut luctus odio mattis. Sed aliquam massa a augue egestas, porta efficitur ante malesuada. Vestibulum quis finibus dui, vitae convallis arcu. Phasellus tempus euismod diam at auctor. Nullam dapibus, mi et placerat fringilla, nulla lacus imperdiet dui, luctus dignissim dui sem vitae turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In interdum ipsum dolor, ut sollicitudin risus lacinia in. In aliquet accumsan vehicula. Curabitur laoreet augue ante. """
+        ])], style={'width': '65%', 'display': 'inline-block', 'vertical-align': 'middle'}),
     html.Div([dcc.Graph(id='x-time-series'),]),
+    html.Div([dcc.Graph(id='x-time-series-2'),]),
     html.Div([dcc.RangeSlider(
         count=1,
         min=0,
@@ -102,8 +122,6 @@ app.layout = html.Div([
         max=500,
         step=1,
         value=[0, 10],id='slider-3')]),
-    html.Div([dcc.Graph(id='county-table')]),
-    html.Div([dcc.Graph(id='county-table')]),
     html.Div([dcc.Checklist(
         options=[
             {'label': 'Full lockdown' ,'value':'FP'},
@@ -125,6 +143,7 @@ df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/solar
     [
         Output('x-time-series', 'figure'),
         Output('county-table', 'figure'),
+        Output('x-time-series-2','figure'),
     ],
     [
         Input('my-graph','clickData'),
@@ -144,7 +163,7 @@ def display_graph(clickData,checks,slider_value_1,slider_value_2,slider_value_3)
     current_fips = fips
     data = get_SIR_from_fips(fips,lockdown=slider_value_1,partial_lockdown=slider_value_2,panic=slider_value_3)
     county_table = table_fig(fips)
-    return create_time_series(data), county_table
+    return create_time_series(data), county_table, create_time_series_2(data)
 
 
 """
