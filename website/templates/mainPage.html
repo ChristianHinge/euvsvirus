@@ -17,20 +17,22 @@
     </header>
 
 <!-- White section -->
-    <section id='HowToText' class='getScrolled'>
-        <div class="titleTextinHowto">
+    <section class='HowToText'>
+        <div class="titleTextDetails">
             <h2>
                 How to use
             </h2>
         </div>
-        <div class="instructions">
+        <div class="details">
             <p>
-                US county data has been curated and processsed to showcase the tool. You can interact with the data through the map below, where you can click on counties to analyse them individually. 
-		Select different risk metric with the dropdown menu above the map to change the map visualization. 
-		The map is interactive, you can zoom in and move around using your scrool and cursor. Click on a county to select it. 
-		Values are plotted for the selected counties underneath. 
-		Press "Lockdown", "Partial lockdown", or "Panic dynamics" to reveal a slider for each. Move end points of the sliders to control the start and end time for each effect.
-		The plot will automatically update to the changes.
+                US county data has been curated and processed to showcase the tool. 
+                You can interact with the data through the interactive map below, 
+                simply select a county by clicking to analyze them. Select different 
+                risk metrics with the dropdown menu above the map to change the map 
+                visualization. Values are plotted for the selected counties underneath.
+                Press "Lockdown", "Partial lockdown", or "Panic dynamics" to reveal 
+                a slider for each. Move nodes of the sliders to control the start and 
+                end time for each effect. The plot will automatically update the changes.
             </p>
             <br>
         </div>
@@ -38,33 +40,47 @@
 
 
 <!-- Plot Section -->
-    <section id="one" class="wrapper style2 special">
+    <section id="one">
         <div class="{% plotly_class name='SimpleExample' %} card" style="height: 100%; width: 100%" id="usaPlot">
-                {% plotly_direct  name='SimpleExample' %}
-            </div>
+            {% plotly_direct  name='SimpleExample' %}
+        </div>
+        <br>
+
     </section>
 
 
 <!-- White section -->
-    <section id='TechnicalText' class='getScrolled'>
-        <div class="titleTextinTechnical">
-            <h2>
-                Details
-            </h2>
-        </div>
-        <div class="details">
-	    <p>
-                The heatmap displayed on the map indicates the risks a county would be exposed to in case of an outbreak. This means it does not visualize the probability of an outbreak but rather the p
-otential ramifications.
-                The risks are currently measured from peak ICU bed requirement, peak ICU beds per available ICU beds, total fatalities, and fatalities per capita all based on a 500 day simulation without lockdown.
-                The default heatmap displays an overall risk index, which is the product of peak ICU/available ICU beds and fatalities per capita.
-                The simulation is built on a SEIR model with parameters currently estimated from population size, age distribution, and other factors.
-                ICU numbers are currently found from a simple model of each fatality having a 5 day ICU stay preceding it.
-            </p><p>
-                Data for the selected county is displayed under the map, followed by a visualization of simulation progression through time.
-                Sliders activated with the buttons "Lockdown", "Partial lockdown", and "Panic dynamics" allows for playing around with the dynamics of introducing a lockdown, partial lockdown, and population panics for time intervals selected from the end points of each slider.
-                All dynamics are modelled as temporary changes to the beta parameter of a SEIR model. A lockdown is modelled to match a reduction of r0 from approximately 2 to &lt;1, partial lockdown is to &gt;1, and panic is approximately 3, although it varies by county. Overlapping dynamics will result in averaged effects.<p>
-            <br>
+    <section>
+        <div class='HowToText'>
+            <div class="titleTextDetails">
+                <h2>
+                    Details
+                </h2>
+            </div>
+            <div class="details">
+                <p>
+                    The heatmap displayed on the map indicates the risks a county would be exposed 
+                    to in case of an outbreak. This means it does not visualize the probability of 
+                    an outbreak but rather the ramifications of one occurring. The risks are measured 
+                    from data on peak ICU bed requirements, peak ICU beds per available ICU beds, 
+                    total fatalities, and fatalities per capita all based on a 500-day simulation 
+                    without a lockdown. The default heatmap displays an overall risk index, which is 
+                    the product of peak ICU versus available ICU beds and fatalities per capita. The 
+                    simulation is built on an SEIR model with parameters currently estimated from 
+                    population size, age distribution, and other factors. ICU numbers are currently 
+                    found from a simple model of each fatality having a 5 day ICU stay preceding it.
+                </p><p>
+                    Data for the selected county is displayed under the map, followed by a visualization 
+                    of simulation progression through time. Sliders activated with the buttons "Lockdown", 
+                    "Partial lockdown", and "Panic dynamics" allows for playing around with the dynamics 
+                    of introducing a lockdown, partial lockdown, and population panics for time intervals 
+                    selected from the end points of each slider. All dynamics are modelled as temporary 
+                    changes to the beta parameter of a SEIR model. A lockdown is modelled to match a reduction 
+                    of r0 from approximately 2 to &lt;1, partial lockdown is to &gt;1, and panic is approximately 
+                    3, although it varies by county. Overlapping dynamics will result in averaged effects.
+                </p>
+                <br>
+            </div>
         </div>
     </section>
 

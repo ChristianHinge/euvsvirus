@@ -99,13 +99,17 @@ app.layout = html.Div([
 #    html.Div([html.H1("Demographic Data by Country")], id='teeesting', style=webVar.demoStyle),
     html.Div([
         html.Span("Risk metric : ", className="six columns", id='metToDisp'),
-        dcc.Dropdown(id="value-selected", value='r', options=[
-                                                       {'label': "Combined risk index", 'value': 'r'},
-                                                       {'label': "Intensive care", 'value': 'ic'},
-                                                       {'label': "Mortality index", 'value': 'mi'},
-                                                       {'label': "Total fatalities", 'value': 'tf'}],
-                                              className="six columns")], className="row"
-    ),
+        dcc.Dropdown(
+            id="value-selected", 
+            value='r', 
+            options=[
+                    {'label': "Combined risk index", 'value': 'r'},
+                    {'label': "Intensive care", 'value': 'ic'},
+                    {'label': "Mortality index", 'value': 'mi'},
+                    {'label': "Total fatalities", 'value': 'tf'}],
+            className="six columns", 
+            searchable=False)], 
+        className="row" ),
     html.Div([
     html.Div([dcc.Graph(id='county-table')],style = {'width': '25%', 'display': 'inline-block','vertical-align': 'middle'}),
     html.Div([dcc.Graph(id="my-graph")],style = {'width': '74%', 'display': 'inline-block','vertical-align': 'middle'}),
@@ -116,7 +120,7 @@ app.layout = html.Div([
         [
             html.Div([
             html.Button('Full lockdown', id='fl-button'),
-                ],style={'width': '10%', 'display': 'inline-block','vertical-align': 'middle'}),
+                ],),
             html.Div([dcc.RangeSlider(
         count=1,
         min=0,
@@ -136,13 +140,13 @@ app.layout = html.Div([
             450: {'label': 'Day 450'},
             500: {'label': 'Day 500'}
         }
-        )],id="flsliderdiv-1",style={'width': '89%', 'display': 'none','vertical-align': 'middle'})
+        )],id="flsliderdiv-1")
         ]),
     html.Div(
         [
             html.Div([
             html.Button('Partial lockdown', id='pl-button'),
-                ],style={'width': '10%', 'display': 'inline-block','vertical-align': 'middle'}),
+                ]),
             html.Div([dcc.RangeSlider(
         count=1,
         min=0,
@@ -162,13 +166,13 @@ app.layout = html.Div([
             450: {'label': 'Day 450'},
             500: {'label': 'Day 500'}
         }
-        )],id="flsliderdiv-2",style={'width': '89%', 'display': 'none','vertical-align': 'middle'})
+        )],id="flsliderdiv-2")
         ]),
 html.Div(
         [
             html.Div([
             html.Button('Panic dynamics', id='p-button'),
-                ],style={'width': '10%', 'display': 'inline-block','vertical-align': 'middle'}),
+                ]),
             html.Div([dcc.RangeSlider(
         count=1,
         min=0,
@@ -188,7 +192,7 @@ html.Div(
             450: {'label': 'Day 450'},
             500: {'label': 'Day 500'}
         }
-        )],id="flsliderdiv-3",style={'width': '89%', 'display': 'none','vertical-align': 'middle'})
+        )],id="flsliderdiv-3")
         ]),
     ],
     className="container",
