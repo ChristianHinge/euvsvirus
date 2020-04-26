@@ -159,7 +159,7 @@ In eu mauris a leo aliquam scelerisque. Ut facilisis viverra odio, interdum pulv
         min=0,
         max=500,
         step=1,
-        value=[0, 10],id='slider-3',
+        value=[10, 12],id='slider-3',
         marks = {
             0: {'label': 'Day 0'},
             50: {'label': 'Day 50'},
@@ -213,7 +213,8 @@ def display_graph(clickData,checks,slider_value_1,slider_value_2,slider_value_3)
         clickData = dict(clickData)
         fips = int(clickData['points'][0]['location'])
     current_fips = fips
-    data = get_SIR_from_fips(fips,lockdown=slider_value_1,partial_lockdown=slider_value_2,panic=slider_value_3)
+    #data = get_SIR_from_fips(fips,lockdown=slider_value_1,partial_lockdown=slider_value_2,panic=slider_value_3)
+    data = get_SIR_from_fips(fips)
     county_table = table_fig(fips)
     return create_time_series(data), county_table, create_time_series_2(data)
 
