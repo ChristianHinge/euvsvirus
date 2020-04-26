@@ -55,7 +55,7 @@ def table_fig(fips=1039):
                     line_color='darkslategray',
                     fill_color='lightskyblue',
                     align='left'),
-        cells=dict(values=[["State","County","Population","Age demographic", "ICU beds", "Pop. density","Un-ensured","Risk"], # 1st column
+        cells=dict(values=[["State","County","Population","Age demographic", "ICU beds", "Pop. density","Uninsured","Risk"], # 1st column
                         [state, county, population, demographic,round(ICU_beds),density,str(round(ensured,2))+"%",2]], # 2nd column
                 line_color='darkslategray',
                 fill_color='white',

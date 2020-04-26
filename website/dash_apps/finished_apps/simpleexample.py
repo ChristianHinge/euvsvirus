@@ -14,7 +14,9 @@ import website.dash_apps.finished_apps.htmlCssVariables as webVar
 from website.dash_apps.finished_apps.county_table import table_fig
 
 current_fips = 1039 #COVIngton county
-fl_visible = False
+fl_visible = True
+pl_visible = True
+p_visible = True
 
 external_stylesheets = 'website/static/website/cssFiles/main.css'
 
@@ -26,27 +28,27 @@ with urlopen('https://raw.githubusercontent.com/plotly/datasets/master/geojson-c
 
 #df = pd.read_csv("https://raw.githubusercontent.com/plotly/datasets/master/fips-unemp-16.csv",
 #                   dtype={"fips": str})
-df = pd.read_csv("data/counties/simulations/county_risk.tsv",sep='\t')
+df = pd.read_csv("data/counties/simulations/risk_index0.csv",dtype={"fips": str})
 
 
 fig3 = go.Figure(data=[go.Table(
     header=dict(values=list(df.columns),
                 fill_color='paleturquoise',
                 align='left'),
-    cells=dict(values=[df.rank, df.fips,df['max_icu/icu_beds']],
+    cells=dict(values=[df.rank, df.fips,df['risk']],
                fill_color='lavender',
                align='left'))
 ])
 
 # fig.show()
 
-fig = px.choropleth_mapbox(df, geojson=counties, locations='fips', color='max_icu/icu_beds',
+fig = px.choropleth_mapbox(df, geojson=counties, locations='fips', color='risk',
                            color_continuous_scale = 'Reds',#['#2821FF','#D917E8','#FF4726','#E89817','#FFCB00'],
-                           range_color=(df.quantile(0.05)["max_icu/icu_beds"], df.quantile(0.95)["max_icu/icu_beds"]),
+                           range_color=(df.quantile(0.05)["risk"], df.quantile(0.95)["risk"]),
                            mapbox_style="carto-positron",
                            zoom=3, center = {"lat": 37.0902, "lon": -95.7129},
                            opacity=0.5,
-                           labels={'max_icu/icu_beds':'County risk'}
+                           labels={'risk':'County risk'}
                           )
 fig.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)',
                       'paper_bgcolor': 'rgba(0, 0, 0, 0)',})
@@ -63,8 +65,8 @@ def get_SIR_from_fips(fips,lockdown=None,panic = None, partial_lockdown = None):
 
 def create_time_series(df):
     df = df[["Susceptible","Exposed","Infected","Recovered","Days"]]
-    df = df.melt('Days',var_name='cols',  value_name='vals')
-    fig2 = px.line(df, x='Days', y='vals', color='cols')
+    df = df.melt('Days',var_name='Population at interest',  value_name='Individuals')
+    fig2 = px.line(df, x='Days', y='Individuals', color='Population at interest')
     fig2.update_traces(mode='markers+lines')
    # fig2.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)',
    #                   'paper_bgcolor': 'rgba(0, 0, 0, 0)',})
@@ -72,8 +74,8 @@ def create_time_series(df):
 
 def create_time_series_2(df):
     df = df[["ICU","Hospital beds","ICU beds","Days","Dead"]]
-    df = df.melt('Days',var_name='cols',  value_name='vals')
-    fig2 = px.line(df, x='Days', y='vals', color='cols')
+    df = df.melt('Days',var_name='Population at interest',  value_name='Individuals')
+    fig2 = px.line(df, x='Days', y='Individuals', color='Population at interest')
     fig2.update_traces(mode='markers+lines')
    # fig2.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)',
    #                   'paper_bgcolor': 'rgba(0, 0, 0, 0)',})
@@ -130,10 +132,13 @@ In eu mauris a leo aliquam scelerisque. Ut facilisis viverra odio, interdum pulv
             450: {'label': ''},
             500: {'label': ''}
         }
-        )],id="flsliderdiv")]),
+        )],id="flsliderdiv-1",style={'width': '89%', 'display': 'none','vertical-align': 'middle'})
+        ]),
     html.Div(
         [
-            html.Div([html.H4("Partial lockdown")],style={'width': '10%', 'display': 'inline-block','vertical-align': 'middle'}),
+            html.Div([
+            html.Button('Partial lockdown', id='pl-button'),
+                ],style={'width': '10%', 'display': 'inline-block','vertical-align': 'middle'}),
             html.Div([dcc.RangeSlider(
         count=1,
         min=0,
@@ -153,108 +158,82 @@ In eu mauris a leo aliquam scelerisque. Ut facilisis viverra odio, interdum pulv
             450: {'label': ''},
             500: {'label': ''}
         }
-        )],style={'width': '89%', 'display': 'inline-block','vertical-align': 'middle'})]),
-        html.Div(
+        )],id="flsliderdiv-2",style={'width': '89%', 'display': 'none','vertical-align': 'middle'})
+        ]),
+html.Div(
         [
-            html.Div([html.H4("Full lockdown")],style={'width': '10%', 'display': 'inline-block','vertical-align': 'middle'}),
+            html.Div([
+            html.Button('Panic dynamics', id='p-button'),
+                ],style={'width': '10%', 'display': 'inline-block','vertical-align': 'middle'}),
             html.Div([dcc.RangeSlider(
         count=1,
         min=0,
         max=500,
         step=1,
-        value=[10, 12],id='slider-3',
-        marks = {
-            0: {'label': 'Day 0'},
-            50: {'label': 'Day 50'},
-            100: {'label': 'Day 100'},
-            150: {'label': 'Day 150'},
-            200: {'label': 'Day 200'},
-            250: {'label': 'Day 250'},
-            300: {'label': 'Day 300'},
-            350: {'label': 'Day 350'},
-            400: {'label': 'Day 400'},
-            450: {'label': 'Day 450'},
-            500: {'label': 'Day 500'}
+        value=[0, 10],id='slider-3',
+        marks={
+            0: {'label': ''},
+            50: {'label': ''},
+            100: {'label': ''},
+            150: {'label': ''},
+            200: {'label': ''},
+            250: {'label': ''},
+            300: {'label': ''},
+            350: {'label': ''},
+            400: {'label': ''},
+            450: {'label': ''},
+            500: {'label': ''}
         }
-        )])]),
-    html.Div([dcc.Checklist(
-        options=[
-            {'label': 'Full lockdown' ,'value':'FP'},
-            {'label': 'Partial lockdown', 'value': 'PP'},
-            {'label': 'Panic', 'value': 'P'}
-        ],
-        value=['P'],id='checks')]),
-        
-        dcc.Dropdown(
-            id = 'dropdown-to-show_or_hide-element',
-            options=[
-                {'label': 'Show element', 'value': 'on'},
-                {'label': 'Hide element', 'value': 'off'}
-            ],
-            value = 'on'
-        ),
-
-        # Create Div to place a conditionally visible element inside
-        html.Div([
-            # Create element to hide/show, in this case an 'Input Component'
-            dcc.RangeSlider(
-            count=1,
-            min=0,
-            max=500,
-            step=1,
-            value=[0, 10],id='element-to-hide-3',
-            marks={
-                0: {'label': ''},
-                50: {'label': ''},
-                100: {'label': ''},
-                150: {'label': ''},
-                200: {'label': ''},
-                250: {'label': ''},
-                300: {'label': ''},
-                350: {'label': ''},
-                400: {'label': ''},
-                450: {'label': ''},
-                500: {'label': ''}
-            })
-        ], id='element-to-hide', style= {'display': 'block'} # <-- This is the line that will be changed by the dropdown callback
-        )
-    
+        )],id="flsliderdiv-3",style={'width': '89%', 'display': 'none','vertical-align': 'middle'})
+        ]),
     ],
     className="container",
 )
 
-df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/solar.csv')
 
-
+#region Slider callbacks
 @app.callback(
-   Output(component_id='element-to-hide', component_property='style'),
-   [Input(component_id='dropdown-to-show_or_hide-element', component_property='value')])
-
-def show_hide_element(visibility_state):
-    if visibility_state == 'on':
-        return {'display': 'block'}
-    if visibility_state == 'off':
-        return {'display': 'none'}
-
-
-
-@app.callback(
-   Output(component_id='flsliderdiv', component_property='style'),
-   [Input(component_id='dropdown-to-show_or_hide-element', component_property='value')])
+   Output(component_id='flsliderdiv-1', component_property='style'),
+   [Input(component_id='fl-button', component_property='n_clicks')])
 
 def toggle_fl(value):
-    print(value)
-    print("Hey2")
     global fl_visible
     
     if fl_visible:
         fl_visible = not fl_visible
-        return {'display': 'block'}
+        return {'width': '89%', 'display': 'none','vertical-align': 'bottom'}
     else:
         fl_visible = not fl_visible
-        return {'display': 'none'}
-    
+        return{'width': '89%', 'display': 'inline-block','vertical-align': 'bottom'}
 
+@app.callback(
+   Output(component_id='flsliderdiv-2', component_property='style'),
+   [Input(component_id='pl-button', component_property='n_clicks')])
+
+def toggle_pl(value):
+    global pl_visible
+    
+    if pl_visible:
+        pl_visible = not pl_visible
+        return {'width': '89%', 'display': 'none','vertical-align': 'bottom'}
+    else:
+        pl_visible = not pl_visible
+        return{'width': '89%', 'display': 'inline-block','vertical-align': 'bottom'}
+
+@app.callback(
+   Output(component_id='flsliderdiv-3', component_property='style'),
+   [Input(component_id='p-button', component_property='n_clicks')])
+
+def toggle_p(value):
+    global p_visible
+    
+    if p_visible:
+        p_visible = not p_visible
+        return {'width': '89%', 'display': 'none','vertical-align': 'bottom'}
+    else:
+        p_visible = not p_visible
+        return{'width': '89%', 'display': 'inline-block','vertical-align': 'bottom'}
+#endregion
 
 
 @app.callback(
@@ -265,14 +244,21 @@ def toggle_fl(value):
     ],
     [
         Input('my-graph','clickData'),
-        Input('checks','value'),
         Input('slider-1','value'),
         Input('slider-2','value'),
-        Input('slider-3','value')
+        Input('slider-3','value'),
+        Input(component_id='fl-button', component_property='n_clicks'),
+        Input(component_id='pl-button', component_property='n_clicks'),
+        Input(component_id='p-button', component_property='n_clicks')
 
     ])
-def display_graph(clickData,checks,slider_value_1,slider_value_2,slider_value_3):
-    print("Hey")
+def display_graph(clickData,slider_value_1,slider_value_2,slider_value_3,b1,b2,b3):
+    if fl_visible == False:
+        slider_value_1 = None
+    if pl_visible == False:
+        slider_value_2 = None
+    if p_visible == False:
+        slider_value_3 = None
     global current_fips
     if clickData == None:
         fips = current_fips
@@ -284,15 +270,3 @@ def display_graph(clickData,checks,slider_value_1,slider_value_2,slider_value_3)
     #data = get_SIR_from_fips(fips)
     county_table = table_fig(fips)
     return create_time_series(data), county_table, create_time_series_2(data)
-
-
-"""
-@app.callback(
-    Output('click-data', 'children'),
-    [
-        Input('my-graph', 'clickData'),
-    ])
-def display_data(clickData):
-    Input('my-graph', 'clickData'),
-    return json.dumps(clickData, indent=2)  
-"""
