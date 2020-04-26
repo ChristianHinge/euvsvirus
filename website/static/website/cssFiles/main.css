@@ -195,8 +195,43 @@
 	color: black;
 }
 
+#fl-button{
+	width: 10%;
+	display: inline-block;
+	vertical-align: middle;
+	box-sizing: border-box;
+}
+
+#pl-button{
+	width: 10%;
+	display: inline-block;
+	vertical-align: middle;
+	box-sizing: border-box;
+}
+
+#p-button{
+	width: 10%;
+	display: inline-block;
+	vertical-align: middle;
+	box-sizing: border-box;
+}
 
 
+#flsliderdiv-1{
+	width: 89%;
+	display: none;
+	vertical-align: middle;
+}
+#flsliderdiv-2{
+	width: 89%;
+	display: none;
+	vertical-align: middle;
+}
+#flsliderdiv-3{
+	width: 89%;
+	display: none;
+	vertical-align: middle;
+}
 
 
 

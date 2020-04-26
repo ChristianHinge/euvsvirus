@@ -116,7 +116,7 @@ app.layout = html.Div([
         [
             html.Div([
             html.Button('Full lockdown', id='fl-button'),
-                ],style={'width': '10%', 'display': 'inline-block','vertical-align': 'middle'}),
+                ],),
             html.Div([dcc.RangeSlider(
         count=1,
         min=0,
@@ -136,13 +136,13 @@ app.layout = html.Div([
             450: {'label': 'Day 450'},
             500: {'label': 'Day 500'}
         }
-        )],id="flsliderdiv-1",style={'width': '89%', 'display': 'none','vertical-align': 'middle'})
+        )],id="flsliderdiv-1")
         ]),
     html.Div(
         [
             html.Div([
             html.Button('Partial lockdown', id='pl-button'),
-                ],style={'width': '10%', 'display': 'inline-block','vertical-align': 'middle'}),
+                ]),
             html.Div([dcc.RangeSlider(
         count=1,
         min=0,
@@ -162,13 +162,13 @@ app.layout = html.Div([
             450: {'label': 'Day 450'},
             500: {'label': 'Day 500'}
         }
-        )],id="flsliderdiv-2",style={'width': '89%', 'display': 'none','vertical-align': 'middle'})
+        )],id="flsliderdiv-2")
         ]),
 html.Div(
         [
             html.Div([
             html.Button('Panic dynamics', id='p-button'),
-                ],style={'width': '10%', 'display': 'inline-block','vertical-align': 'middle'}),
+                ]),
             html.Div([dcc.RangeSlider(
         count=1,
         min=0,
@@ -188,7 +188,7 @@ html.Div(
             450: {'label': 'Day 450'},
             500: {'label': 'Day 500'}
         }
-        )],id="flsliderdiv-3",style={'width': '89%', 'display': 'none','vertical-align': 'middle'})
+        )],id="flsliderdiv-3")
         ]),
     ],
     className="container",
