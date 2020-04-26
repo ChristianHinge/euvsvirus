@@ -58,7 +58,7 @@ def simulate_SEIR_betas(duration, S0, E0=0, I0=1, R0=0, beta=None, gamma=1/14, s
 
 
 def _eradication(solution):
-    idx = np.where(solution[:, 2] < 0.1)[0]
+    idx = np.where(solution[:, 2] < 0.9)[0]
     if len(idx) > 0:
         idx = idx[0]
         # move remaining E and I to R
