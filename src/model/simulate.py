@@ -35,6 +35,9 @@ def simulate_county(fips, duration, I0=1, lockdown=None, panic=None, partial_loc
     :param floats: 
     :return: pandas DataFrame
     """
+    # make sure it works for e.g. fips == "06047"
+    fips = int(fips)
+    
     intervals, beta_factors = [], []
     if lockdown is not None:
         intervals.append(lockdown)
