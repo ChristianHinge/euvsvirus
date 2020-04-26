@@ -30,7 +30,7 @@
                 simply select a county by clicking to analyze them. Select different 
                 risk metrics with the dropdown menu above the map to change the map 
                 visualization. Values are plotted for the selected counties underneath.
-                Press "Lockdown", "Partial lockdown", or "Panic dynamics" to reveal 
+                Press "Full lockdown", "Partial lockdown", or "Panic dynamics" to reveal 
                 a slider for each. Move nodes of the sliders to control the start and 
                 end time for each effect. The plot will automatically update to reflect the changes.
             </p>
@@ -60,18 +60,24 @@
             <div class="details">
                 <p>
                     The heatmap displayed on the map indicates the risks a county would be exposed 
-                    to in case of an outbreak. This means it does not visualize the probability of 
+                    to in case of an outbreak. More precisely, a single infected indivual at day 0. 
+		    The simulations are imagined as a future scenario where a county is hit by a fresh outbreak, 
+		    which means that Removed at day 0 is estimated from current (April 24th 2020) fatality counts.
+		    This means it does not visualize the probability of 
                     an outbreak but rather the ramifications of one occurring. The risks are measured 
                     from data on peak ICU bed requirements, peak ICU beds per available ICU beds, 
                     total fatalities, and fatalities per capita all based on a 500-day simulation 
                     without a lockdown. The default heatmap displays an overall risk index, which is 
                     the product of peak ICU versus available ICU beds and fatalities per capita. The 
                     simulation is built on an SEIR model with parameters currently estimated from 
-                    population size, age distribution, and other factors. ICU numbers are currently 
+                    population size, age distribution, and other factors. 
+		    Fatality rates are estimated from age specific fatality rates, age distributions for each county, 
+		    contribution from prior health issues, and health data for each county.
+		    ICU numbers are currently 
                     found from a simple model of each fatality having a 5 day ICU stay preceding it.
                 </p><p>
                     Data for the selected county is displayed under the map, followed by a visualization 
-                    of simulation progression through time. Sliders activated with the buttons "Lockdown", 
+                    of simulation progression through time. Sliders activated with the buttons "Full lockdown", 
                     "Partial lockdown", and "Panic dynamics" allows for playing around with the dynamics 
                     of introducing a lockdown, partial lockdown, and population panics for time intervals 
                     selected from the end points of each slider. All dynamics are modelled as temporary 
