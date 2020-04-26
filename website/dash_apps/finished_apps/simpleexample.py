@@ -118,12 +118,11 @@ app.layout = html.Div([
     ]),
     html.Div([dcc.Graph(id='x-time-series')]),
     html.Div([dcc.Graph(id='x-time-series-2')]),
-
-html.Div(
-        [
+html.Ul([
+html.Li([ 
             html.Div([
-            html.Button('Panic dynamics', id='fl-button'),
-                ],id='button-div'),
+            html.Button('Full lockdown', id='fl-button'),
+                ],className='button-div'),
             html.Div([dcc.RangeSlider(
         count=1,
         min=0,
@@ -143,13 +142,13 @@ html.Div(
             450: {'label': 'Day 450'},
             500: {'label': 'Day 500'}
         }
-        )],id="flsliderdiv-1")
-        ]),
-html.Div(
+        )],id="flsliderdiv-1",className='sliderPlacement')
+        ],className='buttonSliderWrapper'),
+html.Li(
         [
             html.Div([
-            html.Button('Panic dynamics', id='pl-button'),
-                ],id='button-div'),
+            html.Button('Partial lockdown', id='pl-button'),
+                ],className='button-div'),
             html.Div([dcc.RangeSlider(
         count=1,
         min=0,
@@ -169,13 +168,13 @@ html.Div(
             450: {'label': 'Day 450'},
             500: {'label': 'Day 500'}
         }
-        )],id="flsliderdiv-2")
-        ]),
-html.Div(
+        )],id="flsliderdiv-2",className='sliderPlacement')
+        ],className='buttonSliderWrapper'),
+html.Li(
         [
             html.Div([
             html.Button('Panic dynamics', id='p-button'),
-                ],id='button-div'),
+                ],className='button-div'),
             html.Div([dcc.RangeSlider(
         count=1,
         min=0,
@@ -195,8 +194,8 @@ html.Div(
             450: {'label': 'Day 450'},
             500: {'label': 'Day 500'}
         }
-        )],id="flsliderdiv-3")
-        ]),
+        )],id="flsliderdiv-3",className='sliderPlacement')
+        ],className='buttonSliderWrapper'),])
     ],
     className="container",
 )
