@@ -237,71 +237,67 @@
 	font-size: 1.8em;
 	/* height: 2.5em; */
 	color:black;
-	text-align: center;
+	/* text-align: center;
 	align-items: center;
-	justify-content: center;
+	justify-content: center; */
 
 }
 
 /* currently selected drop down value */
-#value-selected .VirtualizedSelectFocusedOption{
-	justify-content: center;
-}
 
-
-#value-selected .Select--multi .Select-value{
-	justify-content: center;
-}
 
 
 #teeesting h1{
 	font-family: 'Din';
 	color: black;
 }
-/*
+
+
 #fl-button{
 	width: 100%;
-	display: inline-block;
-	vertical-align: middle;
+	float: right;
+	display: block;
 	box-sizing: border-box;
+	color: black;
 }
+
+
+
 
 #pl-button{
-	width: 10%;
-	display: inline-block;
-	vertical-align: middle;
+	width: 100%;
+	top: 300px;
+	display: block;
 	box-sizing: border-box;
 }
+
+
 
 #p-button{
-	width: 10%;
-	display: inline-block;
-	vertical-align: middle;
+	width: 100%;
+	display: block;
 	box-sizing: border-box;
 }
-*/
 
-#flsliderdiv-1{
+
+
+
+
+.sliderPlacement{
 	width:100%;
-	padding-right: 125px;
-	padding-left: 55px;
-    vertical-align: bottom;
+	padding-right: 165px;
+	padding-left: 42px;
+	vertical-align: bottom;
+	padding-top: 11px;
 }
-#flsliderdiv-2{
-	width:100%;
-	padding-right: 125px;
-	padding-left: 55px;
-    vertical-align: bottom;
+.button-div{
+	width: 160px;
+	float: right;
+	display: block;
 }
-#flsliderdiv-3{
-	width:100%;
-	padding-right: 125px;
-	padding-left: 55px;
-    vertical-align: bottom;
-}
-#button-div{
-	width: 124px;
-    float: right;
+
+.buttonSliderWrapper{
+	white-space: nowrap;
 }
 
 
@@ -2213,9 +2209,9 @@ input, select, textarea {
 		border-radius: 6px;
 		border: 0;
 		cursor: pointer;
-		display: inline-block;
+		display: block;
 		font-weight: bold;
-		height: 2.85em;
+		height: 4.3em;
 		line-height: 2.95em;
 		padding: 0 1.75em;
 		text-align: center;
@@ -2782,13 +2778,13 @@ input, select, textarea {
 		}
 
 	ul {
-		list-style: disc;
+		list-style: none;
 		margin: 0 0 2em 0;
 		padding-left: 1em;
 	}
 
 		ul li {
-			padding-left: 0.5em;
+			height: 65px;
 		}
 
 		ul.alt {
