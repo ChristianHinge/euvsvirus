@@ -242,9 +242,9 @@
 	font-family: 'Din';
 	color: black;
 }
-
+/*
 #fl-button{
-	width: 10%;
+	width: 100%;
 	display: inline-block;
 	vertical-align: middle;
 	box-sizing: border-box;
@@ -263,24 +263,30 @@
 	vertical-align: middle;
 	box-sizing: border-box;
 }
-
+*/
 
 #flsliderdiv-1{
-	width: 89%;
-	display: none;
-	vertical-align: middle;
+	width:100%;
+	padding-right: 125px;
+	padding-left: 55px;
+    vertical-align: bottom;
 }
 #flsliderdiv-2{
-	width: 89%;
-	display: none;
-	vertical-align: middle;
+	width:100%;
+	padding-right: 125px;
+	padding-left: 55px;
+    vertical-align: bottom;
 }
 #flsliderdiv-3{
-	width: 89%;
-	display: none;
-	vertical-align: middle;
+	width:100%;
+	padding-right: 125px;
+	padding-left: 55px;
+    vertical-align: bottom;
 }
-
+#button-div{
+	width: 124px;
+    float: right;
+}
 
 
 /* .titleTextinTechnical h2{

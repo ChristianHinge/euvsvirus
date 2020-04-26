@@ -59,8 +59,10 @@ def get_map(ix = "r"):
                             opacity=0.5,
                             labels={'risk':'County risk'}
                             )
-    fig.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)',
-                        'paper_bgcolor': 'rgba(0, 0, 0, 0)',})
+    fig.update_layout(
+        margin=dict(l=0, r=0, t=0, b=0),
+        plot_bgcolor='rgba(0, 0, 0, 0)',
+        paper_bgcolor='rgba(0, 0, 0, 0)',)
     return fig
 
 def get_SIR_from_fips(fips,lockdown=None,panic = None, partial_lockdown = None):
@@ -116,11 +118,12 @@ app.layout = html.Div([
     ]),
     html.Div([dcc.Graph(id='x-time-series')]),
     html.Div([dcc.Graph(id='x-time-series-2')]),
-    html.Div(
+
+html.Div(
         [
             html.Div([
-            html.Button('Full lockdown', id='fl-button'),
-                ],),
+            html.Button('Panic dynamics', id='fl-button'),
+                ],id='button-div'),
             html.Div([dcc.RangeSlider(
         count=1,
         min=0,
@@ -142,11 +145,11 @@ app.layout = html.Div([
         }
         )],id="flsliderdiv-1")
         ]),
-    html.Div(
+html.Div(
         [
             html.Div([
-            html.Button('Partial lockdown', id='pl-button'),
-                ]),
+            html.Button('Panic dynamics', id='pl-button'),
+                ],id='button-div'),
             html.Div([dcc.RangeSlider(
         count=1,
         min=0,
@@ -172,7 +175,7 @@ html.Div(
         [
             html.Div([
             html.Button('Panic dynamics', id='p-button'),
-                ]),
+                ],id='button-div'),
             html.Div([dcc.RangeSlider(
         count=1,
         min=0,
@@ -215,10 +218,10 @@ def toggle_fl(value):
     
     if fl_visible:
         fl_visible = not fl_visible
-        return {'width': '89%', 'display': 'none','vertical-align': 'bottom'}
+        return {'display': 'none'}
     else:
         fl_visible = not fl_visible
-        return{'width': '89%', 'display': 'inline-block','vertical-align': 'bottom'}
+        return{'display': 'block'}
 
 @app.callback(
    Output(component_id='flsliderdiv-2', component_property='style'),
@@ -229,10 +232,10 @@ def toggle_pl(value):
     
     if pl_visible:
         pl_visible = not pl_visible
-        return {'width': '89%', 'display': 'none','vertical-align': 'bottom'}
+        return {'display': 'none'}
     else:
         pl_visible = not pl_visible
-        return{'width': '89%', 'display': 'inline-block','vertical-align': 'bottom'}
+        return{'display': 'block'}
 
 @app.callback(
    Output(component_id='flsliderdiv-3', component_property='style'),
@@ -243,10 +246,10 @@ def toggle_p(value):
     
     if p_visible:
         p_visible = not p_visible
-        return {'width': '89%', 'display': 'none','vertical-align': 'bottom'}
+        return {'display': 'none'}
     else:
         p_visible = not p_visible
-        return{'width': '89%', 'display': 'inline-block','vertical-align': 'bottom'}
+        return{'display': 'block'}
 #endregion
 
 
