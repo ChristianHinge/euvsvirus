@@ -52,7 +52,11 @@ def simulate_county(fips, duration, I0=1, lockdown=None, panic=None, partial_loc
     arr = _add_AD(arr, fips)
     arr = _add_ICU(arr)
     arr = _add_beds(arr, fips)
-    return np.floor(arr.iloc[:len(arr)-ICU_duration, :])
+    # remove the extra ICU_duration
+    arr = arr.iloc[:len(arr)-ICU_duration, :]
+    # return rounded version. 
+    # We round instead of round down since there is some imprecision where I=1, fluctuates to e.g. .98
+    return round(arr).astype(int)
 
 
 def _simulate_county(fips, duration, I0=1, intervals=None, beta_factors=None):
