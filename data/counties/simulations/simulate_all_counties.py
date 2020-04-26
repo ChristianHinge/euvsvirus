@@ -5,7 +5,7 @@ from matplotlib import pyplot as plt
 
 density = pd.read_csv("data/counties/population/density.tsv", sep="\t")
 
-arr = simulate_county(1043, 500, lockdown=[0, 200])
+arr = simulate_county(1043, 500, lockdown=[30, 200])
 plt.plot(arr["Days"], arr["Infected"])
 plt.plot(arr["Days"], arr["Susceptible"])
 

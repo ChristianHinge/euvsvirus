@@ -11,7 +11,7 @@ removed_fatality = np.asarray([0.103181947, 0.842995744, 8.199770342]) / 100
 # beta_factors for lock-down, panic and partial lock-down 
 # for a typical beta, gamma, r0 (1/7, 1/14, r0=2) to a beta that results in r0 < 1, 3, 1.5
 # r0 = beta_factor * beta / gamma => beta_factor = r0 * gamma / beta = r0 / 2
-BETA_FACTORS = [1/2.2, 3/2.2, 1.5/2.2]
+BETA_FACTORS = [1/2.5, 3/2.5, 1.5/2.5]
 
 # read
 populations = pd.read_csv("data/counties/population/density.tsv", sep="\t")
