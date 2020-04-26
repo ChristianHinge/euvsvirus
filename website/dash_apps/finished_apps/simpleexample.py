@@ -85,7 +85,7 @@ def create_time_series(df):
     return fig2
 
 def create_time_series_2(df):
-    df = df[["ICU","Hospital beds","ICU beds","Day","Dead"]]
+    df = df[["ICU patients","Total hospital beds","ICU beds","Day","Dead"]]
     df = df.melt('Day',var_name='Population at interest',  value_name='Individuals')
     fig2 = px.line(df, x='Day', y='Individuals', color='Population at interest')
     fig2.update_traces(mode='lines')
