@@ -66,7 +66,7 @@ def _simulate_county(fips, duration, I0=1, intervals=None, beta_factors=None):
     :return: 
     """
     N = fips2pop[fips]
-    R0 = fips2recovered[fips]
+    R0 = fips2recovered.get(fips, 0)
     beta = fips2beta[fips]
     arr = simulate_SEIR_betas(duration, N-I0-R0, I0=I0, R0=R0, beta=beta, intervals=intervals, beta_factors=beta_factors)
     arr = pd.DataFrame(arr, columns=["Susceptible", "Exposed", "Infected", "Removed"])
